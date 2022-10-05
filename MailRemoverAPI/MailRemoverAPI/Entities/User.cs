@@ -5,7 +5,5 @@
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
-
-        public List<Email> Emails { get; set; }
     }
 }
