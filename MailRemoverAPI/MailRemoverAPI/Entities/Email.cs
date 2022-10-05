@@ -4,7 +4,7 @@ namespace MailRemoverAPI.Entities
 {
     public class Email : Entity
     {
-        public EmailType Type { get; set; }
+        public EmailType Type {  get; set; }
 
         public Guid UserId { get; set; }
 
