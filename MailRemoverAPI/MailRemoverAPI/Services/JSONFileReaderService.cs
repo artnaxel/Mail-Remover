@@ -19,6 +19,8 @@ namespace MailRemoverAPI.Services
 
             var filePath = Directory.GetCurrentDirectory() + _configuration["JSONFilesLocation"] + GetEntityFileName<T>();
 
+            Console.WriteLine(filePath);
+
             using FileStream stream = File.OpenRead(filePath);
 
             var entries = await JsonSerializer.DeserializeAsync<List<T>>(stream);

@@ -3,5 +3,7 @@
     public enum EmailType
     {
         Gmail,
+        Yahoo,
+        Outlook
     }
 }
