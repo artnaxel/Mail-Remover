@@ -13,9 +13,13 @@ namespace MailRemoverAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] Boolean Sorted = true)
         {
             var result = await _userRepository.GetAllAsync();
+            if (Sorted)
+            {
+                result.Sort();
+            }
             return Ok(result);
         }
 
