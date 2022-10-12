@@ -1,4 +1,6 @@
-﻿using MailRemoverAPI.Interfaces;
+﻿using MailRemoverAPI.Entities;
+using MailRemoverAPI.Interfaces;
+using MailRemoverAPI.Validators.Email;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MailRemoverAPI.Controllers
@@ -30,6 +32,13 @@ namespace MailRemoverAPI.Controllers
             }
 
             return Ok(result);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] Email email)
+        {
+            CreateEmailValidator.EmailValidator(email);
+            return Ok(email);
         }
     }
 }

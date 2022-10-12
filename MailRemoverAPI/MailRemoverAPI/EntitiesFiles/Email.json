@@ -2,12 +2,14 @@
   {
     "Id": "fb020d52-30fb-4e43-82cf-681ff3cd5eb6",
     "Type": 0,
+    "Address": "tomas.sinkevicius@gmail.com",
     "UserId": "e734d8e4-ac32-4d7c-b9d4-11562c487bea",
     "Token": "b07f85be-45da"
   },
   {
     "Id": "e734d8e4-ac32-4d7c-b9d4-11562c487bea",
     "Type": 2,
+    "Address": "tomas.sinkevicius@gmail.com",
     "UserId": "fb020d52-30fb-4e43-82cf-681ff3cd5eb6",
     "Token": "a08885be-89da"
   }
