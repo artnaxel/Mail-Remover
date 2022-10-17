@@ -1,4 +1,5 @@
 ﻿using MailRemoverAPI.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MailRemoverAPI.Entities
 {
@@ -6,8 +7,11 @@ namespace MailRemoverAPI.Entities
     {
         public EmailType Type {  get; set; }
 
-        public Guid UserId { get; set; }
-
         public string Token { get; set; }
+
+        [ForeignKey(nameof(UserId))]
+        public Guid UserId { get; set; }
+        public User User { get; set; }
+        
     }
 }

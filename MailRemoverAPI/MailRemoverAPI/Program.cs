@@ -1,9 +1,17 @@
+using MailRemoverAPI.Entities;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+var connectionString = builder.Configuration.GetConnectionString("MailRemoverDbConnectionString");
+builder.Services.AddDbContext<MailRemoverDbContext>(options =>{
+    options.UseSqlServer(connectionString);
+});
+
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IJSONFileReaderService, JSONFileReaderService>();
@@ -13,6 +21,7 @@ builder.Services.AddScoped<IEmailRepository, EmailRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 
