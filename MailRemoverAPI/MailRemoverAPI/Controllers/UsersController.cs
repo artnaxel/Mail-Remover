@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
+using MailRemoverAPI.Data;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -87,7 +88,7 @@ namespace MailRemoverAPI.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
         }
 
         // DELETE: api/Users/5

@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Enums;
+using MailRemoverAPI.Entities;
 
-namespace MailRemoverAPI.Entities
+namespace MailRemoverAPI.Data
 {
     public class MailRemoverDbContext : DbContext
     {
@@ -28,10 +29,10 @@ namespace MailRemoverAPI.Entities
                     LastName = "Sinkevičius",
                     Password = "RjEUW1R58r"
                 },
-                new User 
-                { 
-                    Id = g2, 
-                    FirstName = "Greta", 
+                new User
+                {
+                    Id = g2,
+                    FirstName = "Greta",
                     LastName = "Virpšaitė",
                     Password = "@G3gng9t6XBe"
                 },
@@ -45,7 +46,7 @@ namespace MailRemoverAPI.Entities
                 new User
                 {
                     Id = g4,
-                    FirstName= "Benas",
+                    FirstName = "Benas",
                     LastName = "Skripkiūnas",
                     Password = "*Y4!3l710POq"
                 }
@@ -66,7 +67,7 @@ namespace MailRemoverAPI.Entities
                     Type = EmailType.Gmail,
                     UserId = g1,
                     Token = "a08885be-89da"
-                }, 
+                },
                 new Email
                 {
                     Id = Guid.NewGuid(),

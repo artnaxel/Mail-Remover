@@ -1,8 +1,8 @@
-using MailRemoverAPI.Entities;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Services;
 using MailRemoverAPI.Configurations;
 using Microsoft.EntityFrameworkCore;
+using MailRemoverAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
