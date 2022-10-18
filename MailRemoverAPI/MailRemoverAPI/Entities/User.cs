@@ -10,6 +10,8 @@ namespace MailRemoverAPI.Entities
 
         public string Password { get; set; }
 
-        public virtual IList<Email> Emails { get; set; }
+
+
+        public virtual IList<Email>? Emails { get; set; }
     }
 }

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Entities;
+using MailRemoverAPI.Models.User;
+using AutoMapper;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -14,17 +16,20 @@ namespace MailRemoverAPI.Controllers
     public class UsersController : ControllerBase
     {
         private readonly MailRemoverDbContext _context;
+        private readonly IMapper _mapper;
 
-        public UsersController(MailRemoverDbContext context)
+        public UsersController(MailRemoverDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return await _context.Users.ToListAsync();
+            var users = await _context.Users.ToListAsync();
+            return Ok(users);
         }
 
         // GET: api/Users/5
@@ -38,7 +43,7 @@ namespace MailRemoverAPI.Controllers
                 return NotFound();
             }
 
-            return user;
+            return Ok(user);
         }
 
         // PUT: api/Users/5
@@ -75,8 +80,10 @@ namespace MailRemoverAPI.Controllers
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<User>> PostUser(CreateUserDto createUserDto)
         {
+            var user = _mapper.Map<User>(createUserDto);
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
