@@ -52,8 +52,8 @@ namespace MailRemoverAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Email email)
         {
-            CreateEmailValidator.EmailValidator(email);
-            return Ok(email);
+            //CreateEmailValidator.EmailValidator(email);
+            return Ok($"{1} {2}");
         }
     }
 }
