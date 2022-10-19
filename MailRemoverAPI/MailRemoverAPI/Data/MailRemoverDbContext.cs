@@ -58,6 +58,7 @@ namespace MailRemoverAPI.Data
                 {
                     Id = Guid.NewGuid(),
                     Type = EmailType.Gmail,
+                    Address = "1234user@gmail.com",
                     UserId = g1,
                     Token = "b07f85be-45da"
                 },
@@ -65,6 +66,7 @@ namespace MailRemoverAPI.Data
                 {
                     Id = Guid.NewGuid(),
                     Type = EmailType.Gmail,
+                    Address = "1234wre2ruser@gmail.com",
                     UserId = g1,
                     Token = "a08885be-89da"
                 },
@@ -72,6 +74,7 @@ namespace MailRemoverAPI.Data
                 {
                     Id = Guid.NewGuid(),
                     Type = EmailType.Gmail,
+                    Address = "rsdfe2ruser@gmail.com",
                     UserId = g2,
                     Token = "b07f96be-45da"
                 },
@@ -79,6 +82,7 @@ namespace MailRemoverAPI.Data
                 {
                     Id = Guid.NewGuid(),
                     Type = EmailType.Gmail,
+                    Address = "lunasuo@gmail.com",
                     UserId = g3,
                     Token = "b07f45be-45da"
                 },
@@ -86,6 +90,7 @@ namespace MailRemoverAPI.Data
                 {
                     Id = Guid.NewGuid(),
                     Type = EmailType.Gmail,
+                    Address = "lapesuo@gmail.com",
                     UserId = g4,
                     Token = "b07f75be-45da"
                 }
