@@ -9,6 +9,7 @@ using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
 using MailRemoverAPI.Data;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -27,10 +28,13 @@ namespace MailRemoverAPI.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers([FromQuery] string? firstName)
         {
             var users = await _context.Users.ToListAsync();
-            return Ok(users);
+            var queryedUsers = from user in _context.Users
+                               where user.FirstName.Contains(firstName)
+                               select user;
+            return Ok(queryedUsers);
         }
 
         // GET: api/Users/5
