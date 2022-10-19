@@ -19,7 +19,8 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> GetAll()
         {
             var result = await _emailRepository.GetAllAsync();
-            return Ok(result);
+            var sortedResult = result.OrderBy(email => email.Type);
+            return Ok(sortedResult);
         }
 
         [HttpGet]
@@ -38,7 +39,7 @@ namespace MailRemoverAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetEmision([FromQuery] int mb)
         {
-            var result = await _emailRepository.ToGrams(Mb: mb);
+            var result = await _emailRepository.ToGrams(mb);
 
             if (result is null)
             {
@@ -52,7 +53,7 @@ namespace MailRemoverAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Email email)
         {
-            //CreateEmailValidator.EmailValidator(email);
+            CreateEmailValidator.EmailValidator(email);
             return Ok($"{1} {2}");
         }
     }
