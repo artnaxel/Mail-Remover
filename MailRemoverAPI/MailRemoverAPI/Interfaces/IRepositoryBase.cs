@@ -7,5 +7,6 @@ namespace MailRemoverAPI.Interfaces
         public Task<List<T>> GetAllAsync();
 
         public Task<T?> GetByIdAsync(Guid Id);
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using MailRemoverAPI.Entities;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Validators.Email;
+using MailRemoverAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MailRemoverAPI.Controllers
@@ -33,6 +34,20 @@ namespace MailRemoverAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetEmision([FromQuery] int mb)
+        {
+            var result = await _emailRepository.ToGrams(mb);
+
+            if (result is null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Email email)

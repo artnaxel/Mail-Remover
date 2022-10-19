@@ -1,4 +1,4 @@
-﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MailRemoverAPI.Entities
 {
@@ -8,7 +8,10 @@ namespace MailRemoverAPI.Entities
 
         public string LastName { get; set; }
 
-        public Password Password { get; set; }
+        public string Password { get; set; }
+
+
+        public virtual IList<Email>? Emails { get; set; }
 
         public int CompareTo(User? other)
         {
