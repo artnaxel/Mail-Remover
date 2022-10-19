@@ -38,7 +38,7 @@ namespace MailRemoverAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetEmision([FromQuery] int mb)
         {
-            var result = await _emailRepository.ToGrams(mb);
+            var result = await _emailRepository.ToGrams(Mb: mb);
 
             if (result is null)
             {
