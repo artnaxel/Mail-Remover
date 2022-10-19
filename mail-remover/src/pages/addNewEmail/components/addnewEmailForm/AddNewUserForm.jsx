@@ -25,7 +25,7 @@ export default function AddNewUserForm () {
       <TextField className={Style.TextField} label="Password" variant="outlined" onChange={handleTextFieldChange(setPassword)}/>
       <br />
       <Button className={Style.Button} variant="contained" onClick={() => {
-        axios.post({ url: 'https://localhost:7151/api/Users', data: { firstName, lastName, password } })
+        axios.post('https://localhost:7151/api/Users', { firstName, lastName, password })
       }}>Submit</Button>
     </Paper>
   </Box>
