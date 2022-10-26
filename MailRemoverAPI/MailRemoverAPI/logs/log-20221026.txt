@@ -1,0 +1,25 @@
+2022-10-26 16:43:33.667 +03:00 [INF] Now listening on: https://localhost:7151
+2022-10-26 16:43:33.722 +03:00 [INF] Now listening on: http://localhost:5151
+2022-10-26 16:43:33.727 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 16:43:33.730 +03:00 [INF] Hosting environment: Development
+2022-10-26 16:43:33.732 +03:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-10-26 16:45:18.856 +03:00 [INF] Now listening on: https://localhost:7151
+2022-10-26 16:45:18.886 +03:00 [INF] Now listening on: http://localhost:5151
+2022-10-26 16:45:18.892 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 16:45:18.894 +03:00 [INF] Hosting environment: Development
+2022-10-26 16:45:18.897 +03:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-10-26 16:50:04.988 +03:00 [INF] Now listening on: https://localhost:7151
+2022-10-26 16:50:05.060 +03:00 [INF] Now listening on: http://localhost:5151
+2022-10-26 16:50:05.072 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 16:50:05.074 +03:00 [INF] Hosting environment: Development
+2022-10-26 16:50:05.075 +03:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-10-26 16:52:51.524 +03:00 [INF] Now listening on: https://localhost:7151
+2022-10-26 16:52:51.570 +03:00 [INF] Now listening on: http://localhost:5151
+2022-10-26 16:52:51.576 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 16:52:51.578 +03:00 [INF] Hosting environment: Development
+2022-10-26 16:52:51.579 +03:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-10-26 16:54:13.381 +03:00 [INF] Now listening on: https://localhost:7151
+2022-10-26 16:54:13.450 +03:00 [INF] Now listening on: http://localhost:5151
+2022-10-26 16:54:13.458 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 16:54:13.459 +03:00 [INF] Hosting environment: Development
+2022-10-26 16:54:13.460 +03:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\

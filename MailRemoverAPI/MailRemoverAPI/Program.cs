@@ -3,6 +3,7 @@ using MailRemoverAPI.Services;
 using MailRemoverAPI.Configurations;
 using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Data;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(MapperConfig));
+
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 
 var app = builder.Build();
 
