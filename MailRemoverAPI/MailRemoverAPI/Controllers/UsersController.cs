@@ -95,6 +95,31 @@ namespace MailRemoverAPI.Controllers
             return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
         }
 
+        // POST: api/Users/login
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost("/login")]
+        public async Task<ActionResult<User>> LoginUser(Guid id, string Password)
+        {
+            var user = await _context.Users.FindAsync(id);
+
+            if(user == null)
+            {
+                return NotFound();
+            } else
+            {
+                var result = user.CheckPassword(Password);
+                if(result == false)
+                {
+                    return Ok("Wrong Password");
+                } else
+                {
+                    return Ok(user);
+                }
+            }
+        }
+
+
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
