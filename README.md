@@ -8,7 +8,7 @@ VU PS
 
 -- How to make database work in developement
 
-- Open `Package Manager Console` and enter this command:
+- Open `Package Manager Console` and enter this command:<br />
     1.`update-database`
 
 
