@@ -1,0 +1,10 @@
+2022-11-08 23:33:35.047 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-08 23:33:35.107 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-08 23:33:35.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:33:35.118 +02:00 [INF] Hosting environment: Development
+2022-11-08 23:33:35.119 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-08 23:36:49.049 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-08 23:36:49.130 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-08 23:36:49.139 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:36:49.141 +02:00 [INF] Hosting environment: Development
+2022-11-08 23:36:49.142 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
