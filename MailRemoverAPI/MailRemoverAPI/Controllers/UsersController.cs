@@ -19,36 +19,57 @@ namespace MailRemoverAPI.Controllers
     {
         private readonly MailRemoverDbContext _context;
         private readonly IMapper _mapper;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(MailRemoverDbContext context, IMapper mapper)
+        public UsersController(MailRemoverDbContext context, IMapper mapper, ILogger<UsersController> logger)
         {
             _context = context;
+            this._logger = logger;
             this._mapper = mapper;
         }
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers([FromQuery] string? firstName)
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers([FromQuery] string firstName)
         {
-            var users = await _context.Users.ToListAsync();
-            var queryedUsers = from user in _context.Users
-                               where user.FirstName.Contains(firstName)
-                               select user;
-            return Ok(queryedUsers);
+            _logger.LogInformation($"Getting all users for {firstName}");
+            try
+            {
+                //throw new OutOfMemoryException();
+                var users = await _context.Users.ToListAsync();
+                var queryedUsers = from user in _context.Users
+                                   where user.FirstName.Contains(firstName)
+                                   select user;
+                return Ok(queryedUsers);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the {nameof(GetUsers)}");
+                return Problem($"Something went wrong in the {nameof(GetUsers)}", statusCode: 500);
+            }
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(Guid id)
         {
-            var user = await _context.Users.FindAsync(id);
-
-            if (user == null)
+            _logger.LogInformation($"Getting user by id {id}");
+            try
             {
-                return NotFound();
+                //throw new OutOfMemoryException();
+                var user = await _context.Users.FindAsync(id);
+                Console.WriteLine(user);
+                if(user == null) { 
+                    return NotFound(); 
+                } else { 
+                    return Ok(user); 
+                }
             }
-
-            return Ok(user);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something Went Wrong in the {nameof(GetUser)}");
+                return Problem($"Something Went Wrong in the {nameof(GetUser)}", statusCode: 500);
+            }
         }
 
         // PUT: api/Users/5
@@ -56,18 +77,23 @@ namespace MailRemoverAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(Guid id, User user)
         {
+            _logger.LogInformation($"Registering user with put {id}");
+            _context.Entry(user).State = EntityState.Modified;
+
+
             if (id != user.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            
 
             try
             {
+                //throw new OutOfMemoryException();
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
                 if (!UserExists(id))
                 {
@@ -75,7 +101,8 @@ namespace MailRemoverAPI.Controllers
                 }
                 else
                 {
-                    throw;
+                    _logger.LogError(ex, $"Something Went Wrong in the {nameof(PutUser)}");
+                    return Problem($"Something Went Wrong in the {nameof(PutUser)}", statusCode: 500);
                 }
             }
 
@@ -87,12 +114,25 @@ namespace MailRemoverAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(CreateUserDto createUserDto)
         {
-            var user = _mapper.Map<User>(createUserDto);
+            _logger.LogInformation($"Registering user {createUserDto}");
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+            try
+            {
+                //throw new OutOfMemoryException();
+                var user = _mapper.Map<User>(createUserDto);
 
-            return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the registrstion of {nameof(PostUser)}");
+                return Problem($"Something went wrong in the registrstion of {nameof(PostUser)}", statusCode: 500);
+            }
+
+
         }
 
         // POST: api/Users/login
@@ -100,22 +140,36 @@ namespace MailRemoverAPI.Controllers
         [HttpPost("/login")]
         public async Task<ActionResult<User>> LoginUser(Guid id, string Password)
         {
-            var user = await _context.Users.FindAsync(id);
+            _logger.LogInformation($"Loging in user {id}");
 
-            if(user == null)
+            try
             {
-                return NotFound();
-            } else
-            {
-                var result = user.CheckPassword(Password);
-                if(result == false)
+                //throw new OutOfMemoryException();
+                var user = await _context.Users.FindAsync(id);
+
+                if (user == null)
                 {
-                    return Ok("Wrong Password");
-                } else
+                    return NotFound();
+                }
+                else
                 {
-                    return Ok(user);
+                    var result = user.CheckPassword(Password);
+                    if (result == false)
+                    {
+                        return Ok("Wrong Password");
+                    }
+                    else
+                    {
+                        return Ok(user);
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the loging in of {nameof(LoginUser)}");
+                return Problem($"Something went wrong in the loging in of {nameof(LoginUser)}", statusCode: 500);
+            }
+
         }
 
 
@@ -124,16 +178,29 @@ namespace MailRemoverAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            _logger.LogInformation($"Deleting user {id}");
+
+            try
             {
-                return NotFound();
+                //throw new OutOfMemoryException();
+                var user = await _context.Users.FindAsync(id);
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
             }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the deletion of {nameof(DeleteUser)}");
+                return Problem($"Something went wrong in the deletion of {nameof(DeleteUser)}", statusCode: 500);
+            }
+            
 
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
 
         private bool UserExists(Guid id)
