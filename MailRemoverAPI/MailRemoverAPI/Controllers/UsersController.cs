@@ -30,13 +30,14 @@ namespace MailRemoverAPI.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers([FromQuery] string firstName)
+        public async Task<ActionResult<IEnumerable<GetUserDto>>> GetUsers([FromQuery] string firstName)
         {
             _logger.LogInformation($"Getting all users for {firstName}");
             try
             {
                 //throw new OutOfMemoryException();
                 var users = await _context.Users.ToListAsync();
+                var records = _mapper.Map<List<GetUserDto>>(users);
                 var queryedUsers = from user in _context.Users
                                    where user.FirstName.Contains(firstName)
                                    select user;
@@ -51,19 +52,20 @@ namespace MailRemoverAPI.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(Guid id)
+        public async Task<ActionResult<UserDetailsDto>> GetUser(Guid id)
         {
             _logger.LogInformation($"Getting user by id {id}");
             try
             {
                 //throw new OutOfMemoryException();
-                var user = await _context.Users.FindAsync(id);
-                Console.WriteLine(user);
+                var user = await _context.Users.Include(q => q.Emails).FirstOrDefaultAsync(q => q.Id == id);
+
                 if(user == null) { 
                     return NotFound(); 
-                } else { 
-                    return Ok(user); 
                 }
+
+                var UserDto = _mapper.Map<UserDetailsDto>(user);
+                return Ok(UserDto);
             }
             catch (Exception ex)
             {
