@@ -38,10 +38,12 @@ namespace MailRemoverAPI.Controllers
                 //throw new OutOfMemoryException();
                 var users = await _context.Users.ToListAsync();
                 var records = _mapper.Map<List<GetUserDto>>(users);
-                var queryedUsers = from user in _context.Users
+                var queryedUsers = from user in records
                                    where user.FirstName.Contains(firstName)
                                    select user;
                 return Ok(queryedUsers);
+                //return Ok(records);
+                
             }
             catch (Exception ex)
             {
