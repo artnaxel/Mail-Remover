@@ -7,9 +7,9 @@ namespace MailRemoverAPI.Controllers
 {
     public class GoogleAuthController : BaseController
     {
-        GmailService _gmailService;
+        IGmailService _gmailService;
 
-        public GoogleAuthController(GmailService gmailService)
+        public GoogleAuthController(IGmailService gmailService)
         {
             _gmailService = gmailService;
         }
@@ -22,29 +22,10 @@ namespace MailRemoverAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Code(string code)
+        public async Task<IActionResult> Code(string code, string state)
         {
-            var response = await _gmailService.PostAccessCode(code);
+            var response = await _gmailService.PostAccessCode(code, state);
             return Ok(response);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Token([FromBody] AccessData accessData)
-        {
-            _gmailService.AccessTokens.Add(accessData);
-            return Ok();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAllAccessData()
-        {
-            return Ok(_gmailService.AccessTokens);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAllCodes()
-        {
-            return Ok(_gmailService.Codes);
         }
     }
 }

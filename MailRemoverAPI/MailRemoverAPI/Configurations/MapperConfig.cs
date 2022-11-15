@@ -2,6 +2,7 @@
 using MailRemoverAPI.Models.User;
 
 using AutoMapper;
+using MailRemoverAPI.Models.Gmail;
 
 namespace MailRemoverAPI.Configurations
 {
@@ -10,6 +11,8 @@ namespace MailRemoverAPI.Configurations
         public MapperConfig()
         {
             CreateMap<User, CreateUserDto>().ReverseMap();
+
+            CreateMap<Gmail, GmailDto>().ReverseMap();
         }
     }
 }

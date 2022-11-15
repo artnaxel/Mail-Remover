@@ -27,7 +27,9 @@ builder.Services.AddScoped<IJSONFileReaderService, JSONFileReaderService>();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmailRepository, EmailRepository>();
-builder.Services.AddSingleton<GmailService>();
+builder.Services.AddScoped<IGmailService, GmailService>();
+builder.Services.AddScoped<IGmailRepository, GmailRepository>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

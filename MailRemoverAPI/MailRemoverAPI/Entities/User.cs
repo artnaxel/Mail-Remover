@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MailRemoverAPI.Entities
 {
-    public class User : Entity, IComparable<User>
+    public class User : Entity
     {
         public string FirstName { get; set; }
 
@@ -13,9 +13,6 @@ namespace MailRemoverAPI.Entities
 
         public virtual IList<Email>? Emails { get; set; }
 
-        public int CompareTo(User? other)
-        {
-            return LastName.CompareTo(other.LastName);
-        }
+        public virtual List<Gmail> Gmails { get; set; }
     }
 }
