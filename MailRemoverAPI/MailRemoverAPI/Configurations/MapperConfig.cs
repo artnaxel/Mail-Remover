@@ -13,7 +13,10 @@ namespace MailRemoverAPI.Configurations
             CreateMap<User, CreateUserDto>().ReverseMap();
             CreateMap<User, GetUserDto>().ReverseMap();
             CreateMap<User, UserDetailsDto>().ReverseMap();
+            CreateMap<User, UpdateUserDto>().ReverseMap();
+
             CreateMap<Email, EmailDto>().ReverseMap();
+
         }
     }
 }
