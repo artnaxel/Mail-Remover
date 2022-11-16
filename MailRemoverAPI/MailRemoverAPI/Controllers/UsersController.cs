@@ -8,8 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
-using MailRemoverAPI.Data;
-using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+using MailRemoverAPI.Contracts;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -17,14 +16,14 @@ namespace MailRemoverAPI.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly MailRemoverDbContext _context;
         private readonly IMapper _mapper;
         private readonly ILogger<UsersController> _logger;
+        private readonly IUsersRepository _usersRepository;
 
-        public UsersController(MailRemoverDbContext context, IMapper mapper, ILogger<UsersController> logger)
+        public UsersController(IMapper mapper, ILogger<UsersController> logger, IUsersRepository usersRepository)
         {
-            _context = context;
             this._logger = logger;
+            this._usersRepository = usersRepository;
             this._mapper = mapper;
         }
 
@@ -36,7 +35,7 @@ namespace MailRemoverAPI.Controllers
             try
             {
                 //throw new OutOfMemoryException();
-                var users = await _context.Users.ToListAsync();
+                var users = await _usersRepository.GetAllAsync();
                 var records = _mapper.Map<List<GetUserDto>>(users);
                 var queryedUsers = from user in records
                                    where user.FirstName.Contains(firstName)
@@ -54,20 +53,20 @@ namespace MailRemoverAPI.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserDetailsDto>> GetUser(Guid id)
+        public async Task<ActionResult<GetUserDto>> GetUser(Guid id)
         {
             _logger.LogInformation($"Getting user by id {id}");
             try
             {
                 //throw new OutOfMemoryException();
-                var user = await _context.Users.Include(q => q.Emails).FirstOrDefaultAsync(q => q.Id == id);
+                var user = await _usersRepository.GetAsync(id);
 
                 if(user == null) { 
                     return NotFound(); 
                 }
 
-                var UserDto = _mapper.Map<UserDetailsDto>(user);
-                return Ok(UserDto);
+                var userDto = _mapper.Map<GetUserDto>(user);
+                return Ok(userDto);
             }
             catch (Exception ex)
             {
@@ -79,27 +78,33 @@ namespace MailRemoverAPI.Controllers
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(Guid id, User user)
+        public async Task<IActionResult> PutUser(Guid id, UpdateUserDto updateUserDto)
         {
             _logger.LogInformation($"Registering user with put {id}");
-            _context.Entry(user).State = EntityState.Modified;
-
-
-            if (id != user.Id)
+            
+            if (id != updateUserDto.Id)
             {
-                return BadRequest();
+                return BadRequest("Invalid Record Id");
             }
 
-            
+            //_usersRepository.Entry(updateUserDto).State = EntityState.Modified;
+            var user = await _usersRepository.GetAsync(id);
+
+            if (user == null) 
+            { 
+                return NotFound();
+            }
+
+            _mapper.Map(updateUserDto, user);
 
             try
             {
                 //throw new OutOfMemoryException();
-                await _context.SaveChangesAsync();
+                await _usersRepository.UpdateAsync(user);
             }
             catch (DbUpdateConcurrencyException ex)
             {
-                if (!UserExists(id))
+                if (!await UserExists(id))
                 {
                     return NotFound();
                 }
@@ -125,8 +130,7 @@ namespace MailRemoverAPI.Controllers
                 //throw new OutOfMemoryException();
                 var user = _mapper.Map<User>(createUserDto);
 
-                _context.Users.Add(user);
-                await _context.SaveChangesAsync();
+                await _usersRepository.AddAsync(user);
 
                 return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
             }
@@ -149,7 +153,7 @@ namespace MailRemoverAPI.Controllers
             try
             {
                 //throw new OutOfMemoryException();
-                var user = await _context.Users.FindAsync(id);
+                var user = await _usersRepository.GetAsync(id);
 
                 if (user == null)
                 {
@@ -187,14 +191,13 @@ namespace MailRemoverAPI.Controllers
             try
             {
                 //throw new OutOfMemoryException();
-                var user = await _context.Users.FindAsync(id);
+                var user = await _usersRepository.GetAsync(id);
                 if (user == null)
                 {
                     return NotFound();
                 }
 
-                _context.Users.Remove(user);
-                await _context.SaveChangesAsync();
+                await _usersRepository.DeleteAsync(id);
 
                 return NoContent();
             }
@@ -207,9 +210,9 @@ namespace MailRemoverAPI.Controllers
 
         }
 
-        private bool UserExists(Guid id)
+        private async Task<bool> UserExists(Guid id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return await _usersRepository.Exists(id);
         }
     }
 }

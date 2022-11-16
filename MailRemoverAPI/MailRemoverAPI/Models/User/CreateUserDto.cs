@@ -2,13 +2,8 @@
 
 namespace MailRemoverAPI.Models.User
 {
-    public struct CreateUserDto
+    public class CreateUserDto : BaseUserDto
     {
-        [Required]
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
         [Required]
         public string Password { get; set; }
     }

@@ -17,3 +17,9 @@
 2022-11-14 14:45:16.869 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
 2022-11-14 14:45:31.752 +02:00 [INF] Getting all users for greta
 2022-11-14 14:45:39.772 +02:00 [INF] Getting all users for Greta
+2022-11-14 22:07:13.757 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-14 22:07:13.845 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-14 22:07:13.854 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 22:07:13.855 +02:00 [INF] Hosting environment: Development
+2022-11-14 22:07:13.856 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-14 22:07:33.234 +02:00 [INF] Getting all users for Greta
