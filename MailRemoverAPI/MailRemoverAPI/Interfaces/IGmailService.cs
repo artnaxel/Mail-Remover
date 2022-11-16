@@ -7,5 +7,7 @@ namespace MailRemoverAPI.Interfaces
         public Task<string> Auth(Guid id);
 
         public Task<GmailDto?> PostAccessCode(string code, string state);
+
+        public Task RefreshAccessToken(Guid id);
     }
 }

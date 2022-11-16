@@ -1,4 +1,5 @@
-﻿using MailRemoverAPI.Interfaces;
+﻿using MailRemoverAPI.Entities;
+using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Newtonsoft.Json.Linq;
@@ -57,6 +58,41 @@ namespace MailRemoverAPI.Services
             }
 
             return null;
+        }
+
+        public async Task RefreshAccessToken(Guid id)
+        {
+            var gmail = await _repository.GetByIdAsync(id);
+
+            if(gmail is null)
+            {
+                return;
+            }
+
+            try
+            {
+                using HttpResponseMessage response = await client.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&refresh_token={gmail.RefreshToken}&grant_type=refresh_token", null);
+                var responseBody = await response.Content.ReadAsStringAsync();
+                response.EnsureSuccessStatusCode();
+
+                RefreshedAccessData refreshedAccessData = Newtonsoft.Json.JsonConvert.DeserializeObject<RefreshedAccessData>(responseBody);
+
+                Gmail updatedGmail = new()
+                {
+                    Id = gmail.Id,
+                    AccessToken = refreshedAccessData.access_token,
+                    RefreshToken = gmail.RefreshToken,
+                    Expires = DateTime.Now.AddSeconds(Convert.ToDouble(refreshedAccessData.expires_in)),
+                    UserId = gmail.UserId
+                };
+
+                await _repository.UpdateAsync(updatedGmail);
+
+            }
+            catch (HttpRequestException e)
+            {
+
+            }
         }
     }
 }

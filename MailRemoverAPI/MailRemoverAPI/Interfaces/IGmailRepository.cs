@@ -7,6 +7,6 @@ namespace MailRemoverAPI.Interfaces
     {
         public Task<Guid> CreateAsync(GmailDto gmail);
 
-
+        public Task UpdateAsync(Gmail gmail);
     }
 }
