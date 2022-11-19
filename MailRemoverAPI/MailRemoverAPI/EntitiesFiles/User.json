@@ -1,0 +1,21 @@
+
+  [
+    {
+      "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "FirstName": "Tomas",
+      "LastName": "Sznkevičius",
+      "Password": {
+        "PasswordStr": "RjEUW1R58r",
+        "ExpirationDate": "2023-01-01T00:00:00"
+      }
+    },
+    {
+      "Id": "3fac5f64-5717-4562-b3fc-2c963f66afa6",
+      "FirstName": "Antanas",
+      "LastName": "Smetona",
+      "Password": {
+        "PasswordStr": "RjEUW1R58r",
+        "ExpirationDate": "2023-01-01T00:00:00"
+      }
+    }
+  ]
