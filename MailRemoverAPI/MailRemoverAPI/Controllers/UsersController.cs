@@ -91,9 +91,7 @@ namespace MailRemoverAPI.Controllers
             {
                 return BadRequest();
             }
-
             
-
             try
             {
                 //throw new OutOfMemoryException();
@@ -177,8 +175,6 @@ namespace MailRemoverAPI.Controllers
             }
 
         }
-
-
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
