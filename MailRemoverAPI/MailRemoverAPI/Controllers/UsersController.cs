@@ -9,7 +9,6 @@ using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
 using MailRemoverAPI.Data;
-using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace MailRemoverAPI.Controllers
 {

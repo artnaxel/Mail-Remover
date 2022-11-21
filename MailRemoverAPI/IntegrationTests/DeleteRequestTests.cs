@@ -11,7 +11,7 @@
         }
 
         [Theory]
-        [InlineData("/api/Users/0585dab2-4839-463e-1c0c-08dacbb6e93f")]
+        [InlineData("/api/Users/14bcd064-3df4-4f80-e8a1-08daca423ee9")]
         public async Task Users_DeleteRequest_OnSuccess_ReturnsStatusCode204(string uri)
         {
             // Arrange

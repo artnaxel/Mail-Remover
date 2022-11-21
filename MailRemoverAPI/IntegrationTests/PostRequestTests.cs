@@ -1,9 +1,5 @@
 ﻿using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
-using Microsoft.Data.SqlClient.Server;
-using Moq;
-using System.Net.Http.Json;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace IntegrationTests
 {
