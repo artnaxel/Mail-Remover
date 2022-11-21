@@ -1,0 +1,137 @@
+2022-11-21 11:37:23.931 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 11:37:23.992 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 11:37:24.004 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 11:37:24.006 +02:00 [INF] Hosting environment: Development
+2022-11-21 11:37:24.007 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 11:37:50.928 +02:00 [INF] Getting all users for Greta
+2022-11-21 11:38:56.447 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-21 11:39:33.985 +02:00 [INF] Loging in user 73d9c022-f755-4728-95cb-9b67ab5b5b77
+2022-11-21 11:43:05.885 +02:00 [INF] Loging in user 73d9c022-f755-4728-95cb-9b67ab5b5b77
+2022-11-21 11:43:10.978 +02:00 [INF] Loging in user 73d9c022-f755-4728-95cb-9b67ab5b5b77
+2022-11-21 12:02:50.980 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 12:02:51.076 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 12:02:51.086 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 12:02:51.088 +02:00 [INF] Hosting environment: Development
+2022-11-21 12:02:51.089 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 14:53:08.990 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 14:53:09.035 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 14:53:09.044 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 14:53:09.047 +02:00 [INF] Hosting environment: Development
+2022-11-21 14:53:09.049 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 14:56:30.802 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 14:56:30.857 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 14:56:30.863 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 14:56:30.864 +02:00 [INF] Hosting environment: Development
+2022-11-21 14:56:30.864 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 14:56:40.297 +02:00 [INF] Getting user by id 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2022-11-21 14:56:43.662 +02:00 [ERR] Something Went Wrong While Processing/api/Users/3fa85f64-5717-4562-b3fc-2c963f66afa6
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (3fa85f64-5717-4562-b3fc-2c963f66afa6) was not found
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 64
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 21
+2022-11-21 14:59:43.093 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 14:59:43.156 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 14:59:43.163 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 14:59:43.164 +02:00 [INF] Hosting environment: Development
+2022-11-21 14:59:43.165 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 14:59:58.344 +02:00 [INF] Getting user by id 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2022-11-21 15:00:00.732 +02:00 [ERR] Something Went Wrong While Processing/api/Users/3fa85f64-5717-4562-b3fc-2c963f66afa6
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (3fa85f64-5717-4562-b3fc-2c963f66afa6) was not found
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 64
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 21
+2022-11-21 15:03:00.551 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 15:03:00.610 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 15:03:00.616 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 15:03:00.617 +02:00 [INF] Hosting environment: Development
+2022-11-21 15:03:00.618 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 15:03:10.821 +02:00 [INF] Getting user by id 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2022-11-21 15:03:13.065 +02:00 [ERR] Something Went Wrong While Processing/api/Users/3fa85f64-5717-4562-b3fc-2c963f66afa6
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (3fa85f64-5717-4562-b3fc-2c963f66afa6) was not found
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 64
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 21
+2022-11-21 15:06:21.331 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 15:06:21.395 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 15:06:21.404 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 15:06:21.405 +02:00 [INF] Hosting environment: Development
+2022-11-21 15:06:21.406 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 15:06:28.377 +02:00 [INF] Getting user by id 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2022-11-21 15:06:30.599 +02:00 [ERR] Something Went Wrong While Processing/api/Users/3fa85f64-5717-4562-b3fc-2c963f66afa6
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (3fa85f64-5717-4562-b3fc-2c963f66afa6) was not found   - HELLO!
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 64
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-11-21 15:26:59.348 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 15:26:59.395 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 15:26:59.402 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 15:26:59.403 +02:00 [INF] Hosting environment: Development
+2022-11-21 15:26:59.404 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 15:27:33.290 +02:00 [INF] Registering user with put 3fa85f64-5717-4562-b3fc-2c963f66dca6
+2022-11-21 15:27:33.364 +02:00 [ERR] Something Went Wrong While Processing/api/Users/3fa85f64-5717-4562-b3fc-2c963f66dca6
+MailRemoverAPI.Exceptions.BadRequestException: Requset bad in: GetUser. Invalid Record Id3fa85f64-5717-4562-b3fc-2c963f66dca6
+   at MailRemoverAPI.Controllers.UsersController.PutUser(Guid id, UpdateUserDto updateUserDto) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 80
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-11-21 15:28:00.871 +02:00 [INF] Registering user with put 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2022-11-21 17:29:15.000 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-21 17:29:15.043 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-21 17:29:15.052 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-21 17:29:15.054 +02:00 [INF] Hosting environment: Development
+2022-11-21 17:29:15.057 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-21 17:29:31.240 +02:00 [INF] Getting all users for Greta

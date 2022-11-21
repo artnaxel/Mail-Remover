@@ -9,6 +9,7 @@ using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
 using MailRemoverAPI.Contracts;
+using MailRemoverAPI.Exceptions;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -56,23 +57,15 @@ namespace MailRemoverAPI.Controllers
         public async Task<ActionResult<GetUserDto>> GetUser(Guid id)
         {
             _logger.LogInformation($"Getting user by id {id}");
-            try
-            {
-                //throw new OutOfMemoryException();
+
                 var user = await _usersRepository.GetAsync(id);
 
-                if(user == null) { 
-                    return NotFound(); 
+                if(user == null) {
+                    throw new NotFoundException(nameof(GetUser), id);
                 }
 
                 var userDto = _mapper.Map<GetUserDto>(user);
                 return Ok(userDto);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something Went Wrong in the {nameof(GetUser)}");
-                return Problem($"Something Went Wrong in the {nameof(GetUser)}", statusCode: 500);
-            }
         }
 
         // PUT: api/Users/5
@@ -84,15 +77,15 @@ namespace MailRemoverAPI.Controllers
             
             if (id != updateUserDto.Id)
             {
-                return BadRequest("Invalid Record Id");
+                throw new BadRequestException("Requset bad in: " + nameof(GetUser) + ". Invalid Record Id", id);
             }
 
             //_usersRepository.Entry(updateUserDto).State = EntityState.Modified;
             var user = await _usersRepository.GetAsync(id);
 
             if (user == null) 
-            { 
-                return NotFound();
+            {
+                throw new NotFoundException(nameof(GetUser), id);
             }
 
             _mapper.Map(updateUserDto, user);
