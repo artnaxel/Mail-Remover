@@ -2,7 +2,7 @@
 
 namespace MailRemoverAPI.Models.User
 {
-    public class UserDetailsDto
+    public class UserDetailsDto : BaseUserDto
     {
             public string FirstName { get; set; }
             public string LastName { get; set; }

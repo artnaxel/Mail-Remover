@@ -2,10 +2,8 @@
 
 namespace MailRemoverAPI.Models.User
 {
-    public class GetUserDto
+    public class GetUserDto : BaseUserDto
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public Guid UserId { get; set; }
+        public Guid Id { get; set; }
     }
 }
