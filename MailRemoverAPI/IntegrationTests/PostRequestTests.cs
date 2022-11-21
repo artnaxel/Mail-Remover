@@ -1,5 +1,6 @@
 ﻿using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
+using Microsoft.Data.SqlClient.Server;
 using Moq;
 using System.Net.Http.Json;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -32,8 +33,6 @@ namespace IntegrationTests
                 Password = "bc6vbahd6" 
             };
 
-            
-
             // Act
             HttpResponseMessage response = await client.PostAsJsonAsync(uri, user);
 
@@ -61,26 +60,21 @@ namespace IntegrationTests
             HttpResponseMessage response = await client.PostAsJsonAsync(uri, email);
 
             // Assert
-            Assert.Equal(HttpStatusCode.Created, response.StatusCode);*/
-        }
+            Assert.Equal(HttpStatusCode.Created, response.StatusCode);
+        }*/
 
-        /*[Theory]
-        [InlineData("/api/login")]
-        //[InlineData("/api/Users/dd1e53db-2b4d-405f-99d8-5fb22549ce92")]
+        [Theory]
+        [InlineData("/login?id=e033fa78-a839-4276-ed91-08dacbb5abc5&Password=labukas")]
         public async Task Users_LoginRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
             using var client = _factory.CreateClient();
 
-            //"id": "ad2c0be5-810d-4d8f-9127-08daca3ed5cb"
-
             var user = new User()
             {
-                FirstName = "Rimante",
-                LastName = "Rimantyte",
-                Password = "hihihaha",
-                Id = new Guid("{ad2c0be5-810d-4d8f-9127-08daca3ed5cb}")
+                Id = new Guid("e033fa78-a839-4276-ed91-08dacbb5abc5"),
+                Password = "labukas"
             };
 
             // Act
@@ -88,6 +82,6 @@ namespace IntegrationTests
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-        }*/
+        }
     }
 }
