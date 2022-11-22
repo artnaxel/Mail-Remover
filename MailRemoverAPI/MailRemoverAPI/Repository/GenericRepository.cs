@@ -16,6 +16,7 @@ namespace MailRemoverAPI.Repository
         {
             await _context.AddAsync(entity);
             await _context.SaveChangesAsync();
+
             return entity;
         }
 
@@ -29,6 +30,7 @@ namespace MailRemoverAPI.Repository
         public async Task<bool> Exists(Guid id)
         {
             var entity = await GetAsync(id);
+
             return entity != null;
         }
 
@@ -51,7 +53,6 @@ namespace MailRemoverAPI.Repository
         {
             _context.Update(entity);
             await _context.SaveChangesAsync();
-
         }
     }
 }

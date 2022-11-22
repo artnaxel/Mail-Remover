@@ -24,6 +24,7 @@ namespace MailRemoverAPI.Repository
             user.Id = Guid.NewGuid();
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
+
             return user;
         }
 

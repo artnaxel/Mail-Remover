@@ -55,7 +55,10 @@ app.UseCors();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }
