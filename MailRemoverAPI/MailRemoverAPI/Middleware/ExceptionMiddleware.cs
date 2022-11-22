@@ -48,6 +48,10 @@ namespace MailRemoverAPI.Middleware
                     statusCode = HttpStatusCode.BadRequest;
                     errorDetails.ErrorType = "Bad Requst";
                     break;
+                case UnauthorizedException unauthorizedException:
+                    statusCode = HttpStatusCode.Unauthorized;
+                    errorDetails.ErrorType = "Unauthorized";
+                    break;
                 default:
                     break;
             }

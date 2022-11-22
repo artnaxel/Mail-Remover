@@ -2,7 +2,7 @@
 {
     public class BadRequestException : ApplicationException
     {
-        public BadRequestException(string message, Guid id) : base(message + id)
+        public BadRequestException(string message, string id = "No id") : base(message + id)
         {
 
         }

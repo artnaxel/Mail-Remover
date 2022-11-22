@@ -33,23 +33,16 @@ namespace MailRemoverAPI.Controllers
         public async Task<ActionResult<IEnumerable<GetUserDto>>> GetUsers([FromQuery] string firstName)
         {
             _logger.LogInformation($"Getting all users for {firstName}");
-            try
-            {
-                //throw new OutOfMemoryException();
-                var users = await _usersRepository.GetAllAsync();
-                var records = _mapper.Map<List<GetUserDto>>(users);
-                var queryedUsers = from user in records
-                                   where user.FirstName.Contains(firstName)
-                                   select user;
-                return Ok(queryedUsers);
-                //return Ok(records);
-                
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something went wrong in the {nameof(GetUsers)}");
-                return Problem($"Something went wrong in the {nameof(GetUsers)}", statusCode: 500);
-            }
+
+            var users = await _usersRepository.GetAllAsync();
+            var records = _mapper.Map<List<GetUserDto>>(users);
+            //var queryedUsers = from user in records
+            //                   where user.FirstName.Contains(firstName)
+            //                   select user;
+
+            var queryedUsers = records.Where(user => user.FirstName.Contains(firstName));
+            
+            return Ok(queryedUsers);
         }
 
         // GET: api/Users/5
@@ -58,14 +51,15 @@ namespace MailRemoverAPI.Controllers
         {
             _logger.LogInformation($"Getting user by id {id}");
 
-                var user = await _usersRepository.GetAsync(id);
 
-                if(user == null) {
-                    throw new NotFoundException(nameof(GetUser), id);
-                }
+            var user = await _usersRepository.GetAsync(id);
 
-                var userDto = _mapper.Map<GetUserDto>(user);
-                return Ok(userDto);
+            if(user == null) {
+                throw new NotFoundException(nameof(GetUser), id);
+            }
+
+            var userDto = _mapper.Map<GetUserDto>(user);
+            return Ok(userDto);
         }
 
         // PUT: api/Users/5
@@ -77,38 +71,20 @@ namespace MailRemoverAPI.Controllers
             
             if (id != updateUserDto.Id)
             {
-                throw new BadRequestException("Requset bad in: " + nameof(GetUser) + ". Invalid Record Id", id);
+                throw new BadRequestException("Requset bad in: " + nameof(PutUser) + ". Invalid Record Id", id.ToString());
             }
 
-            //_usersRepository.Entry(updateUserDto).State = EntityState.Modified;
             var user = await _usersRepository.GetAsync(id);
 
             if (user == null) 
             {
-                throw new NotFoundException(nameof(GetUser), id);
+                throw new NotFoundException(nameof(PutUser), id);
             }
 
-            _mapper.Map(updateUserDto, user);
+            var updatedUser = _mapper.Map(updateUserDto, user);
+            await _usersRepository.UpdateAsync(user);
 
-            try
-            {
-                //throw new OutOfMemoryException();
-                await _usersRepository.UpdateAsync(user);
-            }
-            catch (DbUpdateConcurrencyException ex)
-            {
-                if (!await UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    _logger.LogError(ex, $"Something Went Wrong in the {nameof(PutUser)}");
-                    return Problem($"Something Went Wrong in the {nameof(PutUser)}", statusCode: 500);
-                }
-            }
-
-            return NoContent();
+            return Ok(updatedUser);
         }
 
         // POST: api/Users
@@ -118,20 +94,21 @@ namespace MailRemoverAPI.Controllers
         {
             _logger.LogInformation($"Registering user {createUserDto}");
 
-            try
-            {
-                //throw new OutOfMemoryException();
-                var user = _mapper.Map<User>(createUserDto);
 
-                await _usersRepository.AddAsync(user);
+    
+            var user = _mapper.Map<User>(createUserDto);
+            
 
-                return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
-            }
-            catch (Exception ex)
+            if (user == null)
             {
-                _logger.LogError(ex, $"Something went wrong in the registrstion of {nameof(PostUser)}");
-                return Problem($"Something went wrong in the registrstion of {nameof(PostUser)}", statusCode: 500);
+                throw new BadRequestException(nameof(PostUser));
             }
+
+            await _usersRepository.AddAsync(user);
+
+            return CreatedAtAction("GetUser", new { id = Guid.NewGuid() }, user);
+
+
 
 
         }
@@ -143,34 +120,24 @@ namespace MailRemoverAPI.Controllers
         {
             _logger.LogInformation($"Loging in user {id}");
 
-            try
-            {
-                //throw new OutOfMemoryException();
                 var user = await _usersRepository.GetAsync(id);
 
                 if (user == null)
                 {
-                    return NotFound();
+                    throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
                 }
                 else
                 {
                     var result = user.CheckPassword(Password);
                     if (result == false)
                     {
-                        return Ok("Wrong Password");
+                        throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
                     }
                     else
                     {
                         return Ok(user);
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something went wrong in the loging in of {nameof(LoginUser)}");
-                return Problem($"Something went wrong in the loging in of {nameof(LoginUser)}", statusCode: 500);
-            }
-
         }
 
 
@@ -181,26 +148,15 @@ namespace MailRemoverAPI.Controllers
         {
             _logger.LogInformation($"Deleting user {id}");
 
-            try
-            {
-                //throw new OutOfMemoryException();
                 var user = await _usersRepository.GetAsync(id);
                 if (user == null)
                 {
-                    return NotFound();
+                    throw new NotFoundException(nameof(GetUser), id);
                 }
 
                 await _usersRepository.DeleteAsync(id);
 
                 return NoContent();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something went wrong in the deletion of {nameof(DeleteUser)}");
-                return Problem($"Something went wrong in the deletion of {nameof(DeleteUser)}", statusCode: 500);
-            }
-            
-
         }
 
         private async Task<bool> UserExists(Guid id)
