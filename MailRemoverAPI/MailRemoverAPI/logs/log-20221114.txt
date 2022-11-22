@@ -1,0 +1,25 @@
+2022-11-14 14:40:54.743 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-14 14:40:54.792 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-14 14:40:54.800 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 14:40:54.801 +02:00 [INF] Hosting environment: Development
+2022-11-14 14:40:54.802 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-14 14:41:27.881 +02:00 [INF] Getting all users for Greta
+2022-11-14 14:42:57.944 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-14 14:42:57.990 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-14 14:42:57.999 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 14:42:58.000 +02:00 [INF] Hosting environment: Development
+2022-11-14 14:42:58.001 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-14 14:43:06.980 +02:00 [INF] Getting all users for Greta
+2022-11-14 14:45:16.814 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-14 14:45:16.862 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-14 14:45:16.867 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 14:45:16.868 +02:00 [INF] Hosting environment: Development
+2022-11-14 14:45:16.869 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-14 14:45:31.752 +02:00 [INF] Getting all users for greta
+2022-11-14 14:45:39.772 +02:00 [INF] Getting all users for Greta
+2022-11-14 22:07:13.757 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-14 22:07:13.845 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-14 22:07:13.854 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 22:07:13.855 +02:00 [INF] Hosting environment: Development
+2022-11-14 22:07:13.856 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-14 22:07:33.234 +02:00 [INF] Getting all users for Greta

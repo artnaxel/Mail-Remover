@@ -1,0 +1,230 @@
+2022-11-16 15:17:50.575 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:17:50.625 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:17:50.633 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:17:50.635 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:17:50.636 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:18:34.394 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:20:49.603 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:20:49.654 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:20:49.660 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:20:49.661 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:20:49.661 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:20:58.221 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:23:23.113 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:23:23.158 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:23:23.275 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:23:23.276 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:23:23.277 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:23:31.892 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:39:32.077 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:39:32.126 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:39:32.131 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:39:32.132 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:39:32.133 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:39:42.472 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:40:01.257 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method18(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:43:15.430 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:43:15.485 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:43:15.494 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:43:15.496 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:43:15.498 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:43:24.715 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.Mapper' while attempting to activate 'MailRemoverAPI.Controllers.UsersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 15:50:51.859 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:50:51.903 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:50:51.908 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:50:51.909 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:50:51.910 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:50:58.593 +02:00 [INF] Getting all users for Greta
+2022-11-16 15:51:29.447 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-16 15:51:40.642 +02:00 [INF] Getting all users for Jkkk
+2022-11-16 15:52:15.128 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:52:15.211 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:52:15.219 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:52:15.220 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:52:15.221 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:52:22.928 +02:00 [INF] Getting all users for Greta
+2022-11-16 15:52:42.644 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-16 15:53:11.923 +02:00 [INF] Loging in user aab073e8-a8ed-48d2-8ab1-bc506385dc01
+2022-11-16 15:56:33.841 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 15:56:33.885 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 15:56:33.893 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 15:56:33.896 +02:00 [INF] Hosting environment: Development
+2022-11-16 15:56:33.897 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 15:56:52.948 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-16 16:00:48.496 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 16:00:48.555 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 16:00:48.561 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 16:00:48.561 +02:00 [INF] Hosting environment: Development
+2022-11-16 16:00:48.562 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 16:01:03.490 +02:00 [INF] Getting all users for Greta
+2022-11-16 16:03:02.525 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 16:03:02.603 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 16:03:02.611 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 16:03:02.612 +02:00 [INF] Hosting environment: Development
+2022-11-16 16:03:02.613 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 16:03:15.256 +02:00 [INF] Getting all users for Toyota
+2022-11-16 16:03:52.469 +02:00 [INF] Registering user with put 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:04:05.429 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:04:05.626 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> UserDetailsDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.UsersRepository+<GetDetails>d__2, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.UserDetailsDto
+   at lambda_method108(Closure , Object , UserDetailsDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 68
+2022-11-16 16:04:53.292 +02:00 [INF] Getting all users for Bmw
+2022-11-16 16:05:35.891 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:05:35.927 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> UserDetailsDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.UsersRepository+<GetDetails>d__2, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.UserDetailsDto
+   at lambda_method108(Closure , Object , UserDetailsDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 68
+2022-11-16 16:06:04.506 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:06:04.538 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> UserDetailsDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.UsersRepository+<GetDetails>d__2, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.UserDetailsDto
+   at lambda_method108(Closure , Object , UserDetailsDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 68
+2022-11-16 16:07:47.879 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 16:07:47.930 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 16:07:47.936 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 16:07:47.937 +02:00 [INF] Hosting environment: Development
+2022-11-16 16:07:47.938 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 16:07:59.700 +02:00 [INF] Getting all users for Bmw
+2022-11-16 16:08:08.120 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:08:08.559 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> GetUserDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.UsersRepository+<GetDetails>d__2, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.GetUserDto
+   at lambda_method84(Closure , Object , GetUserDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 68
+2022-11-16 16:08:33.386 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:08:33.438 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> GetUserDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.GenericRepository`1+<GetAsync>d__6[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.GetUserDto
+   at lambda_method97(Closure , Object , GetUserDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id)
+2022-11-16 16:08:46.867 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-16 16:08:46.927 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-16 16:08:46.933 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 16:08:46.933 +02:00 [INF] Hosting environment: Development
+2022-11-16 16:08:46.934 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-16 16:08:58.404 +02:00 [INF] Getting all users for Bmw
+2022-11-16 16:09:22.460 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
+2022-11-16 16:09:22.786 +02:00 [ERR] Something Went Wrong in the GetUser
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> GetUserDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MailRemoverAPI.Repository.GenericRepository`1+<GetAsync>d__6[[MailRemoverAPI.Entities.User, MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MailRemoverAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MailRemoverAPI.Models.User.GetUserDto
+   at lambda_method75(Closure , Object , GetUserDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUser(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 68
+2022-11-16 16:09:47.410 +02:00 [INF] Getting user by id 7aff9f4e-37ad-410e-80ac-e9276f03c317
