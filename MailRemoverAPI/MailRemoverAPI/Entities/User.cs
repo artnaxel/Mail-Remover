@@ -5,7 +5,7 @@ using MailRemoverAPI.Services;
 
 namespace MailRemoverAPI.Entities
 {
-    public class User : Entity, IComparable<User>
+    public class User : Entity
     {
         public string FirstName { get; set; }
 
@@ -33,5 +33,6 @@ namespace MailRemoverAPI.Entities
         {
             return PasswordServices.CheckPassword(this, Password);
         }
+        public virtual List<Gmail> Gmails { get; set; }
     }
 }

@@ -10,8 +10,12 @@ namespace MailRemoverAPI.Data
         {
 
         }
+
         public DbSet<Email> Emails { get; set; }
+
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Gmail> Gmails { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
