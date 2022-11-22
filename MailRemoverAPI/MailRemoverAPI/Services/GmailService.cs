@@ -7,7 +7,6 @@ using NuGet.Common;
 using System.Drawing;
 using System.Net.Http.Headers;
 using System.Text.Json;
-using static Google.Apis.Requests.BatchRequest;
 
 namespace MailRemoverAPI.Services
 {
