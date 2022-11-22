@@ -1,7 +1,11 @@
-﻿namespace MailRemoverAPI.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MailRemoverAPI.Entities
 {
     public class Gmail : Entity
     {
+        [StringLength(320)]
+        public string Address { get; set; }
 
         public string AccessToken { get; set; }
 

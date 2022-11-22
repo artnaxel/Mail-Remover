@@ -3,7 +3,9 @@ using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Newtonsoft.Json.Linq;
+using NuGet.Common;
 using System.Drawing;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using static Google.Apis.Requests.BatchRequest;
 
@@ -22,10 +24,39 @@ namespace MailRemoverAPI.Services
             _repository = repository;
         }
 
+       
+
         public async Task<string> Auth(Guid id)
         {
             string gmailAuthEndpoint = $"{_configuration["GoogleApi:url"]}?scope={_configuration["GoogleApi:scope"]}&access_type={_configuration["GoogleApi:access_type"]}&response_type={_configuration["GoogleApi:response_type"]}&state={id}&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}&client_id={_configuration["GoogleApi:client_id"]}";
             return gmailAuthEndpoint;
+        }
+
+        public async Task<Profile> GetProfile(Guid id)
+        {
+            var accessData = await _repository.GetByIdAsync(id);
+
+            if (accessData == null) return null;
+
+            var request = new HttpRequestMessage(HttpMethod.Get, $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/profile");
+
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessData.AccessToken);
+            try
+            {
+                HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                Profile profile = Newtonsoft.Json.JsonConvert.DeserializeObject<Profile>(responseBody);
+
+                return profile;
+            }
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine("\nException Caught!");
+                Console.WriteLine("Message :{0} ", e.Message);
+            }
+            throw new NotImplementedException();
         }
 
         public async Task<GmailDto?> PostAccessCode(string code, string state)
@@ -83,7 +114,8 @@ namespace MailRemoverAPI.Services
                     AccessToken = refreshedAccessData.access_token,
                     RefreshToken = gmail.RefreshToken,
                     Expires = DateTime.Now.AddSeconds(Convert.ToDouble(refreshedAccessData.expires_in)),
-                    UserId = gmail.UserId
+                    UserId = gmail.UserId,
+                    Address = gmail.Address,
                 };
 
                 await _repository.UpdateAsync(updatedGmail);

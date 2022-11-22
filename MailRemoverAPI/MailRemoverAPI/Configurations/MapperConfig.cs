@@ -6,7 +6,7 @@ using MailRemoverAPI.Models.Gmail;
 
 namespace MailRemoverAPI.Configurations
 {
-    public class MapperConfig : Profile
+    public class MapperConfig : AutoMapper.Profile
     {
         public MapperConfig()
         {
