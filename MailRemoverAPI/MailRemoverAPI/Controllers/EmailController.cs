@@ -19,6 +19,7 @@ namespace MailRemoverAPI.Controllers
         {
             var result = await _emailRepository.GetAllAsync();
             var sortedResult = result.OrderBy(email => email.Type);
+            
             return Ok(sortedResult);
         }
 
@@ -48,6 +49,7 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> Create([FromBody] Email email)
         {
             CreateEmailValidator.EmailValidator(email);
+
             return Ok($"{1} {2}");
         }
     }
