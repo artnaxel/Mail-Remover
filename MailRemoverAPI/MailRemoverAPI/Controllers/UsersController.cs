@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Entities;
 using MailRemoverAPI.Models.User;
 using AutoMapper;
 using MailRemoverAPI.Contracts;
+using MailRemoverAPI.Data;
 
 namespace MailRemoverAPI.Controllers
 {
@@ -23,9 +19,9 @@ namespace MailRemoverAPI.Controllers
         private readonly ILogger<UsersController> _logger;
         private readonly IUsersRepository _usersRepository;
 
-        public UsersController(IMapper mapper, ILogger<UsersController> logger, IUsersRepository usersRepository)
+        public UsersController(IMapper mapper, ILogger<UsersController> logger, IUsersRepository usersRepository, MailRemoverDbContext context)
         {
-            _context = context;
+            this._context = context;
             this._logger = logger;
             this._usersRepository = usersRepository;
             this._mapper = mapper;
@@ -85,7 +81,6 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> PutUser(Guid id, UpdateUserDto updateUserDto)
         {
             _logger.LogInformation($"Registering user with put {id}");
-            _context.Entry(user).State = EntityState.Modified;
             
             if (id != updateUserDto.Id)
             {
@@ -94,6 +89,7 @@ namespace MailRemoverAPI.Controllers
 
             //_usersRepository.Entry(updateUserDto).State = EntityState.Modified;
             var user = await _usersRepository.GetAsync(id);
+            _context.Entry(user).State = EntityState.Modified;
 
             if (user == null) 
             { 

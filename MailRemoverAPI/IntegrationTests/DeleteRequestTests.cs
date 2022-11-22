@@ -1,14 +1,10 @@
-﻿namespace IntegrationTests
-{
-    public class DeleteRequestTests
-        : IClassFixture<WebApplicationFactory<Program>>
-    {
-        private readonly WebApplicationFactory<Program> _factory;
+﻿using MailRemoverAPI.Models.User;
 
-        public DeleteRequestTests(WebApplicationFactory<Program> factory)
-        {
-            _factory = factory;
-        }
+namespace IntegrationTests
+{
+    public class DeleteRequestTests : BaseTest
+    {
+        public DeleteRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
 
         [Theory]
         [InlineData("/api/Users/14bcd064-3df4-4f80-e8a1-08daca423ee9")]

@@ -1,18 +1,12 @@
 namespace IntegrationTests
 {
-    public class GetRequestTests
-        : IClassFixture<WebApplicationFactory<Program>>
+    public class GetRequestTests : BaseTest
     {
-        private readonly WebApplicationFactory<Program> _factory;
-
-        public GetRequestTests(WebApplicationFactory<Program> factory)
-        {
-            _factory = factory;
-        }
+        public GetRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
 
         [Theory]
         [InlineData("/api/Email/GetAll")]
-        //[InlineData("/api/Email/GetById?Id=dd1e53db-2b4d-405f-99d8-5fb22549ce92")]
+        [InlineData("/api/Email/GetById?Id=fb020d52-30fb-4e43-82cf-681ff3cd5eb6")]
         //[InlineData("/api/Email/GetEmision")]
         public async Task Email_GetRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
@@ -29,7 +23,7 @@ namespace IntegrationTests
 
         [Theory]
         [InlineData("/api/Users?firstName=Deimante")]
-        //[InlineData("/api/Users/dd1e53db-2b4d-405f-99d8-5fb22549ce92")]
+        [InlineData("/api/Users/1e148dec-f7e1-48fb-cd5f-08dab5d87dcc")]
         public async Task Users_GetRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
             // Arrange

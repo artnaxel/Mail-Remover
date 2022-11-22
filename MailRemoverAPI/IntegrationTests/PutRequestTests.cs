@@ -2,20 +2,14 @@
 
 namespace IntegrationTests
 {
-    public class PutRequestTests
-        : IClassFixture<WebApplicationFactory<Program>>
+    public class PutRequestTests : BaseTest
     {
-        private readonly WebApplicationFactory<Program> _factory;
+        public PutRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
 
-        public PutRequestTests(WebApplicationFactory<Program> factory)
-        {
-            _factory = factory;
-        }
 
         [Theory]
-        [InlineData("/api/Users")]
-        //[InlineData("/api/Users/dd1e53db-2b4d-405f-99d8-5fb22549ce92")]
-        public async Task Users_PostRequest_OnSuccess_ReturnsStatusCode201(string uri)
+        [InlineData("/api/Users/bf82f7c5-708f-4180-8117-f89aa672bf5a")]
+        public async Task Users_PutRequest_OnSuccess_ReturnsStatusCode204(string uri)
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
@@ -23,17 +17,16 @@ namespace IntegrationTests
 
             var user = new User()
             {
-                FirstName = "Karolina",
-                LastName = "Karoliniene",
-                Password = "bc6vbahd6"
+                FirstName = "Objektasss",
+                LastName = "Pakeistassss",
+                Id = new Guid("bf82f7c5-708f-4180-8117-f89aa672bf5a")
             };
 
             // Act
             HttpResponseMessage response = await client.PutAsJsonAsync(uri, user);
 
             // Assert
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
         }
-
     }
 }
