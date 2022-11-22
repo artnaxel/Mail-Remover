@@ -8,8 +8,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{3D4CDC96-ED05-4159-98ED-7F01E8E2A699}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5F74C8EA-F64F-4635-9DF8-EA33E140FBD9}"
+	ProjectSection(SolutionItems) = preProject
+		TestResults.icov = TestResults.icov
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests1\UnitTests.csproj", "{3CA94082-7A23-4707-B072-5490B0FB74B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests1\UnitTests.csproj", "{3CA94082-7A23-4707-B072-5490B0FB74B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
