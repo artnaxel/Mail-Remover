@@ -29,10 +29,17 @@ namespace MailRemoverAPI.Entities
             return LastName.CompareTo(other.LastName);
         }
 
+        
+
         public bool CheckPassword(string Password)
         {
             return PasswordServices.CheckPassword(this, Password);
         }
-        public virtual List<Gmail> Gmails { get; set; }
+
+        private Lazy<List<Gmail>> _gmails;
+        public List<Gmail> Gmails {
+            get => _gmails?.Value;
+            set => _gmails = new Lazy<List<Gmail>>(() => value);
+        }
     }
 }

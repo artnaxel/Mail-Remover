@@ -41,7 +41,6 @@ namespace MailRemoverAPI.Controllers
                                    where user.FirstName.Contains(firstName)
                                    select user;
                 return Ok(queryedUsers);
-                //return Ok(records);
                 
             }
             catch (Exception ex)
