@@ -13,9 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 var connectionString = builder.Configuration.GetConnectionString("MailRemoverDbConnectionString");
-builder.Services.AddDbContext<MailRemoverDbContext>(options =>{
+builder.Services.AddDbContext<MailRemoverDbContext>(options => {
     options.UseSqlServer(connectionString);
-});
+},
+    ServiceLifetime.Singleton);
 
 builder.Services.AddCors(options =>
 {
