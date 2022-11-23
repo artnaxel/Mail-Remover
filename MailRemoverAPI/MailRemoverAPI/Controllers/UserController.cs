@@ -20,6 +20,7 @@ namespace MailRemoverAPI.Controllers
             {
                 result.Sort();
             }
+
             return Ok(result);
         }
 

@@ -14,6 +14,11 @@ namespace MailRemoverAPI.Repository
             this._context = context;
         }
 
+        new public async Task<List<User>> GetAllAsync()
+        {
+            return await _context.Users.Include(q => q.Gmails).ToListAsync();
+        }
+
         public async Task<User> GetDetails(Guid id)
         {
             return await _context.Users.Include(q => q.Emails).FirstOrDefaultAsync(q => q.Id == id);
@@ -24,6 +29,7 @@ namespace MailRemoverAPI.Repository
             user.Id = Guid.NewGuid();
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
+
             return user;
         }
 

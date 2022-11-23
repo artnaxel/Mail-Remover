@@ -5,6 +5,11 @@ namespace MailRemoverAPI.Models.User
     public class CreateUserDto : BaseUserDto
     {
         [Required]
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        [Required]
         public string Password { get; set; }
     }
 }

@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MailRemoverAPI.Entities;
@@ -10,19 +5,24 @@ using MailRemoverAPI.Models.User;
 using AutoMapper;
 using MailRemoverAPI.Contracts;
 using MailRemoverAPI.Exceptions;
+using MailRemoverAPI.Data;
 
 namespace MailRemoverAPI.Controllers
 {
     [Route("api/[controller]")]
+
+
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private readonly MailRemoverDbContext _context;
         private readonly IMapper _mapper;
         private readonly ILogger<UsersController> _logger;
         private readonly IUsersRepository _usersRepository;
 
-        public UsersController(IMapper mapper, ILogger<UsersController> logger, IUsersRepository usersRepository)
+        public UsersController(IMapper mapper, ILogger<UsersController> logger, IUsersRepository usersRepository, MailRemoverDbContext context)
         {
+            this._context = context;
             this._logger = logger;
             this._usersRepository = usersRepository;
             this._mapper = mapper;
@@ -75,6 +75,7 @@ namespace MailRemoverAPI.Controllers
             }
 
             var user = await _usersRepository.GetAsync(id);
+            _context.Entry(user).State = EntityState.Modified;
 
             if (user == null) 
             {

@@ -5,7 +5,7 @@ using MailRemoverAPI.Services;
 
 namespace MailRemoverAPI.Entities
 {
-    public class User : Entity, IComparable<User>
+    public class User : Entity
     {
         public string FirstName { get; set; }
 
@@ -29,9 +29,17 @@ namespace MailRemoverAPI.Entities
             return LastName.CompareTo(other.LastName);
         }
 
+        
+
         public bool CheckPassword(string Password)
         {
             return PasswordServices.CheckPassword(this, Password);
+        }
+
+        private Lazy<List<Gmail>> _gmails;
+        public List<Gmail> Gmails {
+            get => _gmails?.Value;
+            set => _gmails = new Lazy<List<Gmail>>(() => value);
         }
     }
 }
