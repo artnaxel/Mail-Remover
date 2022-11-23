@@ -15,12 +15,14 @@ namespace MailRemoverAPI.Services
     {
         private IConfiguration _configuration;
         private IGmailRepository _repository;
-        private HttpClient client;
+        //private HttpClient client;
+        private HttpClient _httpClient;
 
-        public GmailService(IConfiguration configuration, IGmailRepository repository)
+        public GmailService(IConfiguration configuration, IGmailRepository repository, HttpClient httpClient)
         {
             _configuration = configuration;
-            client = new HttpClient();
+            //client = new HttpClient();
+            _httpClient = httpClient;
             _repository = repository;
         }
 
@@ -50,7 +52,7 @@ namespace MailRemoverAPI.Services
             accessData.AccessTokenExpired -= AccessTokenExpiredHandler;
             try
             {
-                HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+                HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
 
                 var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -71,7 +73,7 @@ namespace MailRemoverAPI.Services
 
             try
             {
-                using HttpResponseMessage response = await client.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&code={code}&grant_type=authorization_code&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}", null);
+                using HttpResponseMessage response = await _httpClient.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&code={code}&grant_type=authorization_code&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}", null);
                 var responseBody = await response.Content.ReadAsStringAsync();
                 response.EnsureSuccessStatusCode();
 
@@ -111,7 +113,7 @@ namespace MailRemoverAPI.Services
 
             try
             {
-                using HttpResponseMessage response = await client.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&refresh_token={gmail.RefreshToken}&grant_type=refresh_token", null);
+                using HttpResponseMessage response = await _httpClient.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&refresh_token={gmail.RefreshToken}&grant_type=refresh_token", null);
                 var responseBody = await response.Content.ReadAsStringAsync();
                 response.EnsureSuccessStatusCode();
 
