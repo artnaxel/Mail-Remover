@@ -1,4 +1,5 @@
 ﻿using MailRemoverAPI.Entities;
+using MailRemoverAPI.Events;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -23,7 +24,10 @@ namespace MailRemoverAPI.Services
             _repository = repository;
         }
 
-       
+        private async void AccessTokenExpiredHandler(Gmail source, AccessTokenExpiredEventHandlerArgs args)
+        {
+            await RefreshAccessToken(args.Id);
+        }
 
         public async Task<string> Auth(Guid id)
         {
@@ -37,9 +41,13 @@ namespace MailRemoverAPI.Services
 
             if (accessData == null) return null;
 
+            accessData.AccessTokenExpired += AccessTokenExpiredHandler;
+
             var request = new HttpRequestMessage(HttpMethod.Get, $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/profile");
 
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessData.AccessToken);
+
+            accessData.AccessTokenExpired -= AccessTokenExpiredHandler;
             try
             {
                 HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
@@ -94,6 +102,8 @@ namespace MailRemoverAPI.Services
         {
             var gmail = await _repository.GetByIdAsync(id);
 
+            
+
             if(gmail is null)
             {
                 return;
@@ -106,7 +116,6 @@ namespace MailRemoverAPI.Services
                 response.EnsureSuccessStatusCode();
 
                 RefreshedAccessData refreshedAccessData = Newtonsoft.Json.JsonConvert.DeserializeObject<RefreshedAccessData>(responseBody);
-
                 Gmail updatedGmail = new()
                 {
                     Id = gmail.Id,
@@ -116,9 +125,7 @@ namespace MailRemoverAPI.Services
                     UserId = gmail.UserId,
                     Address = gmail.Address,
                 };
-
                 await _repository.UpdateAsync(updatedGmail);
-
             }
             catch (HttpRequestException e)
             {
