@@ -1,0 +1,27 @@
+2022-11-30 10:48:26.672 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-30 10:48:26.799 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-30 10:48:26.811 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 10:48:26.812 +02:00 [INF] Hosting environment: Development
+2022-11-30 10:48:26.815 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-30 10:51:09.926 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-30 10:51:09.986 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-30 10:51:09.996 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 10:51:10.001 +02:00 [INF] Hosting environment: Development
+2022-11-30 10:51:10.002 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-30 11:46:51.322 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-30 11:46:51.369 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-30 11:46:51.376 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 11:46:51.376 +02:00 [INF] Hosting environment: Development
+2022-11-30 11:46:51.377 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-30 11:47:25.186 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-30 11:47:48.970 +02:00 [INF] Loging in user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-11-30 12:56:41.526 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-30 12:56:41.582 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-30 12:56:41.590 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 12:56:41.591 +02:00 [INF] Hosting environment: Development
+2022-11-30 12:56:41.592 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-30 14:06:42.976 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-30 14:06:43.040 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-30 14:06:43.056 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 14:06:43.058 +02:00 [INF] Hosting environment: Development
+2022-11-30 14:06:43.059 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\

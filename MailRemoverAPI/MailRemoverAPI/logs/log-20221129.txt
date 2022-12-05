@@ -1,0 +1,265 @@
+2022-11-29 19:58:49.263 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 19:58:49.392 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 19:58:49.405 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 19:58:49.408 +02:00 [INF] Hosting environment: Development
+2022-11-29 19:58:49.411 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 19:59:18.749 +02:00 [INF] Getting all users for Deimante
+2022-11-29 19:59:22.992 +02:00 [ERR] Failed executing DbCommand (1,258ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [g].[Id], [g].[AccessToken], [g].[Address], [g].[Expires], [g].[RefreshToken], [g].[UserId]
+FROM [Users] AS [u]
+LEFT JOIN [Gmails] AS [g] ON [u].[Id] = [g].[UserId]
+ORDER BY [u].[Id]
+2022-11-29 19:59:23.148 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MailRemoverAPI.Data.MailRemoverDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+2022-11-29 19:59:23.502 +02:00 [ERR] Something Went Wrong While Processing/api/Users
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MailRemoverAPI.Repository.UsersRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Repository\UsersRepository.cs:line 19
+   at MailRemoverAPI.Controllers.UsersController.GetUsers(String firstName) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 37
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+2022-11-29 19:59:36.842 +02:00 [INF] Getting all users for Greta
+2022-11-29 19:59:36.868 +02:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password], [g].[Id], [g].[AccessToken], [g].[Address], [g].[Expires], [g].[RefreshToken], [g].[UserId]
+FROM [Users] AS [u]
+LEFT JOIN [Gmails] AS [g] ON [u].[Id] = [g].[UserId]
+ORDER BY [u].[Id]
+2022-11-29 19:59:36.876 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MailRemoverAPI.Data.MailRemoverDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+2022-11-29 19:59:37.214 +02:00 [ERR] Something Went Wrong While Processing/api/Users
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Gmails'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MailRemoverAPI.Repository.UsersRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Repository\UsersRepository.cs:line 19
+   at MailRemoverAPI.Controllers.UsersController.GetUsers(String firstName) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 37
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+ClientConnectionId:3f209fe5-7452-4534-a565-b5f5df7fdf9d
+Error Number:208,State:1,Class:16
+2022-11-29 20:02:52.191 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 20:02:52.305 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 20:02:52.319 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 20:02:52.321 +02:00 [INF] Hosting environment: Development
+2022-11-29 20:02:52.324 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 20:04:23.034 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-29 20:04:40.868 +02:00 [INF] Getting all users for Deimante
+2022-11-29 20:25:49.544 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 20:25:49.588 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 20:25:49.594 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 20:25:49.595 +02:00 [INF] Hosting environment: Development
+2022-11-29 20:25:49.596 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:04:28.397 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:04:28.443 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:04:28.453 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:04:28.454 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:04:28.455 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:05:43.269 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-29 21:05:59.691 +02:00 [INF] Deleting user a65e60ab-4b8e-4e32-9787-98eadbc3cfcd
+2022-11-29 21:06:05.409 +02:00 [INF] Deleting user a65e60ab-4b8e-4e32-9787-98eadbc3cfcd
+2022-11-29 21:06:05.954 +02:00 [ERR] Something Went Wrong While Processing/api/Users/a65e60ab-4b8e-4e32-9787-98eadbc3cfcd
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (a65e60ab-4b8e-4e32-9787-98eadbc3cfcd) was not found
+   at MailRemoverAPI.Controllers.UsersController.DeleteUser(Guid id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 155
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-11-29 21:13:32.968 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:13:33.025 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:13:33.032 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:13:33.033 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:13:33.034 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:32:58.034 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:32:58.081 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:32:58.089 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:32:58.090 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:32:58.091 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:33:12.419 +02:00 [INF] Deleting user e033fa78-a839-4276-ed91-08dacbb5abf7
+2022-11-29 21:33:14.521 +02:00 [ERR] Something Went Wrong While Processing/api/Users/e033fa78-a839-4276-ed91-08dacbb5abf7
+MailRemoverAPI.Exceptions.NotFoundException: GetUser (e033fa78-a839-4276-ed91-08dacbb5abf7) was not found
+   at MailRemoverAPI.Controllers.UsersController.DeleteUser(Guid id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 155
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-11-29 21:33:41.336 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-29 21:34:06.177 +02:00 [INF] Deleting user f9473de2-c88a-4ca4-96eb-69132e4adde6
+2022-11-29 21:48:02.396 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:48:02.453 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:48:02.461 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:48:02.463 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:48:02.463 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:51:19.334 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:51:19.388 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:51:19.396 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:51:19.397 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:51:19.398 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:53:17.718 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:53:17.780 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:53:17.790 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:53:17.793 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:53:17.794 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:57:10.187 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:57:10.228 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:57:10.234 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:57:10.235 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:57:10.235 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 21:57:43.098 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 21:57:43.142 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 21:57:43.151 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 21:57:43.154 +02:00 [INF] Hosting environment: Development
+2022-11-29 21:57:43.154 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 23:08:01.766 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 23:08:01.843 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 23:08:01.855 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 23:08:01.858 +02:00 [INF] Hosting environment: Development
+2022-11-29 23:08:01.859 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 23:17:28.099 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 23:17:28.188 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 23:17:28.204 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 23:17:28.206 +02:00 [INF] Hosting environment: Development
+2022-11-29 23:17:28.208 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 23:18:39.475 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-11-29 23:21:51.958 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 23:21:52.034 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 23:21:52.049 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 23:21:52.053 +02:00 [INF] Hosting environment: Development
+2022-11-29 23:21:52.055 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 23:26:27.529 +02:00 [INF] Now listening on: https://localhost:7151
+2022-11-29 23:26:27.593 +02:00 [INF] Now listening on: http://localhost:5151
+2022-11-29 23:26:27.606 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 23:26:27.609 +02:00 [INF] Hosting environment: Development
+2022-11-29 23:26:27.610 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-11-29 23:26:54.234 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
