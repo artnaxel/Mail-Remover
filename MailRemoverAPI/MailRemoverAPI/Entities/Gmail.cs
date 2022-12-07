@@ -20,7 +20,7 @@ namespace MailRemoverAPI.Entities
             {
                 if (Expires < DateTime.Now && AccessTokenExpired is not null)
                 {
-                    AccessTokenExpired(this, new() { Id = this.Id });
+                    AccessTokenExpired.Invoke(this, new() { Id = this.Id });
                     return null;
                 }
                 return accessToken;
