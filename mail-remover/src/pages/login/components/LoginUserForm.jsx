@@ -1,20 +1,55 @@
-import { TextField, Paper, Box, Button, Typography } from "@mui/material";
+import {
+  TextField,
+  Paper,
+  Box,
+  Button,
+  Typography,
+  Alert,
+} from "@mui/material";
 import React, { useState } from "react";
 import axios from "axios";
 
-import Style from "./AddNewUserForm.module.css";
+import Style from "./LoginUserForm.module.css";
 
-export default function AddNewUserForm() {
+const LoginUserForm = () => {
+  const [id, setId] = useState("");
+  const [status, setStatus] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
 
   const handleTextFieldChange = (setValue) => (e) => setValue(e.target.value);
+
+  const loginUser = async () => {
+    try {
+      const response = await axios.post("https://localhost:7151/login", {
+        firstName,
+        lastName,
+        password,
+      });
+
+      if (response.status === 200) {
+        setId(response.data);
+        setStatus({
+          code: 200,
+          message: `All ok! User id is: ${response.data}`,
+        });
+      }
+    } catch (error) {
+      setStatus({ code: 500, message: error.message });
+    }
+  };
+
   return (
     <Box display="flex" justifyContent="center">
       <Paper className={Style.Paper} elevation={3}>
+        {status && (
+          <Alert severity={status.code === 200 ? "success" : "warning"}>
+            {status.message}
+          </Alert>
+        )}
         <Typography variant="h5" className={Style.haeder}>
-          Here you can sign up for our application
+          Login
         </Typography>
         <TextField
           className={Style.TextField}
@@ -41,17 +76,13 @@ export default function AddNewUserForm() {
         <Button
           className={Style.Button}
           variant="contained"
-          onClick={() => {
-            axios.post("https://localhost:7151/api/Users", {
-              firstName,
-              lastName,
-              password,
-            });
-          }}
+          onClick={loginUser}
         >
-          Signup
+          Login
         </Button>
       </Paper>
     </Box>
   );
-}
+};
+
+export default LoginUserForm;
