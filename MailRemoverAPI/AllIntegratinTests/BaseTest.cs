@@ -1,4 +1,6 @@
-﻿namespace IntegrationTests
+﻿using Microsoft.AspNetCore.Mvc.Testing;
+
+namespace IntegrationTests
 {
     public class BaseTest
         : IClassFixture<WebApplicationFactory<Program>>

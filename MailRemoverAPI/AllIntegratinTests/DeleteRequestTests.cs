@@ -10,9 +10,9 @@
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            client = _factory.CreateClient();
+            using var client = _factory.CreateClient();
 
-            var response = await _client.DeleteAsync(uri);
+            var response = await client.DeleteAsync(uri);
 
             // Assert
             Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);

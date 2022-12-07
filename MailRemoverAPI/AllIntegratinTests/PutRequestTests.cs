@@ -1,4 +1,6 @@
-﻿namespace IntegrationTests
+﻿using MailRemoverAPI.Entities;
+
+namespace IntegrationTests
 {
     public class PutRequestTests : BaseTest
     {
@@ -28,11 +30,11 @@
 
         [Theory]
         [InlineData("/api/Gmails/RefreshAccessToken?id=fb020d52-30fb-4e43-82cf-681ff3cd5eb6")]
-        public async Task Gmails_PutRequest_OnSuccess_ReturnsStatusCode204(string uri)
+        public async Task Gmails_PutRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            client = _factory.CreateClient();
+            using var client = _factory.CreateClient();
 
             var user = new User()
             {

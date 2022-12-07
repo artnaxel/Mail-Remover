@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Mvc.Testing;
+using System.Net;
+using Xunit;
+
 namespace IntegrationTests
 {
     public class GetRequestTests : BaseTest
@@ -21,7 +25,7 @@ namespace IntegrationTests
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            _client = _factory.CreateClient();
+            using var client = _factory.CreateClient();
 
             // Act
             var response = await client.GetAsync(uri);

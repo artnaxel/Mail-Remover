@@ -10,7 +10,7 @@
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            client = _factory.CreateClient();
+            using var client = _factory.CreateClient();
 
             var user = new User()
             {
@@ -20,7 +20,7 @@
             };
 
             // Act
-            HttpResponseMessage response = await _client.PostAsJsonAsync(uri, user);
+            HttpResponseMessage response = await client.PostAsJsonAsync(uri, user);
 
             // Assert
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
@@ -38,7 +38,7 @@
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            _client = _factory.CreateClient();
+            using var client = _factory.CreateClient();
 
             var user = new User()
             {
