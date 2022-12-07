@@ -117,26 +117,32 @@ namespace MailRemoverAPI.Controllers
         // POST: api/Users/login
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost("/login")]
-        public async Task<ActionResult<User>> LoginUser(Guid id, string Password)
+        public async Task<ActionResult<User>> LoginUser(LoginUserDto loginUserDto)
         {
-            _logger.LogInformation($"Loging in user {id}");
+            _logger.LogInformation($"Loging in user {loginUserDto}");
 
-                var user = await _usersRepository.GetAsync(id);
+            var users = await _usersRepository.GetAllAsync();
+            var records = _mapper.Map<List<User>>(users);
+            //var queryedUsers = from user in records
+            //                   where user.FirstName.Contains(firstName)
+            //                   select user;
 
-                if (user == null)
+            var queryedUser = records.Where(user => user.FirstName.Contains(loginUserDto.FirstName)).Where(user => user.LastName.Contains(loginUserDto.LastName)).FirstOrDefault();
+
+            if (queryedUser == null)
                 {
                     throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
                 }
                 else
                 {
-                    var result = user.CheckPassword(Password);
+                    var result = queryedUser.CheckPassword(loginUserDto.Password);
                     if (result == false)
                     {
                         throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
                     }
                     else
                     {
-                        return Ok(user);
+                        return Ok(queryedUser.Id);
                     }
                 }
         }
