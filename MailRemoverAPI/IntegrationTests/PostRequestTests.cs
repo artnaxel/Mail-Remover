@@ -1,7 +1,4 @@
-﻿using MailRemoverAPI.Entities;
-using MailRemoverAPI.Models.User;
-
-namespace IntegrationTests
+﻿namespace IntegrationTests
 {
     public class PostRequestTests : BaseTest
     {
@@ -13,9 +10,9 @@ namespace IntegrationTests
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
+            client = _factory.CreateClient();
 
-            var user = new CreateUserDto()
+            var user = new User()
             {
                 FirstName = "Karolina",
                 LastName = "Karoliniene",
@@ -23,7 +20,7 @@ namespace IntegrationTests
             };
 
             // Act
-            HttpResponseMessage response = await client.PostAsJsonAsync(uri, user);
+            HttpResponseMessage response = await _client.PostAsJsonAsync(uri, user);
 
             // Assert
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
@@ -36,12 +33,12 @@ namespace IntegrationTests
         }*/
 
         [Theory]
-        [InlineData("/login?id=e033fa78-a839-4276-ed91-08dacbb5abc5&Password=labukas")]
+        [InlineData("/login?id=b82748b2-5f23-4b3c-82c9-218c9fd6f87c&Password=labukas")]
         public async Task Users_LoginRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
             // Arrange
             await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
+            _client = _factory.CreateClient();
 
             var user = new User()
             {
