@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using MailRemoverAPI.Services;
+using MailRemoverAPI.Validators.Email;
 
 namespace MailRemoverAPI.Entities
 {
@@ -10,6 +11,16 @@ namespace MailRemoverAPI.Entities
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public string _userEmail;
+        public string UserEmail 
+        { 
+            get { return this._userEmail; }
+            set
+            {
+                _userEmail = CreateEmailValidator.UserEmailValidator(value);
+            }
+        }
 
         private string _password;
         public string Password

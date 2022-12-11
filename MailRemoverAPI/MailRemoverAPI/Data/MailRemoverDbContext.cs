@@ -29,6 +29,7 @@ namespace MailRemoverAPI.Data
                 new User
                 {
                     Id = g1,
+                    UserEmail = "tomas.sinkevicius@gmail.com",
                     FirstName = "Tomas",
                     LastName = "Sinkevičius",
                     Password = "RjEUW1R58r"
@@ -36,6 +37,7 @@ namespace MailRemoverAPI.Data
                 new User
                 {
                     Id = g2,
+                    UserEmail = "greta.virpsaite@gmail.com",
                     FirstName = "Greta",
                     LastName = "Virpšaitė",
                     Password = "@G3gng9t6XBe"
@@ -43,6 +45,7 @@ namespace MailRemoverAPI.Data
                 new User
                 {
                     Id = g3,
+                    UserEmail = "austeja.naujokaite@gmail.com",
                     FirstName = "Austėja",
                     LastName = "Naujokaitė",
                     Password = "3Gcoj6!Z1bnc"
@@ -50,6 +53,7 @@ namespace MailRemoverAPI.Data
                 new User
                 {
                     Id = g4,
+                    UserEmail = "benas.skripkunas@gmail.com",
                     FirstName = "Benas",
                     LastName = "Skripkiūnas",
                     Password = "*Y4!3l710POq"

@@ -30,9 +30,9 @@ namespace MailRemoverAPI.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GetUserDto>>> GetUsers([FromQuery] string firstName)
+        public async Task<ActionResult<IEnumerable<GetUserDto>>> GetUsers([FromQuery] string userEmail)
         {
-            _logger.LogInformation($"Getting all users for {firstName}");
+            _logger.LogInformation($"Getting all users for {userEmail}");
 
             var users = await _usersRepository.GetAllAsync();
             var records = _mapper.Map<List<GetUserDto>>(users);
@@ -40,7 +40,7 @@ namespace MailRemoverAPI.Controllers
             //                   where user.FirstName.Contains(firstName)
             //                   select user;
 
-            var queryedUsers = records.Where(user => user.FirstName.Contains(firstName));
+            var queryedUsers = records.Where(user => user.UserEmail.Contains(userEmail));
             
             return Ok(queryedUsers);
         }
@@ -127,18 +127,18 @@ namespace MailRemoverAPI.Controllers
             //                   where user.FirstName.Contains(firstName)
             //                   select user;
 
-            var queryedUser = records.Where(user => user.FirstName.Contains(loginUserDto.FirstName)).Where(user => user.LastName.Contains(loginUserDto.LastName)).FirstOrDefault();
+            var queryedUser = records.Where(user => user.UserEmail.Contains(loginUserDto.UserEmail)).FirstOrDefault();
 
             if (queryedUser == null)
                 {
-                    throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
+                    throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either email or password is wrong.");
                 }
                 else
                 {
                     var result = queryedUser.CheckPassword(loginUserDto.Password);
                     if (result == false)
                     {
-                        throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either id or password is wrong.");
+                        throw new UnauthorizedException("In: " + nameof(LoginUser) + " there was an error. Either email or password is wrong.");
                     }
                     else
                     {
