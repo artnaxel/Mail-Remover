@@ -38,6 +38,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmailRepository, EmailRepository>();
 builder.Services.AddScoped<IGmailService, GmailService>();
 builder.Services.AddScoped<IGmailRepository, GmailRepository>();
+builder.Services.AddScoped<ICo2FootprintCalcService, Co2FootprintCalcService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
