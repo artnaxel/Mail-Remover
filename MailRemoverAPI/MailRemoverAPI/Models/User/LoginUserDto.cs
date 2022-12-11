@@ -3,13 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MailRemoverAPI.Models.User
 {
-    public class LoginUserDto : BaseUserDto
+    public class LoginUserDto
     {
         [Required]
-        public string FirstName { get; set; }
-
-        [Required]
-        public string LastName { get; set; }
+        public string UserEmail { get; set; }
 
         [Required]
         public string Password { get; set; }
