@@ -14,8 +14,7 @@ import Style from "./LoginUserForm.module.css";
 const LoginUserForm = () => {
   const [id, setId] = useState("");
   const [status, setStatus] = useState(null);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleTextFieldChange = (setValue) => (e) => setValue(e.target.value);
@@ -23,8 +22,7 @@ const LoginUserForm = () => {
   const loginUser = async () => {
     try {
       const response = await axios.post("https://localhost:7151/login", {
-        firstName,
-        lastName,
+        userEmail,
         password,
       });
 
@@ -53,16 +51,9 @@ const LoginUserForm = () => {
         </Typography>
         <TextField
           className={Style.TextField}
-          label="First Name"
+          label="Email"
           variant="outlined"
-          onChange={handleTextFieldChange(setFirstName)}
-        />
-        <br />
-        <TextField
-          className={Style.TextField}
-          label="Last Name"
-          variant="outlined"
-          onChange={handleTextFieldChange(setLastName)}
+          onChange={handleTextFieldChange(setUserEmail)}
         />
         <br />
         <TextField

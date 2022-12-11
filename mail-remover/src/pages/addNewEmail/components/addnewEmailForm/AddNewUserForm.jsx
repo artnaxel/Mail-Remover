@@ -5,6 +5,7 @@ import axios from "axios";
 import Style from "./AddNewUserForm.module.css";
 
 export default function AddNewUserForm() {
+  const [userEmail, setUserEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
@@ -16,6 +17,13 @@ export default function AddNewUserForm() {
         <Typography variant="h5" className={Style.haeder}>
           Here you can sign up for our application
         </Typography>
+        <TextField
+          className={Style.TextField}
+          label="Email"
+          variant="outlined"
+          onChange={handleTextFieldChange(setUserEmail)}
+        />
+        <br />
         <TextField
           className={Style.TextField}
           label="First Name"
@@ -43,6 +51,7 @@ export default function AddNewUserForm() {
           variant="contained"
           onClick={() => {
             axios.post("https://localhost:7151/api/Users", {
+              userEmail,
               firstName,
               lastName,
               password,

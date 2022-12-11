@@ -35,11 +35,11 @@ export default function Header() {
         </Button>
         <Button
           onClick={() => {
-            handleClick("signin");
+            handleClick("signup");
           }}
           variant="contained"
         >
-          Sign In
+          Register
         </Button>
         <Button
           onClick={() => {
