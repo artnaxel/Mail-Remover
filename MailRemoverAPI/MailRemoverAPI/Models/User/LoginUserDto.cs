@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MailRemoverAPI.Models.Gmail;
+using System.ComponentModel.DataAnnotations;
 
 namespace MailRemoverAPI.Models.User
 {
-    public class CreateUserDto : BaseUserDto
+    public class LoginUserDto
     {
         [Required]
         public string UserEmail { get; set; }

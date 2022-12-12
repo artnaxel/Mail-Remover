@@ -7,15 +7,18 @@ using Serilog;
 using MailRemoverAPI.Contracts;
 using MailRemoverAPI.Repository;
 using Microsoft.Extensions.Azure;
+using MailRemoverAPI.Middleware;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 var connectionString = builder.Configuration.GetConnectionString("MailRemoverDbConnectionString");
-builder.Services.AddDbContext<MailRemoverDbContext>(options =>{
+builder.Services.AddDbContext<MailRemoverDbContext>(options => {
     options.UseSqlServer(connectionString);
-});
+},
+    ServiceLifetime.Singleton);
 
 builder.Services.AddCors(options =>
 {
@@ -41,7 +44,28 @@ builder.Services.AddScoped<IGmailRepository, GmailRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHttpClient();
+
 builder.Services.AddAutoMapper(typeof(MapperConfig));
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
+    options.ReportApiVersions = true;
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new QueryStringApiVersionReader("api-version"),
+        new HeaderApiVersionReader("X-Version"),
+        new MediaTypeApiVersionReader("ver")
+    );
+});
+
+builder.Services.AddVersionedApiExplorer(
+    options =>
+    {
+        options.GroupNameFormat = "'v'VVV";
+        options.SubstituteApiVersionInUrl = true;
+    });
 
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddAzureClients(clientBuilder =>
@@ -58,6 +82,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+ 
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseCors();
 

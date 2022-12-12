@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using MailRemoverAPI.Services;
+using MailRemoverAPI.Validators.Email;
 
 namespace MailRemoverAPI.Entities
 {
@@ -10,6 +11,16 @@ namespace MailRemoverAPI.Entities
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public string _userEmail;
+        public string UserEmail 
+        { 
+            get { return this._userEmail; }
+            set
+            {
+                _userEmail = CreateEmailValidator.UserEmailValidator(value);
+            }
+        }
 
         private string _password;
         public string Password
@@ -29,10 +40,17 @@ namespace MailRemoverAPI.Entities
             return LastName.CompareTo(other.LastName);
         }
 
+        
+
         public bool CheckPassword(string Password)
         {
             return PasswordServices.CheckPassword(this, Password);
         }
-        public virtual List<Gmail> Gmails { get; set; }
+
+        private Lazy<List<Gmail>> _gmails;
+        public List<Gmail> Gmails {
+            get => _gmails?.Value;
+            set => _gmails = new Lazy<List<Gmail>>(() => value);
+        }
     }
 }
