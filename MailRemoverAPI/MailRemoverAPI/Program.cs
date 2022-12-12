@@ -6,6 +6,7 @@ using MailRemoverAPI.Data;
 using Serilog;
 using MailRemoverAPI.Contracts;
 using MailRemoverAPI.Repository;
+using Microsoft.Extensions.Azure;
 using MailRemoverAPI.Middleware;
 using Microsoft.AspNetCore.Mvc.Versioning;
 
@@ -67,6 +68,11 @@ builder.Services.AddVersionedApiExplorer(
     });
 
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddBlobServiceClient(builder.Configuration["StorageConnectionString:blob"], preferMsi: true);
+    clientBuilder.AddQueueServiceClient(builder.Configuration["StorageConnectionString:queue"], preferMsi: true);
+});
 
 var app = builder.Build();
 

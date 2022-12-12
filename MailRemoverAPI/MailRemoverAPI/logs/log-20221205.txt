@@ -1,0 +1,1456 @@
+2022-12-05 13:21:45.108 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 13:21:45.161 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 13:21:45.168 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 13:21:45.169 +02:00 [INF] Hosting environment: Development
+2022-12-05 13:21:45.170 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 13:22:24.359 +02:00 [INF] Registering user with put bf82f7c5-708f-4180-8117-f89aa672bf5a
+2022-12-05 13:22:53.336 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-12-05 13:23:35.014 +02:00 [INF] Registering user with put 672faf29-0e93-4f99-b256-13facbe5b528
+2022-12-05 13:27:24.604 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 13:27:24.646 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 13:27:24.652 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 13:27:24.653 +02:00 [INF] Hosting environment: Development
+2022-12-05 13:27:24.653 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 13:27:36.032 +02:00 [INF] Registering user with put 672faf29-0e93-4f99-b256-13facbe5b528
+2022-12-05 13:31:51.789 +02:00 [INF] Registering user with put db7d47d4-1553-46d3-2335-08dab5d9a956
+2022-12-05 13:33:48.392 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 13:33:48.432 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 13:33:48.440 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 13:33:48.441 +02:00 [INF] Hosting environment: Development
+2022-12-05 13:33:48.442 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 13:34:15.385 +02:00 [INF] Registering user with put 1c2984ab-7129-4a89-bd59-08dac1187f4f
+2022-12-05 13:39:11.340 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 13:39:11.380 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 13:39:11.387 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 13:39:11.388 +02:00 [INF] Hosting environment: Development
+2022-12-05 13:39:11.389 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 13:57:04.214 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 13:57:04.267 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 13:57:04.275 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 13:57:04.277 +02:00 [INF] Hosting environment: Development
+2022-12-05 13:57:04.277 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 14:17:50.420 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 17
+   at MailRemoverAPI.Controllers.UserController.GetAll(Boolean Sorted) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:18:01.328 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 17
+   at MailRemoverAPI.Controllers.UserController.GetAll(Boolean Sorted) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:18:51.144 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 17
+   at MailRemoverAPI.Controllers.UserController.GetAll(Boolean Sorted) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:18:54.391 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetAllAsync() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 17
+   at MailRemoverAPI.Controllers.UserController.GetAll(Boolean Sorted) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:19:02.641 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 14:19:02.711 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 14:19:02.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 14:19:02.719 +02:00 [INF] Hosting environment: Development
+2022-12-05 14:19:02.720 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 14:19:06.413 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetByIdAsync(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 30
+   at MailRemoverAPI.Controllers.UserController.GetById(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:19:24.034 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetByIdAsync(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 30
+   at MailRemoverAPI.Controllers.UserController.GetById(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:19:36.882 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The JSON value could not be converted to System.String. Path: $[0].Password | LineNumber: 6 | BytePositionInLine: 19.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'StartObject' as a string.
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.ReadAllAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at MailRemoverAPI.Services.JSONFileReaderService.ReadAll[T]() in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\JSONFileReaderService.cs:line 26
+   at MailRemoverAPI.Services.UserRepository.GetByIdAsync(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\UserRepository.cs:line 30
+   at MailRemoverAPI.Controllers.UserController.GetById(Guid Id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UserController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-05 14:20:06.275 +02:00 [INF] Getting all users for Karolina
+2022-12-05 14:20:13.282 +02:00 [INF] Registering user MailRemoverAPI.Models.User.CreateUserDto
+2022-12-05 14:20:18.242 +02:00 [INF] Loging in user e033fa78-a839-4276-ed91-08dacbb5abc5
+2022-12-05 14:20:25.289 +02:00 [INF] Getting user by id bb66144c-94de-4600-baf7-2cfbb8c10f52
+2022-12-05 14:20:28.724 +02:00 [INF] Registering user with put bf82f7c5-708f-4180-8117-f89aa672bf5a
+2022-12-05 14:20:42.879 +02:00 [INF] Deleting user 5515a2be-e1bf-484b-1e1c-08daca438194
+2022-12-05 14:20:53.562 +02:00 [INF] Deleting user 6e546687-9db2-41b3-95fa-f8f55c16a2aa
+2022-12-05 14:20:53.629 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 14:28:27.128 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 14:28:27.170 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 14:28:27.176 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 14:28:27.177 +02:00 [INF] Hosting environment: Development
+2022-12-05 14:28:27.177 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 14:28:50.188 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 14:28:50.252 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 14:28:50.261 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 14:28:50.261 +02:00 [INF] Hosting environment: Development
+2022-12-05 14:28:50.262 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 15:37:17.023 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 15:37:17.062 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 15:37:17.069 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 15:37:17.069 +02:00 [INF] Hosting environment: Development
+2022-12-05 15:37:17.070 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:36:14.814 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:36:14.891 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:36:14.903 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:36:14.904 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:36:14.905 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:38:36.793 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:38:36.839 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:38:36.845 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:38:36.846 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:38:36.846 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:46:04.386 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:46:04.433 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:46:04.439 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:46:04.440 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:46:04.440 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:51:52.241 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:51:52.311 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:51:52.326 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:51:52.327 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:51:52.328 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:53:55.614 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:53:55.666 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:53:55.692 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:53:55.693 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:53:55.694 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:54:52.681 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:54:52.746 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:54:52.754 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:54:52.755 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:54:52.756 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 16:57:18.544 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 16:57:18.608 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 16:57:18.722 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 16:57:18.724 +02:00 [INF] Hosting environment: Development
+2022-12-05 16:57:18.725 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 17:15:41.869 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 17:15:41.922 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 17:15:41.928 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 17:15:41.929 +02:00 [INF] Hosting environment: Development
+2022-12-05 17:15:41.930 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 17:20:35.939 +02:00 [INF] Deleting user d280f2f1-3192-4d87-816b-067eb58e3ffb
+2022-12-05 17:20:53.115 +02:00 [INF] Deleting user 43fe2cd0-794e-4fb4-aef8-08c97c7425ae
+2022-12-05 17:20:53.166 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:07.527 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:21:07.544 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:08.460 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:21:08.496 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:08.965 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:21:08.980 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:09.394 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:21:09.438 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:18.505 +02:00 [INF] Deleting user db7d47d4-1553-46d3-2335-08dab5d9a956
+2022-12-05 17:21:18.518 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:27.246 +02:00 [INF] Deleting user 92742a99-5ed2-428e-3136-08daca43f765
+2022-12-05 17:21:27.254 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:34.359 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:21:35.244 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:21:35.671 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:21:36.100 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:21:36.121 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:43.504 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:21:43.511 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:47.815 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:21:47.845 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:21:51.945 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:21:51.989 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:21:59.458 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:22:04.041 +02:00 [INF] Deleting user 6868a9be-0325-47e3-9056-10131c0b3247
+2022-12-05 17:22:04.049 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:22:08.684 +02:00 [INF] Deleting user 2c4fa63b-ebb0-4eea-b6b2-122747bfcc86
+2022-12-05 17:22:14.298 +02:00 [INF] Deleting user 0f784011-68dd-48db-9ddf-131109a58e0b
+2022-12-05 17:22:18.924 +02:00 [INF] Deleting user 672faf29-0e93-4f99-b256-13facbe5b528
+2022-12-05 17:22:23.331 +02:00 [INF] Deleting user 88ab2a52-aa3b-4298-9dd2-15bb2062b6da
+2022-12-05 17:22:27.913 +02:00 [INF] Deleting user fa25cd3e-3069-4bcb-b121-16497ec814ff
+2022-12-05 17:22:27.926 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:22:33.754 +02:00 [INF] Deleting user be5acc35-340b-4d13-a4b1-180bc0dc3850
+2022-12-05 17:22:37.771 +02:00 [INF] Deleting user cb60a6b3-e280-4d1d-ab88-19af40277b69
+2022-12-05 17:22:37.781 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:22:42.122 +02:00 [INF] Deleting user bb7481d0-4636-4917-86ee-1bdd260fe308
+2022-12-05 17:22:43.737 +02:00 [ERR] Failed executing DbCommand (1,608ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__get_Item_0
+2022-12-05 17:22:43.849 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MailRemoverAPI.Data.MailRemoverDbContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-12-05 17:22:44.083 +02:00 [ERR] Something went wrong in the deletion of DeleteUser
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MailRemoverAPI.Repository.GenericRepository`1.GetAsync(Nullable`1 id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Repository\GenericRepository.cs:line 49
+   at MailRemoverAPI.Controllers.UsersController.DeleteUser(Guid id) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 195
+2022-12-05 17:22:51.131 +02:00 [INF] Deleting user bebba1ca-e2f7-44a8-997d-1e2409e35c81
+2022-12-05 17:23:00.693 +02:00 [INF] Deleting user 93801b51-fd13-4f5e-a296-1ef90520d3d7
+2022-12-05 17:23:06.334 +02:00 [INF] Deleting user 9c57c65a-43c8-4d83-a038-20a0f23528c2
+2022-12-05 17:23:06.344 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:23:09.943 +02:00 [INF] Deleting user 390e35c1-48b5-4a25-9371-27cce2567b9e
+2022-12-05 17:23:15.345 +02:00 [INF] Deleting user 908bdfcd-9abc-4183-8c25-28ed7482998e
+2022-12-05 17:23:18.518 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:23:18.528 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:23:20.027 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:23:22.151 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:23:22.174 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:23:22.770 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:23:22.791 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:23:25.629 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:23:25.636 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:23:31.048 +02:00 [INF] Deleting user d117a004-6f49-4fa0-aed1-2972a16ccb7f
+2022-12-05 17:23:34.608 +02:00 [INF] Deleting user cba0bbc2-e02b-40e4-9065-2a9ca8e6b22f
+2022-12-05 17:23:38.524 +02:00 [INF] Deleting user 5e80beb2-b06f-4f49-be10-2d25403ddca0
+2022-12-05 17:23:42.815 +02:00 [INF] Deleting user 18bdb3d4-0644-4d25-9f66-2e00331e6054
+2022-12-05 17:23:49.124 +02:00 [INF] Deleting user 9de458a7-ee1a-4fc6-b677-33f46031864c
+2022-12-05 17:23:54.750 +02:00 [INF] Deleting user 7c90011e-cd51-4447-9109-50c55174fd9a
+2022-12-05 17:23:58.547 +02:00 [INF] Deleting user 380f7441-986c-41bd-a726-50e8eb08a7ad
+2022-12-05 17:24:02.914 +02:00 [INF] Deleting user 2ff0f2c3-c308-42ca-af7f-5fb0bbdd767f
+2022-12-05 17:24:07.966 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:24:07.976 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:24:11.722 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:24:16.002 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:24:23.428 +02:00 [INF] Deleting user 2379f506-101d-4121-a6ae-7b26807b7f31
+2022-12-05 17:24:26.548 +02:00 [INF] Deleting user 0ddf7ef9-d6e4-41c5-8af7-7c346976c5c8
+2022-12-05 17:24:30.816 +02:00 [INF] Deleting user d9f4ee87-bfcc-484f-8e44-83cb6e16d707
+2022-12-05 17:24:34.093 +02:00 [INF] Deleting user e1d683e5-6158-453f-9279-8794a3ec1b94
+2022-12-05 17:24:34.103 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:24:40.606 +02:00 [INF] Deleting user bad1f3ad-9696-4f42-9228-8f5e76200aab
+2022-12-05 17:24:50.493 +02:00 [INF] Deleting user 3ebeaba8-34b9-4689-8ecf-9618d773c6c0
+2022-12-05 17:24:55.301 +02:00 [INF] Deleting user 4ac2b779-f22f-4461-ba38-9699f0ecf7e1
+2022-12-05 17:24:59.207 +02:00 [INF] Deleting user c25071cd-9a28-410c-b44a-97d099f3c078
+2022-12-05 17:25:04.788 +02:00 [INF] Deleting user 232b48cf-becf-4e4b-9d62-994b3e3b5a99
+2022-12-05 17:25:08.741 +02:00 [INF] Deleting user bf81334c-f406-4103-8039-9cf50548ee2c
+2022-12-05 17:25:12.934 +02:00 [INF] Deleting user 29edf8be-3006-4447-92d8-9ee38b4fbae4
+2022-12-05 17:25:18.281 +02:00 [INF] Deleting user 9ec91a4d-f785-4977-a1c2-a546a03bab18
+2022-12-05 17:25:22.458 +02:00 [INF] Deleting user 1ca5f699-6f71-4ef8-b652-a5736682bfbd
+2022-12-05 17:25:26.541 +02:00 [INF] Deleting user eefa8ed1-a990-452d-ab7b-a7cd7faa5f09
+2022-12-05 17:25:30.046 +02:00 [INF] Deleting user c91a6ef8-7ed6-4466-a46d-aeb17b5fe0ba
+2022-12-05 17:25:34.814 +02:00 [INF] Deleting user 30cb4a65-1ffe-4c3e-aaa7-b2af9914937e
+2022-12-05 17:25:38.409 +02:00 [INF] Deleting user eddba314-5bee-4348-afe3-b389dd316539
+2022-12-05 17:25:43.209 +02:00 [INF] Deleting user c7be71a4-a7aa-4e2c-b03c-c4d64fb54365
+2022-12-05 17:25:46.968 +02:00 [INF] Deleting user c81110e0-7800-4ff3-9f78-cee1675e4187
+2022-12-05 17:25:52.878 +02:00 [INF] Deleting user c3f77ef0-c00a-4c74-b9ea-dfd3cd553727
+2022-12-05 17:25:56.031 +02:00 [INF] Deleting user 3c7d3344-5126-4917-bf6b-e66330e26e0b
+2022-12-05 17:26:01.488 +02:00 [INF] Deleting user 850ccf79-8966-4ad2-86bf-e78d2e7d0178
+2022-12-05 17:26:06.650 +02:00 [INF] Deleting user 5f3145e2-efaf-4368-9570-f42e612ead48
+2022-12-05 17:26:11.710 +02:00 [INF] Deleting user a7c5593d-fcf2-4d98-8311-ff7478c4ef3e
+2022-12-05 17:26:15.537 +02:00 [INF] Deleting user 09e1722d-0b35-4b96-9396-fea2b058aa6c
+2022-12-05 17:26:19.069 +02:00 [INF] Deleting user 360ca456-99af-46cb-9c40-fd3d732912fa
+2022-12-05 17:26:22.769 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:26:27.124 +02:00 [INF] Deleting user 7cd2d3ff-9ecc-4cf2-ac30-fad41627637f
+2022-12-05 17:26:27.665 +02:00 [INF] Deleting user 7cd2d3ff-9ecc-4cf2-ac30-fad41627637f
+2022-12-05 17:26:28.095 +02:00 [INF] Deleting user 7cd2d3ff-9ecc-4cf2-ac30-fad41627637f
+2022-12-05 17:26:33.014 +02:00 [INF] Deleting user 5518d3b4-c7e2-4ba0-b073-fa7fe6218f76
+2022-12-05 17:26:33.475 +02:00 [INF] Deleting user 5518d3b4-c7e2-4ba0-b073-fa7fe6218f76
+2022-12-05 17:26:33.937 +02:00 [INF] Deleting user 5518d3b4-c7e2-4ba0-b073-fa7fe6218f76
+2022-12-05 17:26:37.488 +02:00 [INF] Deleting user 0547edc9-278c-4ea2-979e-fa507e6cf9fd
+2022-12-05 17:26:37.851 +02:00 [INF] Deleting user 0547edc9-278c-4ea2-979e-fa507e6cf9fd
+2022-12-05 17:26:41.299 +02:00 [INF] Deleting user cbc415ce-1b26-4ad6-b42d-fa0adb40a171
+2022-12-05 17:26:41.778 +02:00 [INF] Deleting user cbc415ce-1b26-4ad6-b42d-fa0adb40a171
+2022-12-05 17:26:49.642 +02:00 [INF] Deleting user edaea866-ed4d-4a79-be2a-f96bb530cc98
+2022-12-05 17:26:53.563 +02:00 [INF] Deleting user 6e546687-9db2-41b3-95fa-f8f55c16a2aa
+2022-12-05 17:26:57.043 +02:00 [INF] Deleting user ee5e15a4-8dbb-4332-ba6c-f8ce5b698ca4
+2022-12-05 17:27:00.217 +02:00 [INF] Deleting user bf82f7c5-708f-4180-8117-f89aa672bf5a
+2022-12-05 17:27:03.653 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:27:03.669 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:27:07.668 +02:00 [INF] Deleting user 4cd66941-9db6-4e2e-87fa-f8037b5715ed
+2022-12-05 17:27:08.320 +02:00 [INF] Deleting user 4cd66941-9db6-4e2e-87fa-f8037b5715ed
+2022-12-05 17:27:11.570 +02:00 [INF] Deleting user 2c7df954-e11b-4d41-b108-f70111bb6a5c
+2022-12-05 17:27:17.734 +02:00 [INF] Deleting user b8f9e813-fd10-40f7-8817-f6fef02c1f19
+2022-12-05 17:27:20.689 +02:00 [INF] Deleting user 2c7df954-e11b-4d41-b108-f70111bb6a5c
+2022-12-05 17:27:24.086 +02:00 [INF] Deleting user 9703505f-8ce5-4af8-8c30-f66e7622fafa
+2022-12-05 17:27:27.117 +02:00 [INF] Deleting user 3ec27879-630d-415d-9b90-f632fd149372
+2022-12-05 17:27:30.256 +02:00 [INF] Deleting user 5f3145e2-efaf-4368-9570-f42e612ead48
+2022-12-05 17:27:33.056 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:27:36.167 +02:00 [INF] Deleting user 25573471-0277-4921-9191-ee279564aaec
+2022-12-05 17:27:41.073 +02:00 [INF] Deleting user 79ca1514-94fa-419e-9203-eca696ad468a
+2022-12-05 17:27:41.674 +02:00 [INF] Deleting user 79ca1514-94fa-419e-9203-eca696ad468a
+2022-12-05 17:27:45.988 +02:00 [INF] Deleting user 14df2cd8-e315-4c52-a113-ec46616d6fd8
+2022-12-05 17:28:15.488 +02:00 [INF] Deleting user 92742a99-5ed2-428e-3136-08daca43f765
+2022-12-05 17:28:19.985 +02:00 [INF] Deleting user d9cf4ec3-254f-43d6-2b84-08dac7447f86
+2022-12-05 17:28:25.854 +02:00 [INF] Deleting user 1c2984ab-7129-4a89-bd59-08dac1187f4f
+2022-12-05 17:28:29.225 +02:00 [INF] Deleting user db7d47d4-1553-46d3-2335-08dab5d9a956
+2022-12-05 17:28:32.663 +02:00 [INF] Deleting user 43fe2cd0-794e-4fb4-aef8-08c97c7425ae
+2022-12-05 17:28:35.746 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:28:41.428 +02:00 [INF] Deleting user 22adfb32-a467-4988-f86b-08daca440ae0
+2022-12-05 17:28:44.591 +02:00 [INF] Deleting user 22adfb32-a467-4988-f86b-08daca440ae0
+2022-12-05 17:28:47.763 +02:00 [INF] Deleting user 04afb618-ec04-445b-9869-08daca441887
+2022-12-05 17:28:53.193 +02:00 [INF] Deleting user 12d8d0f6-7699-4f09-11e0-08daca442ac3
+2022-12-05 17:28:53.214 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:28:57.747 +02:00 [INF] Deleting user 94885277-e108-4798-13ec-08daca443ac2
+2022-12-05 17:29:01.882 +02:00 [INF] Deleting user e391bd1d-92f7-4000-8636-08daca4586cc
+2022-12-05 17:29:09.912 +02:00 [INF] Deleting user 62a032e6-a9f5-4570-9a1d-0978433ee364
+2022-12-05 17:29:14.911 +02:00 [INF] Deleting user fa25cd3e-3069-4bcb-b121-16497ec814ff
+2022-12-05 17:29:19.273 +02:00 [INF] Deleting user be5acc35-340b-4d13-a4b1-180bc0dc3850
+2022-12-05 17:29:22.721 +02:00 [INF] Deleting user cb60a6b3-e280-4d1d-ab88-19af40277b69
+2022-12-05 17:29:26.206 +02:00 [INF] Deleting user bb7481d0-4636-4917-86ee-1bdd260fe308
+2022-12-05 17:29:34.435 +02:00 [INF] Deleting user bebba1ca-e2f7-44a8-997d-1e2409e35c81
+2022-12-05 17:29:38.147 +02:00 [INF] Deleting user cf76b60b-0fd3-44e4-bf8a-1e890811f678
+2022-12-05 17:29:42.589 +02:00 [INF] Deleting user 93801b51-fd13-4f5e-a296-1ef90520d3d7
+2022-12-05 17:29:46.100 +02:00 [INF] Deleting user 9c57c65a-43c8-4d83-a038-20a0f23528c2
+2022-12-05 17:29:49.415 +02:00 [INF] Deleting user 390e35c1-48b5-4a25-9371-27cce2567b9e
+2022-12-05 17:29:54.529 +02:00 [INF] Deleting user 908bdfcd-9abc-4183-8c25-28ed7482998e
+2022-12-05 17:29:55.031 +02:00 [INF] Deleting user 908bdfcd-9abc-4183-8c25-28ed7482998e
+2022-12-05 17:30:00.410 +02:00 [INF] Deleting user ac7d3f49-043b-4afa-af5b-291446f09a04
+2022-12-05 17:30:04.190 +02:00 [INF] Deleting user d117a004-6f49-4fa0-aed1-2972a16ccb7f
+2022-12-05 17:30:07.450 +02:00 [INF] Deleting user cba0bbc2-e02b-40e4-9065-2a9ca8e6b22f
+2022-12-05 17:30:11.213 +02:00 [INF] Deleting user af97b83e-9d61-4d9c-9779-2b042fb09364
+2022-12-05 17:30:15.074 +02:00 [INF] Deleting user e02754f7-2922-47e2-9963-2bd59a2fc5a5
+2022-12-05 17:30:18.786 +02:00 [INF] Deleting user 690e208d-1a95-412a-b341-2c7c38d5e870
+2022-12-05 17:30:21.744 +02:00 [INF] Deleting user bb66144c-94de-4600-baf7-2cfbb8c10f52
+2022-12-05 17:30:25.537 +02:00 [INF] Deleting user 5e80beb2-b06f-4f49-be10-2d25403ddca0
+2022-12-05 17:30:31.846 +02:00 [INF] Deleting user 7763490c-051c-4c24-a08f-2d289dc6fcef
+2022-12-05 17:30:35.096 +02:00 [INF] Deleting user 887ca1f7-dd9f-46df-9d36-2d9eae916a93
+2022-12-05 17:30:38.762 +02:00 [INF] Deleting user 8164fa35-b2c1-4274-9ddd-2ecad26d0784
+2022-12-05 17:30:42.622 +02:00 [INF] Deleting user 46d7826e-0627-4617-899f-2fbfa85d6487
+2022-12-05 17:30:45.970 +02:00 [INF] Deleting user 4706e38a-27d5-44dd-a9b8-327360467661
+2022-12-05 17:30:45.994 +02:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:30:49.436 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:30:55.536 +02:00 [INF] Deleting user df52813c-9dbe-4c5e-ab37-362c0f7b244c
+2022-12-05 17:30:59.582 +02:00 [INF] Deleting user 59f35e15-7532-4d56-ae03-3745708f087b
+2022-12-05 17:31:03.103 +02:00 [INF] Deleting user 50d0d52a-83f7-47b6-ac46-37f965c9ec6b
+2022-12-05 17:31:06.463 +02:00 [INF] Deleting user f34c1948-e4d3-4f9e-afdb-3867eb15df40
+2022-12-05 17:31:09.686 +02:00 [INF] Deleting user df121d51-b875-4bb6-8979-3b5e1d279f31
+2022-12-05 17:31:13.772 +02:00 [INF] Deleting user 36431e83-d4b7-4214-93e3-3d23632c41b6
+2022-12-05 17:31:16.779 +02:00 [INF] Deleting user b444f95f-6a50-4634-b3a0-3da69c2cb02f
+2022-12-05 17:31:23.881 +02:00 [INF] Deleting user 24d9765c-c76d-4948-8738-403bb3a67a8b
+2022-12-05 17:31:29.209 +02:00 [INF] Deleting user 90728089-bcc7-4fe6-885c-4f0e9cfe2bc8
+2022-12-05 17:31:32.968 +02:00 [INF] Deleting user f3579c91-5cf2-4be0-9732-4e1dbba23429
+2022-12-05 17:31:37.479 +02:00 [INF] Deleting user ac90ede7-ea1b-47ca-82cc-57f729df6147
+2022-12-05 17:31:51.354 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:31:51.365 +02:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:31:56.622 +02:00 [INF] Deleting user 744c00c8-baaa-423c-9018-5ee44fbd301c
+2022-12-05 17:32:00.691 +02:00 [INF] Deleting user d9fed3a4-bf50-4916-b260-60113516c739
+2022-12-05 17:32:05.837 +02:00 [INF] Deleting user b26a7fa1-d8b8-4366-9f87-60722df8f242
+2022-12-05 17:32:27.354 +02:00 [INF] Deleting user b26a7fa1-d8b8-4366-9f87-60722df8f242
+2022-12-05 17:32:32.496 +02:00 [INF] Deleting user 43fe2cd0-794e-4fb4-aef8-08c97c7425ae
+2022-12-05 17:32:36.883 +02:00 [INF] Deleting user d2f12d01-e362-4fe1-5dda-08dac7cdfc0d
+2022-12-05 17:32:40.012 +02:00 [INF] Deleting user dad9d304-3711-4cd5-59dc-08daca3ad174
+2022-12-05 17:32:45.006 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:32:45.022 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:32:47.853 +02:00 [INF] Deleting user edd6a62b-c684-4b32-b6ff-08daca43a060
+2022-12-05 17:32:51.848 +02:00 [INF] Deleting user 7a568ba0-4dd9-44f1-72fe-08daca43b0d1
+2022-12-05 17:32:55.080 +02:00 [INF] Deleting user 12d8d0f6-7699-4f09-11e0-08daca442ac3
+2022-12-05 17:32:58.253 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:32:58.269 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:33:02.440 +02:00 [INF] Deleting user e033fa78-a839-4276-ed91-08dacbb5abc5
+2022-12-05 17:33:02.449 +02:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:33:04.026 +02:00 [INF] Deleting user e033fa78-a839-4276-ed91-08dacbb5abc5
+2022-12-05 17:33:08.513 +02:00 [INF] Deleting user 3dff6b51-b600-44f1-682d-08dacbb67f16
+2022-12-05 17:33:12.285 +02:00 [INF] Deleting user 4f3ed930-00b0-4ab5-4117-08dacbb68f5b
+2022-12-05 17:33:17.630 +02:00 [INF] Deleting user 4f3ed930-00b0-4ab5-4117-08dacbb68f5b
+2022-12-05 17:33:29.953 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:33:29.971 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:33:32.613 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:33:35.940 +02:00 [INF] Deleting user c282fc74-d8a5-4763-92a4-08dacbb6ad1c
+2022-12-05 17:33:38.665 +02:00 [INF] Deleting user 83918dd6-306c-46d8-c74b-08dacbb6b621
+2022-12-05 17:33:38.681 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:33:41.361 +02:00 [INF] Deleting user 5a35f93b-926e-4d2e-6d38-08dacbb70ff7
+2022-12-05 17:33:41.369 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:33:44.290 +02:00 [INF] Deleting user fe09a962-7d03-4a16-fc32-08dacbb717c9
+2022-12-05 17:33:47.333 +02:00 [INF] Deleting user f8ee8b1b-e48d-4084-3e3f-08dacbba8c09
+2022-12-05 17:33:47.358 +02:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:33:51.147 +02:00 [INF] Deleting user 2800bec8-7ff3-47a7-4ade-08dacbbc50de
+2022-12-05 17:33:58.178 +02:00 [INF] Deleting user 7a89dd74-91ba-42ca-920f-0a1e73f33b43
+2022-12-05 17:34:02.941 +02:00 [INF] Deleting user cacc6460-dc74-4e4a-8260-0a873f1883f4
+2022-12-05 17:34:05.383 +02:00 [INF] Deleting user cacc6460-dc74-4e4a-8260-0a873f1883f4
+2022-12-05 17:34:05.552 +02:00 [INF] Deleting user cacc6460-dc74-4e4a-8260-0a873f1883f4
+2022-12-05 17:34:07.651 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:08.099 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:08.594 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:09.005 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:09.018 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:09.419 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:09.824 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:09.867 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:10.309 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:10.811 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:11.232 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:11.639 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:12.025 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:12.484 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:12.899 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:13.338 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:13.346 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:13.782 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:14.178 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:14.602 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:14.610 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:15.034 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:15.408 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:15.415 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:15.793 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:16.186 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:16.499 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:16.746 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:16.952 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:17.196 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:17.384 +02:00 [INF] Deleting user 16f56659-452e-4989-bf6f-0bf2b2a7d1cd
+2022-12-05 17:34:21.322 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:21.684 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:22.132 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:22.140 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:22.475 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:22.840 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:23.210 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:23.584 +02:00 [INF] Deleting user 8275be98-8285-4b26-93ad-0ca2fcecb2d0
+2022-12-05 17:34:27.561 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:27.996 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:28.381 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:28.769 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:29.257 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:29.687 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:30.125 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:30.607 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:30.629 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:31.014 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:31.433 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:31.854 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:31.871 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:32.300 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:32.694 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:33.054 +02:00 [INF] Deleting user 0920a422-fbea-4d30-869d-0e09a6157da1
+2022-12-05 17:34:55.395 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:55.402 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:55.871 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:55.879 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:34:56.283 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:56.713 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:57.183 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:57.603 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:58.130 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:58.528 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:34:58.805 +02:00 [INF] Deleting user 1f0d7aae-993f-415f-ae1e-32aef06ca8a0
+2022-12-05 17:35:26.724 +02:00 [INF] Deleting user 0aa6e6c9-cde2-4722-2ecd-08daca3ded13
+2022-12-05 17:35:29.523 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:35:32.604 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:35:36.092 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:35:39.006 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:35:41.419 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:35:41.440 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:35:44.099 +02:00 [INF] Deleting user c282fc74-d8a5-4763-92a4-08dacbb6ad1c
+2022-12-05 17:35:47.604 +02:00 [INF] Deleting user 83918dd6-306c-46d8-c74b-08dacbb6b621
+2022-12-05 17:35:50.941 +02:00 [INF] Deleting user 5a35f93b-926e-4d2e-6d38-08dacbb70ff7
+2022-12-05 17:35:53.691 +02:00 [INF] Deleting user fe09a962-7d03-4a16-fc32-08dacbb717c9
+2022-12-05 17:35:56.255 +02:00 [INF] Deleting user f8ee8b1b-e48d-4084-3e3f-08dacbba8c09
+2022-12-05 17:36:00.308 +02:00 [INF] Deleting user 2800bec8-7ff3-47a7-4ade-08dacbbc50de
+2022-12-05 17:36:03.675 +02:00 [INF] Deleting user bc2ffd04-ecb8-4c08-7886-08dacbbc6a30
+2022-12-05 17:36:06.957 +02:00 [INF] Deleting user 9c633260-d602-4e05-efc1-08dacbcf8a71
+2022-12-05 17:36:10.885 +02:00 [INF] Deleting user 7a89dd74-91ba-42ca-920f-0a1e73f33b43
+2022-12-05 17:36:13.755 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:36:18.246 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:36:18.255 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:36:21.737 +02:00 [INF] Deleting user 6868a9be-0325-47e3-9056-10131c0b3247
+2022-12-05 17:36:24.400 +02:00 [INF] Deleting user 2c4fa63b-ebb0-4eea-b6b2-122747bfcc86
+2022-12-05 17:36:27.076 +02:00 [INF] Deleting user 0f784011-68dd-48db-9ddf-131109a58e0b
+2022-12-05 17:36:33.700 +02:00 [INF] Deleting user 672faf29-0e93-4f99-b256-13facbe5b528
+2022-12-05 17:36:36.985 +02:00 [INF] Deleting user 88ab2a52-aa3b-4298-9dd2-15bb2062b6da
+2022-12-05 17:36:41.067 +02:00 [INF] Deleting user cf76b60b-0fd3-44e4-bf8a-1e890811f678
+2022-12-05 17:36:44.129 +02:00 [INF] Deleting user 93801b51-fd13-4f5e-a296-1ef90520d3d7
+2022-12-05 17:36:49.105 +02:00 [INF] Deleting user 4706e38a-27d5-44dd-a9b8-327360467661
+2022-12-05 17:36:53.423 +02:00 [INF] Deleting user 4706e38a-27d5-44dd-a9b8-327360467661
+2022-12-05 17:36:57.103 +02:00 [INF] Deleting user 1a66870b-1715-4294-baf2-414ef19d0df5
+2022-12-05 17:37:00.461 +02:00 [INF] Deleting user 2350686e-9a6e-423a-8f4c-4185e6e596b2
+2022-12-05 17:37:03.055 +02:00 [INF] Deleting user f84e2215-abbb-4f99-ac2b-42daaaa7cd74
+2022-12-05 17:37:06.141 +02:00 [INF] Deleting user 02a8aeb9-1b18-41d1-a792-438e9d1e9903
+2022-12-05 17:37:08.770 +02:00 [INF] Deleting user da3b9434-c639-4677-a8fe-43cbf5cb9d88
+2022-12-05 17:37:11.996 +02:00 [INF] Deleting user a6364c67-ab97-4db5-8703-46911bd3e182
+2022-12-05 17:37:17.063 +02:00 [INF] Deleting user 784b9a33-cf77-40e7-9808-4707d83cd20a
+2022-12-05 17:37:20.249 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:37:24.839 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:37:28.643 +02:00 [INF] Deleting user fd5e0e02-4bbe-4dea-bf9f-4852a99c3aa4
+2022-12-05 17:37:31.707 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:37:34.798 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:37:38.354 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:37:44.037 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:37:47.804 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:37:52.395 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:37:54.989 +02:00 [INF] Deleting user 26b885c0-a649-4517-a7df-51dab9a6d5ca
+2022-12-05 17:37:57.927 +02:00 [INF] Deleting user 3980a16c-5692-4f6b-8eab-581bbb7e6eb8
+2022-12-05 17:38:00.752 +02:00 [INF] Deleting user c9ee98cd-c4d3-4422-9331-59b6e9ca8416
+2022-12-05 17:38:03.519 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:38:06.403 +02:00 [INF] Deleting user 744c00c8-baaa-423c-9018-5ee44fbd301c
+2022-12-05 17:38:09.044 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:38:12.207 +02:00 [INF] Deleting user bce915d9-343f-4d0b-a23c-60a555f86db0
+2022-12-05 17:38:12.216 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:38:15.660 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:38:19.182 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:38:23.123 +02:00 [INF] Deleting user 237d0e63-0d65-4e6a-8991-6320018f42fd
+2022-12-05 17:38:28.008 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:38:32.070 +02:00 [INF] Deleting user 02e1e769-c1ef-4627-a982-6468435911dd
+2022-12-05 17:38:35.328 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:38:35.340 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:38:38.550 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:38:45.701 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:39:10.120 +02:00 [INF] Deleting user 55eb76d8-c4f7-408e-b569-66fac1a98c49
+2022-12-05 17:39:13.703 +02:00 [INF] Deleting user 46c1cde6-960c-4d50-8b96-66fbccec83b3
+2022-12-05 17:39:17.985 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:39:20.515 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:39:23.993 +02:00 [INF] Deleting user 3edf6280-8a2a-4fe3-acad-6b44ae2f1b67
+2022-12-05 17:39:24.011 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:39:29.644 +02:00 [INF] Deleting user 4cc881f2-0c1a-4578-bb46-6ce7acc5bf5e
+2022-12-05 17:39:29.657 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:39:32.710 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:39:32.728 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:39:35.825 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:39:38.893 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:39:43.452 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:39:43.475 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:39:48.149 +02:00 [INF] Deleting user 80c3cf10-3800-497c-8760-7754bcd4c76a
+2022-12-05 17:39:48.170 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:39:52.761 +02:00 [INF] Deleting user 33d78e90-6acf-4c11-9331-78b95b7d5632
+2022-12-05 17:39:57.722 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:39:57.757 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:40:00.512 +02:00 [INF] Deleting user 08f39c64-8c1c-4659-8620-80ef04966821
+2022-12-05 17:40:03.022 +02:00 [INF] Deleting user 492ac318-f30a-4872-be50-81084b0b6c00
+2022-12-05 17:40:03.049 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:40:06.142 +02:00 [INF] Deleting user 8993bb53-90dc-47ba-ad67-82c797ef2fd0
+2022-12-05 17:40:09.993 +02:00 [INF] Deleting user 8993bb53-90dc-47ba-ad67-82c797ef2fd0
+2022-12-05 17:40:13.832 +02:00 [INF] Deleting user 67a079ef-7c40-497e-b5d8-8445c46b53de
+2022-12-05 17:40:13.851 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:40:18.077 +02:00 [INF] Deleting user b0ce23b9-e902-41b6-9a3f-860a85d04e99
+2022-12-05 17:40:21.362 +02:00 [INF] Deleting user 7a16f40a-2c52-4edc-b755-8722116926cd
+2022-12-05 17:40:21.393 +02:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-12-05 17:40:25.217 +02:00 [INF] Deleting user e1d683e5-6158-453f-9279-8794a3ec1b94
+2022-12-05 17:40:29.207 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:40:29.227 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:40:33.916 +02:00 [INF] Deleting user ea1a7ce3-7294-42a0-a50e-88b71fd2c2b2
+2022-12-05 17:40:33.935 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:40:59.813 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:41:03.438 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:41:07.353 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:41:10.781 +02:00 [INF] Deleting user 0aa6e6c9-cde2-4722-2ecd-08daca3ded13
+2022-12-05 17:41:10.805 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:14.146 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:41:14.168 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:16.921 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:41:21.092 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:41:21.145 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:24.419 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:41:24.462 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:27.319 +02:00 [INF] Deleting user 94144d9e-f505-472c-9206-0adf33f143ef
+2022-12-05 17:41:27.371 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:31.181 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:41:31.214 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:35.240 +02:00 [INF] Deleting user 784b9a33-cf77-40e7-9808-4707d83cd20a
+2022-12-05 17:41:38.275 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:41:38.302 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:41.426 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:41:41.449 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:44.747 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:41:44.769 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:48.039 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:41:48.066 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:51.085 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:41:51.125 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:41:54.251 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:41:57.664 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:41:57.706 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:00.969 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:42:01.000 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:04.263 +02:00 [INF] Deleting user 26b885c0-a649-4517-a7df-51dab9a6d5ca
+2022-12-05 17:42:04.291 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:06.808 +02:00 [INF] Deleting user 3980a16c-5692-4f6b-8eab-581bbb7e6eb8
+2022-12-05 17:42:06.844 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:09.206 +02:00 [INF] Deleting user c9ee98cd-c4d3-4422-9331-59b6e9ca8416
+2022-12-05 17:42:12.297 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:42:14.897 +02:00 [INF] Deleting user 744c00c8-baaa-423c-9018-5ee44fbd301c
+2022-12-05 17:42:16.245 +02:00 [INF] Deleting user 744c00c8-baaa-423c-9018-5ee44fbd301c
+2022-12-05 17:42:16.289 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:19.532 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:42:19.563 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:23.151 +02:00 [INF] Deleting user bce915d9-343f-4d0b-a23c-60a555f86db0
+2022-12-05 17:42:23.170 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:27.146 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:42:27.165 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:32.306 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:42:32.340 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:35.118 +02:00 [INF] Deleting user 237d0e63-0d65-4e6a-8991-6320018f42fd
+2022-12-05 17:42:35.142 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:37.752 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:42:40.653 +02:00 [INF] Deleting user 02e1e769-c1ef-4627-a982-6468435911dd
+2022-12-05 17:42:40.694 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:44.098 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:42:46.726 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:42:46.740 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:49.818 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:42:49.846 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:52.508 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:42:52.525 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:42:55.577 +02:00 [INF] Deleting user 55eb76d8-c4f7-408e-b569-66fac1a98c49
+2022-12-05 17:42:59.024 +02:00 [INF] Deleting user 46c1cde6-960c-4d50-8b96-66fbccec83b3
+2022-12-05 17:42:59.045 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:02.265 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:43:02.295 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:04.982 +02:00 [INF] Deleting user 3edf6280-8a2a-4fe3-acad-6b44ae2f1b67
+2022-12-05 17:43:05.005 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:07.700 +02:00 [INF] Deleting user 4cc881f2-0c1a-4578-bb46-6ce7acc5bf5e
+2022-12-05 17:43:07.718 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:10.390 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:43:10.418 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:12.762 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:43:12.790 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:15.109 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:43:15.127 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:20.133 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:43:20.150 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:23.489 +02:00 [INF] Deleting user 80c3cf10-3800-497c-8760-7754bcd4c76a
+2022-12-05 17:43:26.003 +02:00 [INF] Deleting user 33d78e90-6acf-4c11-9331-78b95b7d5632
+2022-12-05 17:43:26.021 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:29.108 +02:00 [INF] Deleting user 33d78e90-6acf-4c11-9331-78b95b7d5632
+2022-12-05 17:43:36.337 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:43:36.355 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:43:38.579 +02:00 [INF] Deleting user 08f39c64-8c1c-4659-8620-80ef04966821
+2022-12-05 17:43:41.449 +02:00 [INF] Deleting user 492ac318-f30a-4872-be50-81084b0b6c00
+2022-12-05 17:43:45.294 +02:00 [INF] Deleting user 8993bb53-90dc-47ba-ad67-82c797ef2fd0
+2022-12-05 17:43:48.498 +02:00 [INF] Deleting user 67a079ef-7c40-497e-b5d8-8445c46b53de
+2022-12-05 17:43:50.859 +02:00 [INF] Deleting user b0ce23b9-e902-41b6-9a3f-860a85d04e99
+2022-12-05 17:43:53.556 +02:00 [INF] Deleting user 7a16f40a-2c52-4edc-b755-8722116926cd
+2022-12-05 17:43:56.136 +02:00 [INF] Deleting user e1d683e5-6158-453f-9279-8794a3ec1b94
+2022-12-05 17:43:59.123 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:44:01.510 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:44:06.256 +02:00 [INF] Deleting user ea1a7ce3-7294-42a0-a50e-88b71fd2c2b2
+2022-12-05 17:44:09.540 +02:00 [INF] Deleting user 78ab3cac-e909-4d6f-a142-88d2a1a92f8f
+2022-12-05 17:44:12.033 +02:00 [INF] Deleting user 65d84cb4-0cd4-4b85-8a44-8959ceace685
+2022-12-05 17:44:15.017 +02:00 [INF] Deleting user 76e7dd1e-d637-4c71-b654-9031afb0ae1e
+2022-12-05 17:44:17.587 +02:00 [INF] Deleting user f024f602-0c13-4cb2-88fd-90346c2a0319
+2022-12-05 17:44:20.336 +02:00 [INF] Deleting user 442a3484-cc28-46bf-a739-910b2ee67d99
+2022-12-05 17:44:23.611 +02:00 [INF] Deleting user 3614176b-6afa-4faf-a31e-97622e65da2b
+2022-12-05 17:44:26.416 +02:00 [INF] Deleting user c7b0ec9b-e147-4c63-8f0b-98a49887115b
+2022-12-05 17:44:29.535 +02:00 [INF] Deleting user 5e53c475-90ca-40f5-8120-99ca1fb638b7
+2022-12-05 17:44:32.684 +02:00 [INF] Deleting user c5faea77-bc20-44f6-9a4d-9a5ce549b354
+2022-12-05 17:44:59.287 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:44:59.545 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:44:59.700 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:44:59.838 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:44:59.973 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:00.124 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:00.375 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:00.539 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:00.679 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:01.094 +02:00 [INF] Deleting user dcbea76e-488a-49e6-b59d-0469197cf200
+2022-12-05 17:45:03.696 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:04.003 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:04.149 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:04.275 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:04.428 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:06.226 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:06.396 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:06.603 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:06.793 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:06.971 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:07.177 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:07.195 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:45:07.376 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:07.998 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:08.402 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:08.814 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:09.134 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:09.361 +02:00 [INF] Deleting user 1e148dec-f7e1-48fb-cd5f-08dab5d87dcc
+2022-12-05 17:45:13.786 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:13.951 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:14.155 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:14.390 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:14.604 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:14.802 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:15.012 +02:00 [INF] Deleting user 8cab76c8-b8cc-4a38-2b83-08dac7447f86
+2022-12-05 17:45:18.843 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:19.001 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:19.171 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:19.286 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:19.552 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:19.725 +02:00 [INF] Deleting user d0dc3644-2a7d-46d9-db29-08daca3bdf35
+2022-12-05 17:45:22.728 +02:00 [INF] Deleting user 0aa6e6c9-cde2-4722-2ecd-08daca3ded13
+2022-12-05 17:45:23.271 +02:00 [INF] Deleting user 0aa6e6c9-cde2-4722-2ecd-08daca3ded13
+2022-12-05 17:45:23.666 +02:00 [INF] Deleting user 0aa6e6c9-cde2-4722-2ecd-08daca3ded13
+2022-12-05 17:45:29.324 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:29.589 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:29.962 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:30.456 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:32.994 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:33.168 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:33.293 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:33.467 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:33.865 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:34.214 +02:00 [INF] Deleting user 05630897-a890-41ec-27d4-08daca43510d
+2022-12-05 17:45:36.946 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:45:37.221 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:45:37.467 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:45:37.665 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:45:37.941 +02:00 [INF] Deleting user 5ba95ef3-00ad-4a9d-bc8b-08dacbb57a52
+2022-12-05 17:45:41.819 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:42.083 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:42.207 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:42.373 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:42.506 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:42.654 +02:00 [INF] Deleting user 0fd5883f-4cfa-41e5-11bb-08dacbb69c03
+2022-12-05 17:45:45.203 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:45:45.378 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:45:45.503 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:45:45.673 +02:00 [INF] Deleting user e48eb781-4ce4-4dbc-6580-08dacbb6a451
+2022-12-05 17:45:50.668 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:45:50.877 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:45:51.069 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:45:51.258 +02:00 [INF] Deleting user 536f12f7-0982-4b9a-8353-0f58e360b13a
+2022-12-05 17:45:55.019 +02:00 [INF] Deleting user 784b9a33-cf77-40e7-9808-4707d83cd20a
+2022-12-05 17:46:00.172 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:00.376 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:00.519 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:00.694 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:00.827 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:00.948 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:01.121 +02:00 [INF] Deleting user e6b71667-74d2-4ea0-8e4a-4725685b9e7b
+2022-12-05 17:46:04.407 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:46:04.595 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:46:04.750 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:46:04.896 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:46:05.054 +02:00 [INF] Deleting user c1c77aaa-e987-46da-bc69-47b83289556f
+2022-12-05 17:46:07.461 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:07.611 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:07.803 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:07.916 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:08.052 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:08.897 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:09.082 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:09.264 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:09.473 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:09.947 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:10.412 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:10.727 +02:00 [INF] Deleting user 88f95cc8-4dfb-4a1b-8df3-4858ec6cb742
+2022-12-05 17:46:13.619 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:13.635 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:46:14.010 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:14.595 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:14.773 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:14.920 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:15.147 +02:00 [INF] Deleting user 07ea51a3-4536-4367-a5d2-4964f0a15298
+2022-12-05 17:46:23.043 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:46:23.221 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:46:23.376 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:46:23.528 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:46:23.691 +02:00 [INF] Deleting user ef121b2f-367c-4f7a-9bb3-4adb50235fb8
+2022-12-05 17:46:48.566 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:46:48.583 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:46:51.754 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:46:55.383 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:46:58.636 +02:00 [INF] Deleting user 26b885c0-a649-4517-a7df-51dab9a6d5ca
+2022-12-05 17:47:01.477 +02:00 [INF] Deleting user 3980a16c-5692-4f6b-8eab-581bbb7e6eb8
+2022-12-05 17:47:04.324 +02:00 [INF] Deleting user c9ee98cd-c4d3-4422-9331-59b6e9ca8416
+2022-12-05 17:47:07.106 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:47:07.126 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:47:09.644 +02:00 [INF] Deleting user 744c00c8-baaa-423c-9018-5ee44fbd301c
+2022-12-05 17:47:13.871 +02:00 [INF] Deleting user bce915d9-343f-4d0b-a23c-60a555f86db0
+2022-12-05 17:47:16.981 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:47:17.005 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:47:19.469 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:47:23.096 +02:00 [INF] Deleting user 237d0e63-0d65-4e6a-8991-6320018f42fd
+2022-12-05 17:47:26.152 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:47:26.172 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:47:28.784 +02:00 [INF] Deleting user 02e1e769-c1ef-4627-a982-6468435911dd
+2022-12-05 17:47:32.149 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:47:32.606 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:47:32.860 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:47:33.037 +02:00 [INF] Deleting user 5ac73263-0c01-42e2-a455-6492e20265fe
+2022-12-05 17:47:35.673 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:47:35.868 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:47:36.085 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:47:36.253 +02:00 [INF] Deleting user 279b26c4-42e2-4499-b1b5-66035d26caef
+2022-12-05 17:47:39.647 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:47:39.800 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:47:39.938 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:47:40.111 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:47:40.267 +02:00 [INF] Deleting user 1a6a4c7a-57d3-40f1-bd29-66edd74ef3dc
+2022-12-05 17:47:43.576 +02:00 [INF] Deleting user 55eb76d8-c4f7-408e-b569-66fac1a98c49
+2022-12-05 17:47:43.746 +02:00 [INF] Deleting user 55eb76d8-c4f7-408e-b569-66fac1a98c49
+2022-12-05 17:47:43.889 +02:00 [INF] Deleting user 55eb76d8-c4f7-408e-b569-66fac1a98c49
+2022-12-05 17:47:49.186 +02:00 [INF] Deleting user 46c1cde6-960c-4d50-8b96-66fbccec83b3
+2022-12-05 17:47:49.624 +02:00 [INF] Deleting user 46c1cde6-960c-4d50-8b96-66fbccec83b3
+2022-12-05 17:47:53.132 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:47:53.300 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:47:53.454 +02:00 [INF] Deleting user 150f13cd-652c-4d60-bb8e-68eb2ec96d4d
+2022-12-05 17:47:56.639 +02:00 [INF] Deleting user 3edf6280-8a2a-4fe3-acad-6b44ae2f1b67
+2022-12-05 17:47:56.655 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:47:56.879 +02:00 [INF] Deleting user 3edf6280-8a2a-4fe3-acad-6b44ae2f1b67
+2022-12-05 17:47:57.317 +02:00 [INF] Deleting user 3edf6280-8a2a-4fe3-acad-6b44ae2f1b67
+2022-12-05 17:48:00.139 +02:00 [INF] Deleting user 4cc881f2-0c1a-4578-bb46-6ce7acc5bf5e
+2022-12-05 17:48:00.507 +02:00 [INF] Deleting user 4cc881f2-0c1a-4578-bb46-6ce7acc5bf5e
+2022-12-05 17:48:04.345 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:48:04.533 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:48:04.747 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:48:05.169 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:48:05.615 +02:00 [INF] Deleting user de6fd192-5ba6-4a8d-a427-6d93637409e6
+2022-12-05 17:48:10.302 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:48:10.319 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:48:10.572 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:48:10.865 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:48:11.231 +02:00 [INF] Deleting user 691459aa-3274-4efb-8195-6f0dcce037f7
+2022-12-05 17:48:14.791 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:48:15.086 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:48:15.316 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:48:15.629 +02:00 [INF] Deleting user 2ae28d3b-31b8-4e8c-9e3d-709d338f5224
+2022-12-05 17:48:18.818 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:19.069 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:19.381 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:19.729 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:20.184 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:20.765 +02:00 [INF] Deleting user 3011caf0-ce92-43de-aabc-72888c294ff7
+2022-12-05 17:48:30.369 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:48:30.536 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:48:30.676 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:48:30.814 +02:00 [INF] Deleting user a83a02e2-07bf-46f4-8f32-7ab1cc1f48e8
+2022-12-05 17:48:33.681 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:48:33.831 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:48:33.996 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:48:34.150 +02:00 [INF] Deleting user a4c71762-f9dd-4afa-906c-879c46c27a70
+2022-12-05 17:48:37.173 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:48:37.189 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:48:37.353 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:48:37.525 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:48:37.705 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:48:37.901 +02:00 [INF] Deleting user cd582234-5dad-4a43-81e4-8810a69b2bb8
+2022-12-05 17:48:42.270 +02:00 [INF] Deleting user 2ce595af-3f90-4f1a-8457-96c528413c9c
+2022-12-05 17:48:42.613 +02:00 [INF] Deleting user 2ce595af-3f90-4f1a-8457-96c528413c9c
+2022-12-05 17:48:42.785 +02:00 [INF] Deleting user 2ce595af-3f90-4f1a-8457-96c528413c9c
+2022-12-05 17:48:45.646 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:45.820 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:45.963 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:46.132 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:46.717 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:46.933 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:47.101 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:49.760 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:49.946 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:50.197 +02:00 [INF] Deleting user cd11c27f-6cc0-4b0e-949b-9d3e64b04e56
+2022-12-05 17:48:52.496 +02:00 [INF] Deleting user 7fefb117-05ef-42b7-a675-9d473ee310c4
+2022-12-05 17:48:52.664 +02:00 [INF] Deleting user 7fefb117-05ef-42b7-a675-9d473ee310c4
+2022-12-05 17:48:52.821 +02:00 [INF] Deleting user 7fefb117-05ef-42b7-a675-9d473ee310c4
+2022-12-05 17:48:55.557 +02:00 [INF] Deleting user 3c3df944-7484-4c4e-b1f3-9d7f14ab1853
+2022-12-05 17:48:55.739 +02:00 [INF] Deleting user 3c3df944-7484-4c4e-b1f3-9d7f14ab1853
+2022-12-05 17:48:56.006 +02:00 [INF] Deleting user 3c3df944-7484-4c4e-b1f3-9d7f14ab1853
+2022-12-05 17:48:56.421 +02:00 [INF] Deleting user 3c3df944-7484-4c4e-b1f3-9d7f14ab1853
+2022-12-05 17:49:00.632 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:49:00.648 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:49:00.868 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:49:01.177 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:49:04.495 +02:00 [INF] Deleting user a98dcdd3-7da4-40da-b50e-9f5d695589f1
+2022-12-05 17:49:04.803 +02:00 [INF] Deleting user a98dcdd3-7da4-40da-b50e-9f5d695589f1
+2022-12-05 17:49:05.156 +02:00 [INF] Deleting user a98dcdd3-7da4-40da-b50e-9f5d695589f1
+2022-12-05 17:49:08.467 +02:00 [INF] Deleting user 8cc327b0-dca3-4d47-9605-a15a4d2dd1af
+2022-12-05 17:49:08.672 +02:00 [INF] Deleting user 8cc327b0-dca3-4d47-9605-a15a4d2dd1af
+2022-12-05 17:49:08.939 +02:00 [INF] Deleting user 8cc327b0-dca3-4d47-9605-a15a4d2dd1af
+2022-12-05 17:49:09.345 +02:00 [INF] Deleting user 8cc327b0-dca3-4d47-9605-a15a4d2dd1af
+2022-12-05 17:49:12.855 +02:00 [INF] Deleting user b10b9fe8-e192-47dd-a94f-a251e88f56c8
+2022-12-05 17:49:13.089 +02:00 [INF] Deleting user b10b9fe8-e192-47dd-a94f-a251e88f56c8
+2022-12-05 17:49:13.292 +02:00 [INF] Deleting user b10b9fe8-e192-47dd-a94f-a251e88f56c8
+2022-12-05 17:49:16.912 +02:00 [INF] Deleting user b10b9fe8-e192-47dd-a94f-a251e88f56c8
+2022-12-05 17:49:17.080 +02:00 [INF] Deleting user b10b9fe8-e192-47dd-a94f-a251e88f56c8
+2022-12-05 17:49:20.685 +02:00 [INF] Deleting user 479ff344-cd37-420b-8bc7-a25f512d273e
+2022-12-05 17:49:20.846 +02:00 [INF] Deleting user 479ff344-cd37-420b-8bc7-a25f512d273e
+2022-12-05 17:49:21.008 +02:00 [INF] Deleting user 479ff344-cd37-420b-8bc7-a25f512d273e
+2022-12-05 17:49:21.174 +02:00 [INF] Deleting user 479ff344-cd37-420b-8bc7-a25f512d273e
+2022-12-05 17:49:24.720 +02:00 [INF] Deleting user bd2c8452-3967-4216-ab8a-a2a1c93586ed
+2022-12-05 17:49:24.889 +02:00 [INF] Deleting user bd2c8452-3967-4216-ab8a-a2a1c93586ed
+2022-12-05 17:49:25.060 +02:00 [INF] Deleting user bd2c8452-3967-4216-ab8a-a2a1c93586ed
+2022-12-05 17:49:30.251 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:49:30.430 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:49:30.584 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:49:30.605 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:49:34.747 +02:00 [INF] Deleting user 9ec91a4d-f785-4977-a1c2-a546a03bab18
+2022-12-05 17:49:34.923 +02:00 [INF] Deleting user 9ec91a4d-f785-4977-a1c2-a546a03bab18
+2022-12-05 17:49:37.874 +02:00 [INF] Deleting user 0bc62f70-064c-4308-bae2-a70a3abbbd2f
+2022-12-05 17:49:38.039 +02:00 [INF] Deleting user 0bc62f70-064c-4308-bae2-a70a3abbbd2f
+2022-12-05 17:49:38.219 +02:00 [INF] Deleting user 0bc62f70-064c-4308-bae2-a70a3abbbd2f
+2022-12-05 17:49:41.356 +02:00 [INF] Deleting user f56273d3-3c40-4acc-8cf7-a7d1d7bcc888
+2022-12-05 17:49:41.524 +02:00 [INF] Deleting user f56273d3-3c40-4acc-8cf7-a7d1d7bcc888
+2022-12-05 17:49:44.743 +02:00 [INF] Deleting user f152b0ee-6d9e-41a8-ba23-a7e38c2b5015
+2022-12-05 17:49:44.881 +02:00 [INF] Deleting user f152b0ee-6d9e-41a8-ba23-a7e38c2b5015
+2022-12-05 17:49:51.688 +02:00 [INF] Deleting user a5f6581c-8031-417e-bddd-a8f4592fb038
+2022-12-05 17:49:51.849 +02:00 [INF] Deleting user a5f6581c-8031-417e-bddd-a8f4592fb038
+2022-12-05 17:49:52.011 +02:00 [INF] Deleting user a5f6581c-8031-417e-bddd-a8f4592fb038
+2022-12-05 17:49:55.895 +02:00 [INF] Deleting user d4067034-fa3c-434e-8e58-a9ce36edd6e7
+2022-12-05 17:49:56.075 +02:00 [INF] Deleting user d4067034-fa3c-434e-8e58-a9ce36edd6e7
+2022-12-05 17:49:56.213 +02:00 [INF] Deleting user d4067034-fa3c-434e-8e58-a9ce36edd6e7
+2022-12-05 17:50:00.822 +02:00 [INF] Deleting user ef8526ff-0b40-4968-9b9e-ddcfb69483c0
+2022-12-05 17:50:00.989 +02:00 [INF] Deleting user ef8526ff-0b40-4968-9b9e-ddcfb69483c0
+2022-12-05 17:50:01.174 +02:00 [INF] Deleting user ef8526ff-0b40-4968-9b9e-ddcfb69483c0
+2022-12-05 17:50:01.352 +02:00 [INF] Deleting user ef8526ff-0b40-4968-9b9e-ddcfb69483c0
+2022-12-05 17:50:04.783 +02:00 [INF] Deleting user 3ec27879-630d-415d-9b90-f632fd149372
+2022-12-05 17:50:04.954 +02:00 [INF] Deleting user 3ec27879-630d-415d-9b90-f632fd149372
+2022-12-05 17:50:05.111 +02:00 [INF] Deleting user 3ec27879-630d-415d-9b90-f632fd149372
+2022-12-05 17:50:08.088 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:50:08.108 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:50:08.297 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:50:11.374 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:50:11.529 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:50:11.694 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:50:11.818 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:50:11.930 +02:00 [INF] Deleting user e6e8f375-c979-4c9d-862e-fbdddc453637
+2022-12-05 17:50:16.495 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:50:16.933 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:50:17.347 +02:00 [INF] Deleting user 5781fcbb-fde6-446d-a6aa-f820ccad72fd
+2022-12-05 17:50:47.722 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:50:47.879 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:50:49.260 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:50:49.771 +02:00 [INF] Deleting user 61abd3e5-d960-415d-9759-4b167b6f94f5
+2022-12-05 17:50:53.661 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:50:53.835 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:50:54.024 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:50:54.268 +02:00 [INF] Deleting user 68096c61-bcf7-4f74-b5f4-5185843b37ac
+2022-12-05 17:50:57.366 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:50:57.547 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:50:57.726 +02:00 [INF] Deleting user 34d985cd-1a96-47d4-81d7-5187dc32a156
+2022-12-05 17:51:00.976 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:51:01.190 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:51:01.385 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:51:01.547 +02:00 [INF] Deleting user f10869bb-8f5a-4915-8df6-59e0e9cfcbf3
+2022-12-05 17:51:04.236 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:51:04.527 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:51:04.813 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:51:05.039 +02:00 [INF] Deleting user 3d482ae0-2518-469d-b7ee-6028fa94d695
+2022-12-05 17:51:07.812 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:51:07.974 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:51:08.252 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:51:08.500 +02:00 [INF] Deleting user e878c811-187a-4080-815f-615c69dd1e66
+2022-12-05 17:51:12.719 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:51:13.100 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:51:13.405 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:51:16.234 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:51:16.541 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:51:18.189 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:51:18.579 +02:00 [INF] Deleting user 89ad7678-e7b4-4354-ab68-9d9e52b4d98d
+2022-12-05 17:51:23.152 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:51:23.388 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:51:23.747 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:51:24.064 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:51:24.297 +02:00 [INF] Deleting user 287390d4-773d-4bda-b932-a316ebafebb8
+2022-12-05 17:51:27.751 +02:00 [INF] Deleting user a9568225-f129-4039-825d-a42243cfec1b
+2022-12-05 17:51:28.032 +02:00 [INF] Deleting user a9568225-f129-4039-825d-a42243cfec1b
+2022-12-05 17:51:28.337 +02:00 [INF] Deleting user a9568225-f129-4039-825d-a42243cfec1b
+2022-12-05 17:51:28.743 +02:00 [INF] Deleting user a9568225-f129-4039-825d-a42243cfec1b
+2022-12-05 17:51:29.030 +02:00 [INF] Deleting user a9568225-f129-4039-825d-a42243cfec1b
+2022-12-05 17:51:32.700 +02:00 [INF] Deleting user d16b9606-4816-4adb-a28c-a46c8e7f110b
+2022-12-05 17:51:33.099 +02:00 [INF] Deleting user d16b9606-4816-4adb-a28c-a46c8e7f110b
+2022-12-05 17:51:33.439 +02:00 [INF] Deleting user d16b9606-4816-4adb-a28c-a46c8e7f110b
+2022-12-05 17:51:33.691 +02:00 [INF] Deleting user d16b9606-4816-4adb-a28c-a46c8e7f110b
+2022-12-05 17:51:37.076 +02:00 [INF] Deleting user eddf4e15-0176-4781-8c18-a9d2a845036f
+2022-12-05 17:51:37.313 +02:00 [INF] Deleting user eddf4e15-0176-4781-8c18-a9d2a845036f
+2022-12-05 17:51:37.745 +02:00 [INF] Deleting user eddf4e15-0176-4781-8c18-a9d2a845036f
+2022-12-05 17:51:38.252 +02:00 [INF] Deleting user eddf4e15-0176-4781-8c18-a9d2a845036f
+2022-12-05 17:51:42.914 +02:00 [INF] Deleting user 1474e7fe-601f-4092-ac79-aa99eee7abbf
+2022-12-05 17:51:43.088 +02:00 [INF] Deleting user 1474e7fe-601f-4092-ac79-aa99eee7abbf
+2022-12-05 17:51:43.341 +02:00 [INF] Deleting user 1474e7fe-601f-4092-ac79-aa99eee7abbf
+2022-12-05 17:51:43.700 +02:00 [INF] Deleting user 1474e7fe-601f-4092-ac79-aa99eee7abbf
+2022-12-05 17:51:44.144 +02:00 [INF] Deleting user 1474e7fe-601f-4092-ac79-aa99eee7abbf
+2022-12-05 17:51:47.535 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:47.707 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:47.954 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:48.297 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:48.973 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:49.185 +02:00 [INF] Deleting user d56dc3fe-b90f-4e6e-a939-ab43a0dc2a96
+2022-12-05 17:51:52.884 +02:00 [INF] Deleting user 70d1dd95-fce0-40ac-bca2-acd8e90fa399
+2022-12-05 17:51:53.229 +02:00 [INF] Deleting user 70d1dd95-fce0-40ac-bca2-acd8e90fa399
+2022-12-05 17:51:53.453 +02:00 [INF] Deleting user 70d1dd95-fce0-40ac-bca2-acd8e90fa399
+2022-12-05 17:51:53.654 +02:00 [INF] Deleting user 70d1dd95-fce0-40ac-bca2-acd8e90fa399
+2022-12-05 17:51:53.812 +02:00 [INF] Deleting user 70d1dd95-fce0-40ac-bca2-acd8e90fa399
+2022-12-05 17:51:57.753 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:57.944 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:58.174 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:58.425 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:58.611 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:58.806 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:51:58.953 +02:00 [INF] Deleting user fa0473f4-1b72-480f-bdb5-b032e7817f19
+2022-12-05 17:52:02.611 +02:00 [INF] Deleting user 22f62d2d-c7aa-4a60-a7ff-b7738c734eb7
+2022-12-05 17:52:02.794 +02:00 [INF] Deleting user 22f62d2d-c7aa-4a60-a7ff-b7738c734eb7
+2022-12-05 17:52:02.974 +02:00 [INF] Deleting user 22f62d2d-c7aa-4a60-a7ff-b7738c734eb7
+2022-12-05 17:52:03.162 +02:00 [INF] Deleting user 22f62d2d-c7aa-4a60-a7ff-b7738c734eb7
+2022-12-05 17:52:03.328 +02:00 [INF] Deleting user 22f62d2d-c7aa-4a60-a7ff-b7738c734eb7
+2022-12-05 17:52:06.702 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:06.874 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:07.167 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:07.340 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:07.551 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:07.750 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:07.958 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:08.197 +02:00 [INF] Deleting user 3e2e3780-3cbe-4c46-9e99-b78b62198365
+2022-12-05 17:52:10.601 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:10.782 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:10.979 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:11.158 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:11.360 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:11.524 +02:00 [INF] Deleting user 53b0f6c2-dc06-4ec3-849a-b84b5b67e586
+2022-12-05 17:52:14.031 +02:00 [INF] Deleting user 364ba73a-d73a-48e3-881a-b91a551c5508
+2022-12-05 17:52:14.242 +02:00 [INF] Deleting user 364ba73a-d73a-48e3-881a-b91a551c5508
+2022-12-05 17:52:14.388 +02:00 [INF] Deleting user 364ba73a-d73a-48e3-881a-b91a551c5508
+2022-12-05 17:52:14.534 +02:00 [INF] Deleting user 364ba73a-d73a-48e3-881a-b91a551c5508
+2022-12-05 17:52:14.702 +02:00 [INF] Deleting user 364ba73a-d73a-48e3-881a-b91a551c5508
+2022-12-05 17:52:17.537 +02:00 [INF] Deleting user 767fe68f-5ef8-44d4-8700-ba1eb918a08c
+2022-12-05 17:52:17.716 +02:00 [INF] Deleting user 767fe68f-5ef8-44d4-8700-ba1eb918a08c
+2022-12-05 17:52:17.859 +02:00 [INF] Deleting user 767fe68f-5ef8-44d4-8700-ba1eb918a08c
+2022-12-05 17:52:18.000 +02:00 [INF] Deleting user 767fe68f-5ef8-44d4-8700-ba1eb918a08c
+2022-12-05 17:52:18.194 +02:00 [INF] Deleting user 767fe68f-5ef8-44d4-8700-ba1eb918a08c
+2022-12-05 17:52:21.127 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:52:21.147 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:52:21.289 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:52:21.557 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:52:21.764 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:52:24.895 +02:00 [INF] Deleting user bcf38632-33ff-4013-8ee6-bd805587ec87
+2022-12-05 17:52:25.070 +02:00 [INF] Deleting user bcf38632-33ff-4013-8ee6-bd805587ec87
+2022-12-05 17:52:25.244 +02:00 [INF] Deleting user bcf38632-33ff-4013-8ee6-bd805587ec87
+2022-12-05 17:52:25.396 +02:00 [INF] Deleting user bcf38632-33ff-4013-8ee6-bd805587ec87
+2022-12-05 17:52:28.171 +02:00 [INF] Deleting user 8004e117-554b-4dba-873e-bdfe6b616426
+2022-12-05 17:52:28.384 +02:00 [INF] Deleting user 8004e117-554b-4dba-873e-bdfe6b616426
+2022-12-05 17:52:28.532 +02:00 [INF] Deleting user 8004e117-554b-4dba-873e-bdfe6b616426
+2022-12-05 17:52:28.784 +02:00 [INF] Deleting user 8004e117-554b-4dba-873e-bdfe6b616426
+2022-12-05 17:52:31.967 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:32.156 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:32.427 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:32.640 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:32.826 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:33.047 +02:00 [INF] Deleting user ea586afb-1d29-4db7-9540-bec626f41049
+2022-12-05 17:52:35.998 +02:00 [INF] Deleting user 3de0a8cf-e154-4542-b591-bed82b55463b
+2022-12-05 17:52:36.170 +02:00 [INF] Deleting user 3de0a8cf-e154-4542-b591-bed82b55463b
+2022-12-05 17:52:36.356 +02:00 [INF] Deleting user 3de0a8cf-e154-4542-b591-bed82b55463b
+2022-12-05 17:52:40.582 +02:00 [INF] Deleting user 5769ad6d-c9f7-43cc-9ebb-c2c718613e32
+2022-12-05 17:52:40.761 +02:00 [INF] Deleting user 5769ad6d-c9f7-43cc-9ebb-c2c718613e32
+2022-12-05 17:52:40.980 +02:00 [INF] Deleting user 5769ad6d-c9f7-43cc-9ebb-c2c718613e32
+2022-12-05 17:52:41.230 +02:00 [INF] Deleting user 5769ad6d-c9f7-43cc-9ebb-c2c718613e32
+2022-12-05 17:52:43.830 +02:00 [INF] Deleting user d319f616-0246-47e5-9a18-c55e55036165
+2022-12-05 17:52:43.987 +02:00 [INF] Deleting user d319f616-0246-47e5-9a18-c55e55036165
+2022-12-05 17:52:44.161 +02:00 [INF] Deleting user d319f616-0246-47e5-9a18-c55e55036165
+2022-12-05 17:52:44.268 +02:00 [INF] Deleting user d319f616-0246-47e5-9a18-c55e55036165
+2022-12-05 17:52:46.918 +02:00 [INF] Deleting user b5cdd261-2cda-4e37-8202-c6283871c09e
+2022-12-05 17:52:47.080 +02:00 [INF] Deleting user b5cdd261-2cda-4e37-8202-c6283871c09e
+2022-12-05 17:52:47.237 +02:00 [INF] Deleting user b5cdd261-2cda-4e37-8202-c6283871c09e
+2022-12-05 17:52:51.554 +02:00 [INF] Deleting user 4deadc71-a35e-4ba7-86bc-d25229014553
+2022-12-05 17:52:51.767 +02:00 [INF] Deleting user 4deadc71-a35e-4ba7-86bc-d25229014553
+2022-12-05 17:52:51.922 +02:00 [INF] Deleting user 4deadc71-a35e-4ba7-86bc-d25229014553
+2022-12-05 17:52:52.080 +02:00 [INF] Deleting user 4deadc71-a35e-4ba7-86bc-d25229014553
+2022-12-05 17:52:55.603 +02:00 [INF] Deleting user 5fba3c7e-a687-4f8c-94ba-d34f60b99d4d
+2022-12-05 17:52:55.766 +02:00 [INF] Deleting user 5fba3c7e-a687-4f8c-94ba-d34f60b99d4d
+2022-12-05 17:52:55.905 +02:00 [INF] Deleting user 5fba3c7e-a687-4f8c-94ba-d34f60b99d4d
+2022-12-05 17:52:58.626 +02:00 [INF] Deleting user d46b355a-d432-4ca9-a483-d3c1402d67c0
+2022-12-05 17:52:58.808 +02:00 [INF] Deleting user d46b355a-d432-4ca9-a483-d3c1402d67c0
+2022-12-05 17:52:58.965 +02:00 [INF] Deleting user d46b355a-d432-4ca9-a483-d3c1402d67c0
+2022-12-05 17:53:19.577 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:53:19.602 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:53:19.707 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:53:19.911 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:53:20.085 +02:00 [INF] Deleting user 24527b35-d8a6-474e-bd8f-60ff43ae4823
+2022-12-05 17:53:24.129 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:53:24.282 +02:00 [INF] Deleting user 5769a6cf-b7f1-48d1-be80-bbdce59db63b
+2022-12-05 17:53:27.537 +02:00 [INF] Deleting user 3bc4f0c0-7985-492a-a5d7-c04d5d00bd7b
+2022-12-05 17:53:27.701 +02:00 [INF] Deleting user 3bc4f0c0-7985-492a-a5d7-c04d5d00bd7b
+2022-12-05 17:53:30.380 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:53:30.400 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:53:33.514 +02:00 [INF] Deleting user 3f7216fe-576c-4bb0-9166-c8f8f51d76a0
+2022-12-05 17:53:36.986 +02:00 [INF] Deleting user c543701c-c228-48dd-ba5c-cb781bb44127
+2022-12-05 17:53:40.317 +02:00 [INF] Deleting user dc4ceb47-29bb-4d7d-8175-d199026b3c6d
+2022-12-05 17:53:44.330 +02:00 [INF] Deleting user cd405e01-5c70-4f49-a4be-d40303174912
+2022-12-05 17:53:47.315 +02:00 [INF] Deleting user 07282b55-6e8f-451f-88b9-d4a256313b2f
+2022-12-05 17:53:50.145 +02:00 [INF] Deleting user 07282b55-6e8f-451f-88b9-d4a256313b2f
+2022-12-05 17:53:52.076 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:52.094 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:53:52.219 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:52.381 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:52.547 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:53.974 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:54.095 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:54.259 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:54.267 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:53:54.770 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:54.779 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:53:54.948 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:55.431 +02:00 [INF] Deleting user 588092ad-b2a3-47bb-89ff-d7300d51dd9d
+2022-12-05 17:53:58.874 +02:00 [INF] Deleting user 7e510d30-4a9a-459a-abe2-d7a27e420f37
+2022-12-05 17:53:59.073 +02:00 [INF] Deleting user 7e510d30-4a9a-459a-abe2-d7a27e420f37
+2022-12-05 17:53:59.317 +02:00 [INF] Deleting user 7e510d30-4a9a-459a-abe2-d7a27e420f37
+2022-12-05 17:53:59.620 +02:00 [INF] Deleting user 7e510d30-4a9a-459a-abe2-d7a27e420f37
+2022-12-05 17:53:59.834 +02:00 [INF] Deleting user 7e510d30-4a9a-459a-abe2-d7a27e420f37
+2022-12-05 17:54:03.264 +02:00 [INF] Deleting user 51932f4f-638d-46d5-8f3c-d94a0299aab1
+2022-12-05 17:54:03.435 +02:00 [INF] Deleting user 51932f4f-638d-46d5-8f3c-d94a0299aab1
+2022-12-05 17:54:03.582 +02:00 [INF] Deleting user 51932f4f-638d-46d5-8f3c-d94a0299aab1
+2022-12-05 17:54:03.945 +02:00 [INF] Deleting user 51932f4f-638d-46d5-8f3c-d94a0299aab1
+2022-12-05 17:54:04.717 +02:00 [INF] Deleting user 51932f4f-638d-46d5-8f3c-d94a0299aab1
+2022-12-05 17:54:07.215 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:07.500 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:07.699 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:08.026 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:08.420 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:08.736 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:08.969 +02:00 [INF] Deleting user 4a230231-1f2b-4f8d-a919-d9be8e75dd76
+2022-12-05 17:54:12.093 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:12.273 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:12.514 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:12.802 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:13.174 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:18.428 +02:00 [INF] Deleting user cb529752-c9d3-42f3-a2b6-da62eae464f6
+2022-12-05 17:54:21.806 +02:00 [INF] Deleting user cbd0c659-2372-4e15-96f1-dc65c39dcd7d
+2022-12-05 17:54:21.961 +02:00 [INF] Deleting user cbd0c659-2372-4e15-96f1-dc65c39dcd7d
+2022-12-05 17:54:22.140 +02:00 [INF] Deleting user cbd0c659-2372-4e15-96f1-dc65c39dcd7d
+2022-12-05 17:54:22.425 +02:00 [INF] Deleting user cbd0c659-2372-4e15-96f1-dc65c39dcd7d
+2022-12-05 17:54:25.100 +02:00 [INF] Deleting user a3d30911-e758-4308-9665-ddda31d1146e
+2022-12-05 17:54:25.290 +02:00 [INF] Deleting user a3d30911-e758-4308-9665-ddda31d1146e
+2022-12-05 17:54:25.471 +02:00 [INF] Deleting user a3d30911-e758-4308-9665-ddda31d1146e
+2022-12-05 17:54:25.656 +02:00 [INF] Deleting user a3d30911-e758-4308-9665-ddda31d1146e
+2022-12-05 17:54:25.841 +02:00 [INF] Deleting user a3d30911-e758-4308-9665-ddda31d1146e
+2022-12-05 17:54:29.256 +02:00 [INF] Deleting user f3afee6b-2357-40dd-aef7-dea8c0cd6bbf
+2022-12-05 17:54:29.480 +02:00 [INF] Deleting user f3afee6b-2357-40dd-aef7-dea8c0cd6bbf
+2022-12-05 17:54:29.806 +02:00 [INF] Deleting user f3afee6b-2357-40dd-aef7-dea8c0cd6bbf
+2022-12-05 17:54:29.967 +02:00 [INF] Deleting user f3afee6b-2357-40dd-aef7-dea8c0cd6bbf
+2022-12-05 17:54:32.688 +02:00 [INF] Deleting user 9b385fac-7d47-491d-b698-e2dc01674b1d
+2022-12-05 17:54:32.928 +02:00 [INF] Deleting user 9b385fac-7d47-491d-b698-e2dc01674b1d
+2022-12-05 17:54:33.175 +02:00 [INF] Deleting user 9b385fac-7d47-491d-b698-e2dc01674b1d
+2022-12-05 17:54:33.437 +02:00 [INF] Deleting user 9b385fac-7d47-491d-b698-e2dc01674b1d
+2022-12-05 17:54:33.640 +02:00 [INF] Deleting user 9b385fac-7d47-491d-b698-e2dc01674b1d
+2022-12-05 17:54:37.412 +02:00 [INF] Deleting user e1735506-e0ed-4af7-bfaf-e2fe9b8230f3
+2022-12-05 17:54:37.605 +02:00 [INF] Deleting user e1735506-e0ed-4af7-bfaf-e2fe9b8230f3
+2022-12-05 17:54:37.822 +02:00 [INF] Deleting user e1735506-e0ed-4af7-bfaf-e2fe9b8230f3
+2022-12-05 17:54:40.685 +02:00 [INF] Deleting user 297aa683-df55-4086-9f55-e33e9a02b383
+2022-12-05 17:54:40.861 +02:00 [INF] Deleting user 297aa683-df55-4086-9f55-e33e9a02b383
+2022-12-05 17:54:41.049 +02:00 [INF] Deleting user 297aa683-df55-4086-9f55-e33e9a02b383
+2022-12-05 17:54:41.258 +02:00 [INF] Deleting user 297aa683-df55-4086-9f55-e33e9a02b383
+2022-12-05 17:54:41.727 +02:00 [INF] Deleting user 297aa683-df55-4086-9f55-e33e9a02b383
+2022-12-05 17:54:44.429 +02:00 [INF] Deleting user fc08578b-40da-479d-851c-e3b4ef749dec
+2022-12-05 17:54:44.778 +02:00 [INF] Deleting user fc08578b-40da-479d-851c-e3b4ef749dec
+2022-12-05 17:54:45.150 +02:00 [INF] Deleting user fc08578b-40da-479d-851c-e3b4ef749dec
+2022-12-05 17:54:48.111 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:48.320 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:48.562 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:48.761 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:48.963 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:49.121 +02:00 [INF] Deleting user 55e0644a-9fd1-4cef-81ec-e4f41f11354a
+2022-12-05 17:54:52.161 +02:00 [INF] Deleting user 9de7597b-e26a-470b-b029-e762fa7ad8f9
+2022-12-05 17:54:52.316 +02:00 [INF] Deleting user 9de7597b-e26a-470b-b029-e762fa7ad8f9
+2022-12-05 17:54:52.513 +02:00 [INF] Deleting user 9de7597b-e26a-470b-b029-e762fa7ad8f9
+2022-12-05 17:54:52.723 +02:00 [INF] Deleting user 9de7597b-e26a-470b-b029-e762fa7ad8f9
+2022-12-05 17:54:52.948 +02:00 [INF] Deleting user 9de7597b-e26a-470b-b029-e762fa7ad8f9
+2022-12-05 17:54:55.647 +02:00 [INF] Deleting user f1c5011a-122a-4209-887f-e7b5873ae83c
+2022-12-05 17:54:56.007 +02:00 [INF] Deleting user f1c5011a-122a-4209-887f-e7b5873ae83c
+2022-12-05 17:54:56.209 +02:00 [INF] Deleting user f1c5011a-122a-4209-887f-e7b5873ae83c
+2022-12-05 17:54:59.026 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:54:59.035 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:54:59.442 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:54:59.746 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:54:59.999 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:00.230 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:00.561 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:00.966 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:01.437 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:01.837 +02:00 [INF] Deleting user d6749f2b-4fe7-45a9-870c-eaec76dd2fc8
+2022-12-05 17:55:06.031 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:06.225 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:06.468 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:06.666 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:06.855 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:07.021 +02:00 [INF] Deleting user c957c1fa-dde4-4708-83e7-eed625145866
+2022-12-05 17:55:22.167 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:55:22.334 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:55:22.535 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:55:22.707 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:55:22.868 +02:00 [INF] Deleting user 6fa564bc-6f1b-4f3c-bd5e-c27d90c96023
+2022-12-05 17:56:47.498 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-05 17:56:47.556 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-05 17:56:47.569 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-05 17:56:47.570 +02:00 [INF] Hosting environment: Development
+2022-12-05 17:56:47.571 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-05 17:56:56.763 +02:00 [INF] Deleting user 4cc4ba6e-7ad4-4db3-9b6e-8f2cc908e660
+2022-12-05 17:57:00.616 +02:00 [INF] Deleting user 4cc4ba6e-7ad4-4db3-9b6e-8f2cc908e660
+2022-12-05 17:57:05.998 +02:00 [INF] Deleting user f04e19bc-5405-4723-89da-3803e68ad539
+2022-12-05 17:57:06.024 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:57:06.588 +02:00 [INF] Deleting user f04e19bc-5405-4723-89da-3803e68ad539
+2022-12-05 17:57:06.614 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:57:07.169 +02:00 [INF] Deleting user f04e19bc-5405-4723-89da-3803e68ad539
+2022-12-05 17:57:07.180 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:57:07.578 +02:00 [INF] Deleting user f04e19bc-5405-4723-89da-3803e68ad539
+2022-12-05 17:57:07.587 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:57:15.015 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:57:15.030 +02:00 [ERR] An error occurred using a transaction.
+2022-12-05 17:57:15.340 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:57:15.680 +02:00 [INF] Deleting user 8d4bffd1-618e-402a-872c-63aa9a0cfb96
+2022-12-05 17:57:15.730 +02:00 [ERR] An error occurred using a transaction.

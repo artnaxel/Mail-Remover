@@ -2,10 +2,6 @@
 using MailRemoverAPI.Events;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Newtonsoft.Json.Linq;
-using NuGet.Common;
-using System.Drawing;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
