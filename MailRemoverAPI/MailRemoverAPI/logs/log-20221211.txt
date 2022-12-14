@@ -16,3 +16,60 @@
 2022-12-11 14:07:28.622 +02:00 [INF] Hosting environment: Development
 2022-12-11 14:07:28.624 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
 2022-12-11 14:07:55.915 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-11 19:06:41.781 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-11 19:06:41.825 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-11 19:06:41.836 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 19:06:41.838 +02:00 [INF] Hosting environment: Development
+2022-12-11 19:06:41.841 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-11 19:07:11.181 +02:00 [ERR] Something Went Wrong While Processing/api/UnauthorizedFunctions
+System.InvalidOperationException: Unable to resolve service for type 'MailRemoverAPI.Interfaces.ICo2FootprintCalcService' while attempting to activate 'MailRemoverAPI.Controllers.UnauthorizedFunctionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-11 19:11:47.864 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-11 19:11:47.906 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-11 19:11:47.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 19:11:47.916 +02:00 [INF] Hosting environment: Development
+2022-12-11 19:11:47.918 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-11 19:11:56.803 +02:00 [ERR] Something Went Wrong While Processing/api/UnauthorizedFunctions
+System.InvalidOperationException: Unable to resolve service for type 'MailRemoverAPI.Interfaces.ICo2FootprintCalcService' while attempting to activate 'MailRemoverAPI.Controllers.UnauthorizedFunctionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-11 19:14:42.212 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-11 19:14:42.257 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-11 19:14:42.265 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 19:14:42.266 +02:00 [INF] Hosting environment: Development
+2022-12-11 19:14:42.267 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-11 19:15:42.051 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-11 19:15:42.097 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-11 19:15:42.104 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 19:15:42.106 +02:00 [INF] Hosting environment: Development
+2022-12-11 19:15:42.107 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-11 19:28:45.091 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-11 19:28:45.137 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-11 19:28:45.149 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 19:28:45.150 +02:00 [INF] Hosting environment: Development
+2022-12-11 19:28:45.151 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\

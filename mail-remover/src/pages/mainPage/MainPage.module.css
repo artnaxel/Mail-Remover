@@ -1,5 +1,6 @@
 .Paper {
   padding: 2em;
+  width: 100%;
 }
 
 .TextField {
@@ -12,4 +13,16 @@
 
 .header {
   margin-bottom: 1em;
+}
+
+.caption {
+  display: block;
+}
+
+.main_header {
+  margin-bottom: 1em;
+}
+
+.results {
+  width: 100%;
 }
