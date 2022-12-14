@@ -11,5 +11,7 @@ namespace MailRemoverAPI.Interfaces
         public Task RefreshAccessToken(Guid id);
 
         public Task<Profile> GetProfile(Guid id);
+
+        public Task<List<MessageDto>> GetProfileMessagesAsync(Guid id);
     }
 }
