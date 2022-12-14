@@ -15,15 +15,13 @@ namespace MailRemoverAPI.Services
     {
         private IConfiguration _configuration;
         private IGmailRepository _repository;
-        //private HttpClient client;
-        private HttpClient _httpClient;
+        private IHttpRequestService _httpRequestService;
 
-        public GmailService(IConfiguration configuration, IGmailRepository repository, HttpClient httpClient)
+        public GmailService(IConfiguration configuration, IGmailRepository repository, IHttpRequestService httpRequestService)
         {
             _configuration = configuration;
-            //client = new HttpClient();
-            _httpClient = httpClient;
             _repository = repository;
+            _httpRequestService = httpRequestService;
         }
 
         private async void AccessTokenExpiredHandler(Gmail source, AccessTokenExpiredEventHandlerArgs args)
@@ -45,94 +43,79 @@ namespace MailRemoverAPI.Services
 
             accessData.AccessTokenExpired += AccessTokenExpiredHandler;
 
-            var request = new HttpRequestMessage(HttpMethod.Get, $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/profile");
+            var uri = $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/profile";
 
-            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessData.AccessToken);
+            var profile = await _httpRequestService.HttpRequest<Profile>(uri, HttpMethod.Get, accessData.AccessToken);
 
             accessData.AccessTokenExpired -= AccessTokenExpiredHandler;
-            try
+
+            return profile;
+        }
+
+        public async Task<List<MessageDto>> GetProfileMessagesAsync(Guid id)
+        {
+            var accessData = await _repository.GetByIdAsync(id);
+
+            if(accessData is null) throw new ArgumentNullException(nameof(accessData));
+
+            var uri = $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/messages";
+
+            MessagesListDto partialMessages = await _httpRequestService.HttpRequest<MessagesListDto>(uri, HttpMethod.Get, accessData.AccessToken);
+
+            Func<PartialMessageDto, HttpRequestMessage> generateUri = (partialMessage) =>
             {
-                HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+                var request = new HttpRequestMessage(HttpMethod.Get, $"{uri}/{partialMessage.Id}");
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessData.AccessToken);
+                return request;
+            };
 
-                var responseBody = await response.Content.ReadAsStringAsync();
+            List<MessageDto> messages = await _httpRequestService.BatchGet<MessageDto, PartialMessageDto>(generateUri, partialMessages.Messages);
 
-                Profile profile = Newtonsoft.Json.JsonConvert.DeserializeObject<Profile>(responseBody);
-
-                return profile;
-            }
-            catch (HttpRequestException e)
-            {
-                Console.WriteLine("\nException Caught!");
-                Console.WriteLine("Message :{0} ", e.Message);
-            }
-            throw new NotImplementedException();
+            return messages;
         }
 
         public async Task<GmailDto?> PostAccessCode(string code, string state)
         {
+            var uri = $"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&code={code}&grant_type=authorization_code&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}";
 
-            try
+            var accessData = await _httpRequestService.HttpRequest<AccessData>(uri, HttpMethod.Post);
+
+            GmailDto gmailDto = new ()
             {
-                using HttpResponseMessage response = await _httpClient.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&code={code}&grant_type=authorization_code&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}", null);
-                var responseBody = await response.Content.ReadAsStringAsync();
-                response.EnsureSuccessStatusCode();
+                UserId = new Guid(state),
+                AccessToken = accessData.Access_token,
+                RefreshToken = accessData.Refresh_token,
+                Expires = DateTime.Now.AddSeconds(Convert.ToDouble(accessData.Expires_in)),
+            };
 
+            await _repository.CreateAsync(gmailDto);
 
-                AccessData accessData = Newtonsoft.Json.JsonConvert.DeserializeObject<AccessData>(responseBody);
-                GmailDto gmailDto = new ()
-                {
-                    UserId = new Guid(state),
-                    AccessToken = accessData.Access_token,
-                    RefreshToken = accessData.Refresh_token,
-                    Expires = DateTime.Now.AddSeconds(Convert.ToDouble(accessData.Expires_in)),
-                };
-
-                await _repository.CreateAsync(gmailDto);
-
-                return gmailDto;
-            }
-            catch (HttpRequestException e)
-            {
-                Console.WriteLine("\nException Caught!");
-                Console.WriteLine("Message :{0} ", e.Message);
-            }
-
-            return null;
+            return gmailDto;
         }
 
         public async Task RefreshAccessToken(Guid id)
         {
             var gmail = await _repository.GetByIdAsync(id);
 
-            
-
             if(gmail is null)
             {
                 return;
             }
 
-            try
-            {
-                using HttpResponseMessage response = await _httpClient.PostAsync($"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&refresh_token={gmail.RefreshToken}&grant_type=refresh_token", null);
-                var responseBody = await response.Content.ReadAsStringAsync();
-                response.EnsureSuccessStatusCode();
+            var uri = $"https://oauth2.googleapis.com/token?client_id={_configuration["GoogleApi:client_id"]}&client_secret={_configuration["GoogleApi:client_secret"]}&refresh_token={gmail.RefreshToken}&grant_type=refresh_token";
 
-                RefreshedAccessData refreshedAccessData = Newtonsoft.Json.JsonConvert.DeserializeObject<RefreshedAccessData>(responseBody);
-                Gmail updatedGmail = new()
-                {
-                    Id = gmail.Id,
-                    AccessToken = refreshedAccessData.access_token,
-                    RefreshToken = gmail.RefreshToken,
-                    Expires = DateTime.Now.AddSeconds(Convert.ToDouble(refreshedAccessData.expires_in)),
-                    UserId = gmail.UserId,
-                    Address = gmail.Address,
-                };
-                await _repository.UpdateAsync(updatedGmail);
-            }
-            catch (HttpRequestException e)
-            {
+            var refreshedAccessData = await _httpRequestService.HttpRequest<RefreshedAccessData>(uri, HttpMethod.Post);
 
-            }
+            Gmail updatedGmail = new()
+            {
+                Id = gmail.Id,
+                AccessToken = refreshedAccessData.access_token,
+                RefreshToken = gmail.RefreshToken,
+                Expires = DateTime.Now.AddSeconds(Convert.ToDouble(refreshedAccessData.expires_in)),
+                UserId = gmail.UserId,
+                Address = gmail.Address,
+            };
+            await _repository.UpdateAsync(updatedGmail);
         }
     }
 }

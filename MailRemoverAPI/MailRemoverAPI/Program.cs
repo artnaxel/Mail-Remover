@@ -29,6 +29,7 @@ builder.Services.AddCors(options =>
 
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IHttpRequestService, HttpRequestService>();
 builder.Services.AddScoped<IJSONFileReaderService, JSONFileReaderService>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

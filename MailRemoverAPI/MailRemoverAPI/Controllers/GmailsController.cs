@@ -38,8 +38,7 @@ namespace MailRemoverAPI.Controllers
             return Ok(result);
         }
 
-
-        [HttpPut]
+        [HttpGet]
         public async Task<IActionResult> RefreshAccessToken([FromQuery] Guid id)
         {
             await _gmailService.RefreshAccessToken(id);
@@ -50,6 +49,19 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> GetProfile([FromQuery] Guid Id)
         {
             var result = await _gmailService.GetProfile(Id);
+
+            if (result is null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetProfileMessages([FromQuery] Guid Id)
+        {
+            var result = await _gmailService.GetProfileMessagesAsync(Id);
 
             if (result is null)
             {
