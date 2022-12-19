@@ -17,6 +17,8 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +26,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Calistoga" !important;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  color: #212121 !important;
+}
+
+h2,
+h5 {
+  font-family: "Calistoga", cursive !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #647766 !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: white !important;
+  color: #647766 !important;
+}
+
+.MuiButton-outlinedPrimary {
+  border-color: #647766 !important;
+  color: #647766 !important;
+}
+
+.MuiButton-outlinedPrimary:hover {
+  background-color: #647766 !important;
+  color: white !important;
 }
 
 .App-link {
