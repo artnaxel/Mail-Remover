@@ -1,12 +1,26 @@
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection;
 using System.Net;
 using Xunit;
 
 namespace IntegrationTests
 {
-    public class GetRequestTests : BaseTest
+    public class GetRequestTests
+        : IClassFixture<CustomWebApplicationFactory<Program>>
     {
-        public GetRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
+
+        private readonly HttpClient _client;
+        private readonly CustomWebApplicationFactory<Program> _factory;
+
+        public GetRequestTests(
+            CustomWebApplicationFactory<Program> factory)
+        {
+            _factory = factory;
+            _client = factory.CreateClient(new WebApplicationFactoryClientOptions
+            {
+                AllowAutoRedirect = false
+            });
+        }
 
         [Theory]
         // Email
@@ -20,15 +34,11 @@ namespace IntegrationTests
         // Google Auth
         [InlineData("/api/GoogleAuth/Get?user_id=fb020d52-30fb-4e43-82cf-681ff3cd5eb6")]
         //Users
-        [InlineData("/api/Users?firstName=Deimante")]
+        [InlineData("/api/Users?userEmail=greta.virpsaite%40gmail.com")]
         public async Task GetRequest_OnSuccess_ReturnsStatusCode200(string uri)
         {
-            // Arrange
-            await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
-
             // Act
-            var response = await client.GetAsync(uri);
+            var response = await _client.GetAsync(uri);
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

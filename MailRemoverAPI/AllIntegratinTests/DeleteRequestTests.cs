@@ -1,18 +1,41 @@
-﻿namespace IntegrationTests
+﻿using System;
+
+namespace IntegrationTests
 {
-    public class DeleteRequestTests : BaseTest
+    public class DeleteRequestTests
+        : IClassFixture<CustomWebApplicationFactory<Program>>
     {
-        public DeleteRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
+
+        private readonly HttpClient _client;
+        private readonly CustomWebApplicationFactory<Program> _factory;
+
+        public DeleteRequestTests(
+            CustomWebApplicationFactory<Program> factory)
+        {
+            _factory = factory;
+            _client = factory.CreateClient(new WebApplicationFactoryClientOptions
+            {
+                AllowAutoRedirect = false
+            });
+        }
 
         [Theory]
-        [InlineData("/api/Users/f04e19bc-5405-4723-89da-3803e68ad539")]
-        public async Task Users_DeleteRequest_OnSuccess_ReturnsStatusCode204(string uri)
+        [InlineData("/api/Users/e033fa78-a839-4276-ed91-08dacbb5abc5", "/api/Users")]
+        public async Task Users_DeleteRequest_OnSuccess_ReturnsStatusCode204(string uri, string uri1)
         {
             // Arrange
-            await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
+            var user = new User()
+            {
+                Id = new Guid("e033fa78-a839-4276-ed91-08dacbb5abc5"),
+                FirstName = "Karolina",
+                LastName = "Karolinute",
+                UserEmail = "Karolina@gmail.com",
+                Password = "laaabas"
+            };
 
-            var response = await client.DeleteAsync(uri);
+            // Act
+            await _client.PostAsJsonAsync(uri1, user);
+            var response = await _client.DeleteAsync(uri);
 
             // Assert
             Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);

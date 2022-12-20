@@ -1,53 +1,65 @@
-﻿namespace IntegrationTests
+﻿using Azure.Core;
+using MailRemoverAPI.Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace IntegrationTests
 {
-    public class PostRequestTests : BaseTest
+    public class PostRequestTests
+        : IClassFixture<CustomWebApplicationFactory<Program>>
     {
-        public PostRequestTests(WebApplicationFactory<Program> factory) : base(factory) { }
+
+        private readonly HttpClient _client;
+        private readonly CustomWebApplicationFactory<Program> _factory;
+
+        public PostRequestTests(
+            CustomWebApplicationFactory<Program> factory)
+        {
+            _factory = factory;
+            _client = factory.CreateClient(new WebApplicationFactoryClientOptions
+            {
+                AllowAutoRedirect = false
+            });
+        }
 
         [Theory]
         [InlineData("/api/Users")]
         public async Task Users_PostRequest_OnSuccess_ReturnsStatusCode201(string uri)
         {
             // Arrange
-            await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
-
             var user = new User()
             {
-                FirstName = "Karolina",
-                LastName = "Karoliniene",
-                Password = "bc6vbahd6"
+                Id = new Guid("e033fa78-a839-4276-ed91-08dacbb5abc5"),
+                FirstName = "Rimas",
+                LastName = "Rimukas",
+                UserEmail = "rimukas@gmail.com",
+                Password = "baba123"
             };
 
             // Act
-            HttpResponseMessage response = await client.PostAsJsonAsync(uri, user);
+            HttpResponseMessage response = await _client.PostAsJsonAsync(uri, user);
 
             // Assert
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         }
 
-        /*[Theory]
-        [InlineData("/api/Email/Create")]
-        public async Task Email_PostRequest_OnSuccess_ReturnsStatusCode201(string uri)
-        {
-        }*/
-
         [Theory]
-        [InlineData("/login?id=b82748b2-5f23-4b3c-82c9-218c9fd6f87c&Password=labukas")]
-        public async Task Users_LoginRequest_OnSuccess_ReturnsStatusCode200(string uri)
+        [InlineData("/login", "/api/Users")]
+        public async Task Users_LoginRequest_OnSuccess_ReturnsStatusCode200(string uri, string uri1)
         {
             // Arrange
-            await using var application = new WebApplicationFactory<Program>();
-            using var client = _factory.CreateClient();
-
             var user = new User()
             {
-                Id = new Guid("e033fa78-a839-4276-ed91-08dacbb5abc5"),
-                Password = "labukas"
+                Id = new Guid("e033fa78-a839-4276-ed91-08dacbb5abc6"),
+                FirstName = "Lina",
+                LastName = "Linute",
+                UserEmail = "linute@gmail.com",
+                Password = "labas"
             };
 
             // Act
-            HttpResponseMessage response = await client.PostAsJsonAsync(uri, user);
+            await _client.PostAsJsonAsync(uri1, user);
+            HttpResponseMessage response = await _client.PostAsJsonAsync(uri, user);
 
             // Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

@@ -9,6 +9,7 @@ using MailRemoverAPI.Repository;
 using Microsoft.Extensions.Azure;
 using MailRemoverAPI.Middleware;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,7 @@ var connectionString = builder.Configuration.GetConnectionString("MailRemoverDbC
 builder.Services.AddDbContext<MailRemoverDbContext>(options => {
     options.UseSqlServer(connectionString);
 },
-    ServiceLifetime.Singleton);
+    ServiceLifetime.Transient);
 
 builder.Services.AddCors(options =>
 {

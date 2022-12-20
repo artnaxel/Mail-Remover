@@ -3,3 +3,13 @@
 2022-12-12 17:24:57.497 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-12-12 17:24:57.501 +02:00 [INF] Hosting environment: Development
 2022-12-12 17:24:57.504 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-12 17:42:07.726 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-12 17:42:07.856 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-12 17:42:07.870 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 17:42:07.872 +02:00 [INF] Hosting environment: Development
+2022-12-12 17:42:07.873 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-12 18:17:15.775 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-12 18:17:15.872 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-12 18:17:15.888 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 18:17:15.891 +02:00 [INF] Hosting environment: Development
+2022-12-12 18:17:15.893 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
