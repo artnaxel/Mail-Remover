@@ -1,6 +1,7 @@
 import { Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import { useUser } from "../../context/user-context";
 import "./Header.css";
 
 export default function Header() {
@@ -12,6 +13,10 @@ export default function Header() {
       navigate(`/${option}`);
     }
   };
+
+  const {
+    state: { user },
+  } = useUser();
 
   return (
     <header>
@@ -25,30 +30,35 @@ export default function Header() {
         Mail Remover
       </Typography>
       <div className="nav_buttons">
-        <Button
-          onClick={() => {
-            handleClick("user_info");
-          }}
-          variant="outlined"
-        >
-          User Info
-        </Button>
-        <Button
-          onClick={() => {
-            handleClick("signup");
-          }}
-          variant="contained"
-        >
-          Register
-        </Button>
-        <Button
-          onClick={() => {
-            handleClick("login");
-          }}
-          variant="contained"
-        >
-          Log In
-        </Button>
+        {user !== null ? (
+          <Button
+            onClick={() => {
+              handleClick("user_info");
+            }}
+            variant="outlined"
+          >
+            User Info
+          </Button>
+        ) : (
+          <div>
+            <Button
+              onClick={() => {
+                handleClick("signup");
+              }}
+              variant="contained"
+            >
+              Register
+            </Button>
+            <Button
+              onClick={() => {
+                handleClick("login");
+              }}
+              variant="contained"
+            >
+              Log In
+            </Button>
+          </div>
+        )}
       </div>
     </header>
   );

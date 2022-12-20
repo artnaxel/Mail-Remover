@@ -7,6 +7,7 @@ import {
   Alert,
 } from "@mui/material";
 import React, { useState } from "react";
+import { useUser } from "../../../context/user-context";
 import axios from "axios";
 
 import Style from "./LoginUserForm.module.css";
@@ -16,6 +17,7 @@ const LoginUserForm = () => {
   const [status, setStatus] = useState(null);
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { dispatch } = useUser();
 
   const handleTextFieldChange = (setValue) => (e) => setValue(e.target.value);
 
@@ -32,6 +34,7 @@ const LoginUserForm = () => {
           code: 200,
           message: `All ok! User id is: ${response.data}`,
         });
+        dispatch({ type: "login", payload: response.data });
       }
     } catch (error) {
       setStatus({ code: 500, message: error.message });
