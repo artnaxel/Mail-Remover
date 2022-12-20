@@ -1,6 +1,7 @@
 ﻿using MailRemoverAPI.Entities;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
+using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
@@ -108,5 +109,62 @@ namespace MailRemoverAPI.Services
             };
             await _repository.UpdateAsync(updatedGmail);
         }
+
+        public async Task<Dictionary<string, int>> CalculateMemoryConsumption(Guid id)
+        {
+            Dictionary<string, int> emailMemoryConsumption = new Dictionary<string, int>();
+
+            var messages = await GetProfileMessagesAsync(id);
+
+            foreach(var message in messages)
+            {
+
+                var emailFrom = message.Payload.Headers.Where(h => h.Name == "From").FirstOrDefault()?.Value ?? "Undefined";
+
+                if (emailMemoryConsumption.ContainsKey(emailFrom))
+                {
+                    emailMemoryConsumption[emailFrom] += message.SizeEstimate;
+                } else
+                {
+                    emailMemoryConsumption.Add(emailFrom, message.SizeEstimate);
+                }
+            }
+
+            return emailMemoryConsumption;
+        }
+
+        public async Task<int> BatchDeleteMessagesFromEmailAddress(Guid id, string emailFrom)
+        {
+            var gmail = await _repository.GetByIdAsync(id);
+
+            if(gmail is null)
+            {
+                return 0;
+            }
+
+            var messages = await GetProfileMessagesAsync(id);
+            int memoryDeleted = 0;
+            var messagesIds = new MessagesIds();
+
+            foreach (var message in messages)
+            {
+                var from = message.Payload.Headers.Where(h => h.Name == "From").FirstOrDefault()?.Value;
+                if (message.Payload.Headers.Where(h => h.Name == "From").FirstOrDefault()?.Value == emailFrom)
+                {
+                    messagesIds.ids.Add(message.Id);
+                    memoryDeleted += message.SizeEstimate;
+                }
+            }
+
+            var uri = $"https://gmail.googleapis.com/gmail/v1/users/{gmail.Address}/messages/batchDelete";
+
+            string jsonIds = JsonConvert.SerializeObject(messagesIds);
+
+            HttpContent httpContent = new StringContent(jsonIds);
+
+            await _httpRequestService.HttpRequest(uri, HttpMethod.Post, gmail.AccessToken, httpContent);
+
+            return memoryDeleted;
+        }   
     }
 }

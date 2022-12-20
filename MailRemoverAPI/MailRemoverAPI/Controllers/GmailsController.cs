@@ -70,5 +70,27 @@ namespace MailRemoverAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetMemoryConsumptionByContacts([FromQuery] Guid Id)
+        {
+            var result = await _gmailService.CalculateMemoryConsumption(Id);
+
+            if (result is null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteGmailsByEmail([FromQuery] Guid Id, [FromQuery] string emailFrom)
+        {
+            var result = await _gmailService.BatchDeleteMessagesFromEmailAddress(Id, emailFrom);
+
+            return Ok(result);
+        }
+
     }
 }
