@@ -15,7 +15,7 @@ export default function AddNewUserForm() {
     <Box display="flex" justifyContent="center">
       <Paper className={Style.Paper} elevation={3}>
         <Typography variant="h5" className={Style.haeder}>
-          Here you can sign up for our application
+          Register
         </Typography>
         <TextField
           className={Style.TextField}
