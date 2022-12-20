@@ -1,5 +1,4 @@
 ﻿using MailRemoverAPI.Entities;
-using MailRemoverAPI.Events;
 using MailRemoverAPI.Interfaces;
 using MailRemoverAPI.Models.Gmail;
 using System.Net.Http.Headers;
@@ -20,11 +19,6 @@ namespace MailRemoverAPI.Services
             _httpRequestService = httpRequestService;
         }
 
-        private async void AccessTokenExpiredHandler(Gmail source, AccessTokenExpiredEventHandlerArgs args)
-        {
-            await RefreshAccessToken(args.Id);
-        }
-
         public async Task<string> Auth(Guid id)
         {
             string gmailAuthEndpoint = $"{_configuration["GoogleApi:url"]}?scope={_configuration["GoogleApi:scope"]}&access_type={_configuration["GoogleApi:access_type"]}&response_type={_configuration["GoogleApi:response_type"]}&state={id}&redirect_uri={_configuration["GoogleApi:redirect_uris:code"]}&client_id={_configuration["GoogleApi:client_id"]}";
@@ -37,13 +31,9 @@ namespace MailRemoverAPI.Services
 
             if (accessData == null) return null;
 
-            accessData.AccessTokenExpired += AccessTokenExpiredHandler;
-
             var uri = $"https://gmail.googleapis.com/gmail/v1/users/{accessData.Address}/profile";
 
             var profile = await _httpRequestService.HttpRequest<Profile>(uri, HttpMethod.Get, accessData.AccessToken);
-
-            accessData.AccessTokenExpired -= AccessTokenExpiredHandler;
 
             return profile;
         }
@@ -76,12 +66,17 @@ namespace MailRemoverAPI.Services
 
             var accessData = await _httpRequestService.HttpRequest<AccessData>(uri, HttpMethod.Post);
 
-            GmailDto gmailDto = new ()
+            var profileUri = $"https://gmail.googleapis.com/gmail/v1/users/me/profile";
+
+            var profile = await _httpRequestService.HttpRequest<Profile>(profileUri, HttpMethod.Get, accessData.Access_token);
+
+            GmailDto gmailDto = new()
             {
                 UserId = new Guid(state),
                 AccessToken = accessData.Access_token,
                 RefreshToken = accessData.Refresh_token,
                 Expires = DateTime.Now.AddSeconds(Convert.ToDouble(accessData.Expires_in)),
+                Address = profile.EmailAddress
             };
 
             await _repository.CreateAsync(gmailDto);
