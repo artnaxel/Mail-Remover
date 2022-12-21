@@ -27,26 +27,5 @@ namespace UnitTests.Services
             // Assert
             result.StatusCode.Should().Be(200);
         }
-
-        /*[Fact]
-        public async Task GetEmailById_OnSuccess_returnsStatusCode200()
-        {
-            // Arrange
-            var mockUserService = new Mock<IEmailRepository>();
-
-            mockUserService
-                .Setup(service => service.GetAllAsync())
-                .ReturnsAsync(EmailFixture.GetEmailControllerTests());
-
-            var sut = new EmailController(mockUserService.Object);
-
-            var Id = new Guid("487d101f-ab59-42f2-839e-000b680667cb");
-
-            // Act
-            var result = (OkObjectResult)await sut.GetById(Id);
-
-            // Assert
-            result.StatusCode.Should().Be(200);
-        }*/
     }
 }

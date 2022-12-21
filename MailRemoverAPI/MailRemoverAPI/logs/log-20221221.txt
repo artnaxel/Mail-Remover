@@ -1,0 +1,71 @@
+2022-12-21 00:15:18.429 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 00:15:18.509 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 00:15:18.526 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 00:15:18.528 +02:00 [INF] Hosting environment: Development
+2022-12-21 00:15:18.531 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 00:16:39.971 +02:00 [INF] Registering user with put 2546b0ca-9d4c-4044-a1a2-5f04baae4fad
+2022-12-21 00:16:44.805 +02:00 [ERR] Something Went Wrong While Processing/api/Users/2546b0ca-9d4c-4044-a1a2-5f04baae4fad
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at MailRemoverAPI.Controllers.UsersController.PutUser(Guid id, UpdateUserDto updateUserDto) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 00:17:13.633 +02:00 [INF] Registering user with put a48b3655-4a64-47fa-913e-e0bdf6da8b87
+2022-12-21 10:56:35.979 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 10:56:36.025 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 10:56:36.031 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 10:56:36.032 +02:00 [INF] Hosting environment: Development
+2022-12-21 10:56:36.033 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 10:57:35.843 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-21 10:57:37.074 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-21 10:57:39.501 +02:00 [ERR] Something Went Wrong While Processing/login
+MailRemoverAPI.Exceptions.UnauthorizedException: In: LoginUser there was an error. Either email or password is wrong.
+   at MailRemoverAPI.Controllers.UsersController.LoginUser(LoginUserDto loginUserDto) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 134
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 10:57:39.501 +02:00 [ERR] Something Went Wrong While Processing/login
+MailRemoverAPI.Exceptions.UnauthorizedException: In: LoginUser there was an error. Either email or password is wrong.
+   at MailRemoverAPI.Controllers.UsersController.LoginUser(LoginUserDto loginUserDto) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\UsersController.cs:line 134
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 11:05:27.805 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 11:05:27.845 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 11:05:27.850 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 11:05:27.851 +02:00 [INF] Hosting environment: Development
+2022-12-21 11:05:27.852 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
