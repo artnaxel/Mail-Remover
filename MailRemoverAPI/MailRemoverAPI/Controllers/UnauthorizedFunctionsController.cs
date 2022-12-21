@@ -19,7 +19,7 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> GetCo2Eggs([FromQuery] int totalMessages)
         {
             var resultEggs = _co2FootprintCalcService.EggCalculator(totalMessages);
-            var resultCO2 = _co2FootprintCalcService.Co2FootprintCalculatorKg(totalMessages);
+            var resultCO2 = _co2FootprintCalcService.Co2FootprintCalculatorKgMessages(totalMessages);
 
             return Ok(new {eggs = resultEggs, co2 = resultCO2});
         }

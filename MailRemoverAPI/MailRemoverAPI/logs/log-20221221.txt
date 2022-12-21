@@ -672,3 +672,8 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2022-12-21 14:56:23.468 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1841040c371717fb"
 2022-12-21 14:56:23.751 +02:00 [INF] Received HTTP response headers after 278.6108ms - 200
 2022-12-21 14:56:23.758 +02:00 [INF] End processing HTTP request after 294.4415ms - 200
+2022-12-21 14:59:43.729 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 14:59:43.773 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 14:59:43.782 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 14:59:43.783 +02:00 [INF] Hosting environment: Development
+2022-12-21 14:59:43.786 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
