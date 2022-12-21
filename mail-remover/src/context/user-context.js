@@ -5,10 +5,20 @@ const UserContext = React.createContext();
 function userReducer(state, action) {
   switch (action.type) {
     case "login": {
+      localStorage.setItem("mail_remover_user_id", action.payload);
       return { user_id: action.payload };
     }
     case "register": {
       return { user: action.payload };
+    }
+    case "logout": {
+      localStorage.removeItem("mail_remover_user_id");
+      localStorage.removeItem("mail_remover_gmail_id");
+      return { user: null, user_id: null, user_gmail_id: null };
+    }
+    case "mail_remover_gmail_id": {
+      localStorage.setItem("mail_remover_gmail_id", action.payload);
+      return { user_gmail_id: action.payload };
     }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);

@@ -1,0 +1,20 @@
+.form_paper {
+  padding: 2em !important;
+  text-align: center;
+}
+
+.form {
+  width: 50%;
+  text-align: left;
+  padding: 2em;
+  margin: 2em auto;
+}
+
+.checkbox {
+  margin: 2em 0;
+}
+
+.submit_button {
+  margin-top: 2em;
+  width: 10em;
+}
