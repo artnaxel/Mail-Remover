@@ -12,12 +12,14 @@ namespace MailRemoverAPI.Services
         private IConfiguration _configuration;
         private IGmailRepository _repository;
         private IHttpRequestService _httpRequestService;
+        private ICo2FootprintCalcService _co2FootprintCalcService;
 
-        public GmailService(IConfiguration configuration, IGmailRepository repository, IHttpRequestService httpRequestService)
+        public GmailService(IConfiguration configuration, IGmailRepository repository, IHttpRequestService httpRequestService, ICo2FootprintCalcService co2FootprintCalcService)
         {
             _configuration = configuration;
             _repository = repository;
             _httpRequestService = httpRequestService;
+            _co2FootprintCalcService = co2FootprintCalcService;
         }
 
         public async Task<string> Auth(Guid id)
@@ -110,8 +112,12 @@ namespace MailRemoverAPI.Services
             await _repository.UpdateAsync(updatedGmail);
         }
 
-        public async Task<List<GmailEmailMemoryConsumptionPair>> CalculateMemoryConsumption(Guid id)
+        public async Task<GmailConsumptionDetails> CalculateMemoryConsumption(Guid id)
         {
+            GmailConsumptionDetails result = new();
+
+            int totalMemory = 0;
+
             List<GmailEmailMemoryConsumptionPair> emailMemoryConsumption = new List<GmailEmailMemoryConsumptionPair>();
 
             var messages = await GetProfileMessagesAsync(id);
@@ -122,6 +128,8 @@ namespace MailRemoverAPI.Services
                 var emailFrom = message.Payload.Headers.Where(h => h.Name == "From").FirstOrDefault()?.Value ?? "Undefined";
 
                 var existingEmailFromIndex = emailMemoryConsumption.FindIndex(mc => mc.From == emailFrom);
+
+                totalMemory += message.SizeEstimate;
 
                 if (existingEmailFromIndex != -1)
                 {
@@ -135,7 +143,11 @@ namespace MailRemoverAPI.Services
                 }
             }
 
-            return emailMemoryConsumption;
+            result.gmailEmailMemoryConsumptionPairs = emailMemoryConsumption;
+
+            result.Co2Emissions = _co2FootprintCalcService.Co2FootprintCalculatorKg(totalMemory);
+
+            return result;
         }
 
         public async Task<int> BatchDeleteMessagesFromEmailAddress(Guid id, string emailFrom)
