@@ -10,6 +10,8 @@
 
         public string InternalDate { get; set; }
 
+        public MessagePayload Payload { get; set; }
+
         // Estimated size in bytes of the message
         public int SizeEstimate { get; set; } 
 
