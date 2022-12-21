@@ -12,6 +12,7 @@ header {
 .title {
   padding: 0.5em;
   font-family: "Calistoga", cursive !important;
+  cursor: pointer;
 }
 
 .nav_buttons button {
