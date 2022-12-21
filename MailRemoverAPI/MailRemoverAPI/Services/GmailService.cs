@@ -110,9 +110,9 @@ namespace MailRemoverAPI.Services
             await _repository.UpdateAsync(updatedGmail);
         }
 
-        public async Task<Dictionary<string, int>> CalculateMemoryConsumption(Guid id)
+        public async Task<List<GmailEmailMemoryConsumptionPair>> CalculateMemoryConsumption(Guid id)
         {
-            Dictionary<string, int> emailMemoryConsumption = new Dictionary<string, int>();
+            List<GmailEmailMemoryConsumptionPair> emailMemoryConsumption = new List<GmailEmailMemoryConsumptionPair>();
 
             var messages = await GetProfileMessagesAsync(id);
 
@@ -121,12 +121,17 @@ namespace MailRemoverAPI.Services
 
                 var emailFrom = message.Payload.Headers.Where(h => h.Name == "From").FirstOrDefault()?.Value ?? "Undefined";
 
-                if (emailMemoryConsumption.ContainsKey(emailFrom))
+                var existingEmailFromIndex = emailMemoryConsumption.FindIndex(mc => mc.From == emailFrom);
+
+                if (existingEmailFromIndex != -1)
                 {
-                    emailMemoryConsumption[emailFrom] += message.SizeEstimate;
+                    emailMemoryConsumption[existingEmailFromIndex].MemoryConsumption += message.SizeEstimate;
                 } else
                 {
-                    emailMemoryConsumption.Add(emailFrom, message.SizeEstimate);
+                    emailMemoryConsumption.Add(new GmailEmailMemoryConsumptionPair() { 
+                        From = emailFrom, 
+                        MemoryConsumption = message.SizeEstimate
+                    });
                 }
             }
 
