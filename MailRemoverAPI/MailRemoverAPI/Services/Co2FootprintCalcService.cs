@@ -9,6 +9,12 @@ namespace MailRemoverAPI.Services
             return calculatedCo2;
         }
 
+        public double Co2FootprintCalculatorKgKBytes(int size)
+        {
+            double calculatedCo2KBytes = size * 0.001;
+            return calculatedCo2KBytes;
+        }
+
         public int EggCalculator(int messagesTotal)
         {
             int calcEggs = messagesTotal * 2;

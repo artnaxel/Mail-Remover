@@ -45,6 +45,21 @@ namespace MailRemoverAPI.Controllers
             return Ok(queryedUsers);
         }
 
+        [HttpGet("/api/Users/get_gmail/{id}")]
+        public async Task<ActionResult<IEnumerable<GetUserDto>>> GetUsersGmail(Guid id)
+        {
+
+            var users = await _usersRepository.GetAllAsync();
+            var records = _mapper.Map<List<GetUserDto>>(users);
+            //var queryedUsers = from user in records
+            //                   where user.FirstName.Contains(firstName)
+            //                   select user;
+
+            var queryedUsers = records.Where(user => user.Id.Equals(id));
+
+            return Ok(queryedUsers);
+        }
+
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<GetUserDto>> GetUser(Guid id)
@@ -61,6 +76,7 @@ namespace MailRemoverAPI.Controllers
             var userDto = _mapper.Map<GetUserDto>(user);
             return Ok(userDto);
         }
+
 
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

@@ -69,3 +69,606 @@ MailRemoverAPI.Exceptions.UnauthorizedException: In: LoginUser there was an erro
 2022-12-21 11:05:27.850 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-12-21 11:05:27.851 +02:00 [INF] Hosting environment: Development
 2022-12-21 11:05:27.852 +02:00 [INF] Content root path: C:\Users\Deimante\source\repos\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:20:21.553 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:20:21.606 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:20:21.613 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:20:21.616 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:20:21.618 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:31:48.904 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:31:48.986 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:31:49.023 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:31:49.024 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:31:49.025 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:34:43.014 +02:00 [INF] Start processing HTTP request POST "https://oauth2.googleapis.com/token?client_id=915249258106-okhc493erabvu8ung70thq15hmn1q1ia.apps.googleusercontent.com&client_secret=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&code=4/0AWgavdfqptNhPPrzKSycrO3Sk_EtCFg-PY4YSsAb420zvf9n_d1j4v0NZaYam0MRUIsvRA&grant_type=authorization_code&redirect_uri=https%3A//localhost:7151/api/GoogleAuth/Code"
+2022-12-21 13:34:43.024 +02:00 [INF] Sending HTTP request POST "https://oauth2.googleapis.com/token?client_id=915249258106-okhc493erabvu8ung70thq15hmn1q1ia.apps.googleusercontent.com&client_secret=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&code=4/0AWgavdfqptNhPPrzKSycrO3Sk_EtCFg-PY4YSsAb420zvf9n_d1j4v0NZaYam0MRUIsvRA&grant_type=authorization_code&redirect_uri=https%3A//localhost:7151/api/GoogleAuth/Code"
+2022-12-21 13:34:43.311 +02:00 [INF] Received HTTP response headers after 271.6365ms - 200
+2022-12-21 13:34:43.323 +02:00 [INF] End processing HTTP request after 316.6389ms - 200
+2022-12-21 13:34:43.519 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/me/profile"
+2022-12-21 13:34:43.520 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/me/profile"
+2022-12-21 13:34:43.853 +02:00 [INF] Received HTTP response headers after 331.1379ms - 200
+2022-12-21 13:34:43.857 +02:00 [INF] End processing HTTP request after 338.326ms - 200
+2022-12-21 13:41:31.427 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:41:46.456 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 13:43:13.056 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:43:13.099 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:43:13.105 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:43:13.106 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:43:13.106 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:43:31.329 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:43:44.970 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 13:46:46.384 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:46:46.430 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:46:46.437 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:46:46.439 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:46:46.442 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:47:07.348 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:48:51.652 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:48:51.696 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:48:51.701 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:48:51.702 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:48:51.703 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:49:03.735 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:55:16.828 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:55:16.871 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:55:16.879 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:55:16.881 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:55:16.882 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:55:46.652 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:56:01.529 +02:00 [ERR] Something Went Wrong While Processing/api/Users/get_gmail/7318c89b-f035-4e0f-9edc-16f12f7f1521
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> GetUserGmailDto
+MailRemoverAPI.Entities.User -> MailRemoverAPI.Models.User.GetUserGmailDto
+   at lambda_method134(Closure , Object , GetUserGmailDto , ResolutionContext )
+   at MailRemoverAPI.Controllers.UsersController.GetUserGmailId(Guid id)
+   at lambda_method126(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+2022-12-21 13:58:40.710 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:58:40.757 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:58:40.763 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:58:40.764 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:58:40.764 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 13:58:52.064 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 13:59:42.843 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 13:59:42.900 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 13:59:42.906 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 13:59:42.907 +02:00 [INF] Hosting environment: Development
+2022-12-21 13:59:42.908 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 14:00:01.763 +02:00 [INF] Getting all users for jk@gmail.com
+2022-12-21 14:05:26.282 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:05:26.385 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:14:09.356 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetMemoryConsumptionByContacts
+System.ArgumentNullException: Value cannot be null. (Parameter 'accessData')
+   at MailRemoverAPI.Services.GmailService.GetProfileMessagesAsync(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 46
+   at MailRemoverAPI.Services.GmailService.CalculateMemoryConsumption(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 117
+   at MailRemoverAPI.Controllers.GmailsController.GetMemoryConsumptionByContacts(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:14:20.554 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfileMessages
+System.ArgumentNullException: Value cannot be null. (Parameter 'accessData')
+   at MailRemoverAPI.Services.GmailService.GetProfileMessagesAsync(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 46
+   at MailRemoverAPI.Controllers.GmailsController.GetProfileMessages(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:19:46.778 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-21 14:20:43.851 +02:00 [INF] Now listening on: https://localhost:7151
+2022-12-21 14:20:43.895 +02:00 [INF] Now listening on: http://localhost:5151
+2022-12-21 14:20:43.901 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-21 14:20:43.904 +02:00 [INF] Hosting environment: Development
+2022-12-21 14:20:43.905 +02:00 [INF] Content root path: C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\
+2022-12-21 14:20:54.951 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-21 14:20:56.381 +02:00 [INF] Loging in user MailRemoverAPI.Models.User.LoginUserDto
+2022-12-21 14:22:11.817 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:22:11.824 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:22:12.011 +02:00 [INF] Received HTTP response headers after 180.0575ms - 401
+2022-12-21 14:22:12.016 +02:00 [INF] End processing HTTP request after 205.3497ms - 401
+2022-12-21 14:22:12.321 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfile
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken, HttpContent content) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 59
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 70
+   at MailRemoverAPI.Services.GmailService.GetProfile(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 37
+   at MailRemoverAPI.Controllers.GmailsController.GetProfile(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:22:41.898 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:22:41.906 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:22:42.131 +02:00 [INF] Received HTTP response headers after 220.7532ms - 200
+2022-12-21 14:22:42.134 +02:00 [INF] End processing HTTP request after 236.6575ms - 200
+2022-12-21 14:24:49.594 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:24:49.599 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:24:50.117 +02:00 [INF] Received HTTP response headers after 514.1715ms - 200
+2022-12-21 14:24:50.121 +02:00 [INF] End processing HTTP request after 527.0522ms - 200
+2022-12-21 14:26:08.631 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:26:08.662 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:26:33.692 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:26:33.705 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:26:58.648 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:26:58.663 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:27:36.725 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:27:36.733 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:28:09.678 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:28:09.690 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:28:37.396 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:28:37.411 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:28:37.955 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:37.959 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.277 +02:00 [INF] Received HTTP response headers after 315.5462ms - 200
+2022-12-21 14:28:38.282 +02:00 [INF] End processing HTTP request after 327.5995ms - 200
+2022-12-21 14:28:38.295 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.301 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.625 +02:00 [INF] Received HTTP response headers after 318.7739ms - 200
+2022-12-21 14:28:38.633 +02:00 [INF] End processing HTTP request after 338.4533ms - 200
+2022-12-21 14:28:38.659 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.668 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.889 +02:00 [INF] Received HTTP response headers after 214.4503ms - 200
+2022-12-21 14:28:38.893 +02:00 [INF] End processing HTTP request after 233.7081ms - 200
+2022-12-21 14:28:38.901 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:38.904 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.124 +02:00 [INF] Received HTTP response headers after 216.5993ms - 200
+2022-12-21 14:28:39.132 +02:00 [INF] End processing HTTP request after 230.9611ms - 200
+2022-12-21 14:28:39.159 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.171 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.395 +02:00 [INF] Received HTTP response headers after 215.5417ms - 200
+2022-12-21 14:28:39.399 +02:00 [INF] End processing HTTP request after 239.9439ms - 200
+2022-12-21 14:28:39.409 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.413 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.631 +02:00 [INF] Received HTTP response headers after 213.4461ms - 200
+2022-12-21 14:28:39.635 +02:00 [INF] End processing HTTP request after 226.4657ms - 200
+2022-12-21 14:28:39.654 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.662 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.875 +02:00 [INF] Received HTTP response headers after 205.1594ms - 200
+2022-12-21 14:28:39.880 +02:00 [INF] End processing HTTP request after 225.9961ms - 200
+2022-12-21 14:28:39.896 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:39.902 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.114 +02:00 [INF] Received HTTP response headers after 207.4792ms - 200
+2022-12-21 14:28:40.124 +02:00 [INF] End processing HTTP request after 227.7486ms - 200
+2022-12-21 14:28:40.147 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.155 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.369 +02:00 [INF] Received HTTP response headers after 207.6681ms - 200
+2022-12-21 14:28:40.377 +02:00 [INF] End processing HTTP request after 230.6653ms - 200
+2022-12-21 14:28:40.399 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.409 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.633 +02:00 [INF] Received HTTP response headers after 210.9438ms - 200
+2022-12-21 14:28:40.637 +02:00 [INF] End processing HTTP request after 237.5028ms - 200
+2022-12-21 14:28:40.648 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.652 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.867 +02:00 [INF] Received HTTP response headers after 211.895ms - 200
+2022-12-21 14:28:40.871 +02:00 [INF] End processing HTTP request after 223.4341ms - 200
+2022-12-21 14:28:40.880 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:40.885 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.089 +02:00 [INF] Received HTTP response headers after 201.1142ms - 200
+2022-12-21 14:28:41.092 +02:00 [INF] End processing HTTP request after 212.1069ms - 200
+2022-12-21 14:28:41.100 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.105 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.321 +02:00 [INF] Received HTTP response headers after 213.2846ms - 200
+2022-12-21 14:28:41.328 +02:00 [INF] End processing HTTP request after 227.8366ms - 200
+2022-12-21 14:28:41.352 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.359 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.634 +02:00 [INF] Received HTTP response headers after 271.0943ms - 200
+2022-12-21 14:28:41.638 +02:00 [INF] End processing HTTP request after 286.0022ms - 200
+2022-12-21 14:28:41.648 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.652 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.869 +02:00 [INF] Received HTTP response headers after 213.841ms - 200
+2022-12-21 14:28:41.873 +02:00 [INF] End processing HTTP request after 225.5696ms - 200
+2022-12-21 14:28:41.883 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:41.886 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.106 +02:00 [INF] Received HTTP response headers after 214.713ms - 200
+2022-12-21 14:28:42.109 +02:00 [INF] End processing HTTP request after 225.6119ms - 200
+2022-12-21 14:28:42.118 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.122 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.339 +02:00 [INF] Received HTTP response headers after 213.7941ms - 200
+2022-12-21 14:28:42.342 +02:00 [INF] End processing HTTP request after 224.1503ms - 200
+2022-12-21 14:28:42.360 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.365 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.578 +02:00 [INF] Received HTTP response headers after 207.1184ms - 200
+2022-12-21 14:28:42.581 +02:00 [INF] End processing HTTP request after 221.5495ms - 200
+2022-12-21 14:28:42.591 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.595 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.810 +02:00 [INF] Received HTTP response headers after 211.2365ms - 200
+2022-12-21 14:28:42.812 +02:00 [INF] End processing HTTP request after 221.1047ms - 200
+2022-12-21 14:28:42.821 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:42.824 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.056 +02:00 [INF] Received HTTP response headers after 228.324ms - 200
+2022-12-21 14:28:43.058 +02:00 [INF] End processing HTTP request after 237.5093ms - 200
+2022-12-21 14:28:43.065 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.068 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.276 +02:00 [INF] Received HTTP response headers after 204.857ms - 200
+2022-12-21 14:28:43.284 +02:00 [INF] End processing HTTP request after 218.7771ms - 200
+2022-12-21 14:28:43.299 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.303 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.545 +02:00 [INF] Received HTTP response headers after 238.1024ms - 200
+2022-12-21 14:28:43.553 +02:00 [INF] End processing HTTP request after 253.7332ms - 200
+2022-12-21 14:28:43.573 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.582 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.798 +02:00 [INF] Received HTTP response headers after 208.274ms - 200
+2022-12-21 14:28:43.802 +02:00 [INF] End processing HTTP request after 229.0808ms - 200
+2022-12-21 14:28:43.810 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:43.812 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.018 +02:00 [INF] Received HTTP response headers after 200.7719ms - 200
+2022-12-21 14:28:44.023 +02:00 [INF] End processing HTTP request after 212.9436ms - 200
+2022-12-21 14:28:44.041 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.046 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.273 +02:00 [INF] Received HTTP response headers after 222.9203ms - 200
+2022-12-21 14:28:44.275 +02:00 [INF] End processing HTTP request after 234.4005ms - 200
+2022-12-21 14:28:44.284 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.292 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.501 +02:00 [INF] Received HTTP response headers after 203.5403ms - 200
+2022-12-21 14:28:44.504 +02:00 [INF] End processing HTTP request after 220.727ms - 200
+2022-12-21 14:28:44.513 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.516 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.720 +02:00 [INF] Received HTTP response headers after 200.5151ms - 200
+2022-12-21 14:28:44.727 +02:00 [INF] End processing HTTP request after 214.0688ms - 200
+2022-12-21 14:28:44.748 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.757 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:44.998 +02:00 [INF] Received HTTP response headers after 234.0767ms - 200
+2022-12-21 14:28:45.002 +02:00 [INF] End processing HTTP request after 253.9214ms - 200
+2022-12-21 14:28:45.013 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.019 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.228 +02:00 [INF] Received HTTP response headers after 205.8731ms - 200
+2022-12-21 14:28:45.237 +02:00 [INF] End processing HTTP request after 224.1423ms - 200
+2022-12-21 14:28:45.269 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.283 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.510 +02:00 [INF] Received HTTP response headers after 211.0002ms - 200
+2022-12-21 14:28:45.513 +02:00 [INF] End processing HTTP request after 244.6508ms - 200
+2022-12-21 14:28:45.522 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.526 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.737 +02:00 [INF] Received HTTP response headers after 207.274ms - 200
+2022-12-21 14:28:45.746 +02:00 [INF] End processing HTTP request after 223.1057ms - 200
+2022-12-21 14:28:45.769 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.780 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:45.992 +02:00 [INF] Received HTTP response headers after 205.6346ms - 200
+2022-12-21 14:28:45.995 +02:00 [INF] End processing HTTP request after 227.1758ms - 200
+2022-12-21 14:28:46.012 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.019 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.236 +02:00 [INF] Received HTTP response headers after 211.5971ms - 200
+2022-12-21 14:28:46.238 +02:00 [INF] End processing HTTP request after 226.1683ms - 200
+2022-12-21 14:28:46.245 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.249 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.459 +02:00 [INF] Received HTTP response headers after 205.936ms - 200
+2022-12-21 14:28:46.462 +02:00 [INF] End processing HTTP request after 217.5616ms - 200
+2022-12-21 14:28:46.473 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.477 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.691 +02:00 [INF] Received HTTP response headers after 210.6133ms - 200
+2022-12-21 14:28:46.695 +02:00 [INF] End processing HTTP request after 221.8161ms - 200
+2022-12-21 14:28:46.703 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.706 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.937 +02:00 [INF] Received HTTP response headers after 229.1252ms - 200
+2022-12-21 14:28:46.941 +02:00 [INF] End processing HTTP request after 238.2834ms - 200
+2022-12-21 14:28:46.950 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:46.954 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.164 +02:00 [INF] Received HTTP response headers after 206.1758ms - 200
+2022-12-21 14:28:47.167 +02:00 [INF] End processing HTTP request after 217.6333ms - 200
+2022-12-21 14:28:47.176 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.180 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.399 +02:00 [INF] Received HTTP response headers after 215.7692ms - 200
+2022-12-21 14:28:47.404 +02:00 [INF] End processing HTTP request after 228.709ms - 200
+2022-12-21 14:28:47.417 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.424 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.636 +02:00 [INF] Received HTTP response headers after 206.9436ms - 200
+2022-12-21 14:28:47.640 +02:00 [INF] End processing HTTP request after 223.1075ms - 200
+2022-12-21 14:28:47.651 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.656 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.864 +02:00 [INF] Received HTTP response headers after 204.1735ms - 200
+2022-12-21 14:28:47.867 +02:00 [INF] End processing HTTP request after 216.9554ms - 200
+2022-12-21 14:28:47.876 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:47.879 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.092 +02:00 [INF] Received HTTP response headers after 209.5457ms - 200
+2022-12-21 14:28:48.096 +02:00 [INF] End processing HTTP request after 220.7911ms - 200
+2022-12-21 14:28:48.107 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.111 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.323 +02:00 [INF] Received HTTP response headers after 207.9492ms - 200
+2022-12-21 14:28:48.327 +02:00 [INF] End processing HTTP request after 219.5298ms - 200
+2022-12-21 14:28:48.338 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.342 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.553 +02:00 [INF] Received HTTP response headers after 208.6292ms - 200
+2022-12-21 14:28:48.562 +02:00 [INF] End processing HTTP request after 223.8194ms - 200
+2022-12-21 14:28:48.592 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.611 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.826 +02:00 [INF] Received HTTP response headers after 206.8004ms - 200
+2022-12-21 14:28:48.833 +02:00 [INF] End processing HTTP request after 240.6013ms - 200
+2022-12-21 14:28:48.870 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:48.883 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:49.102 +02:00 [INF] Received HTTP response headers after 210.933ms - 200
+2022-12-21 14:28:49.106 +02:00 [INF] End processing HTTP request after 236.5964ms - 200
+2022-12-21 14:28:49.119 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:49.123 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:28:49.333 +02:00 [INF] Received HTTP response headers after 206.3684ms - 200
+2022-12-21 14:28:49.336 +02:00 [INF] End processing HTTP request after 217.6613ms - 200
+2022-12-21 14:29:19.874 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:29:19.883 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:29:20.186 +02:00 [INF] Received HTTP response headers after 297.2427ms - 200
+2022-12-21 14:29:20.193 +02:00 [INF] End processing HTTP request after 318.9031ms - 200
+2022-12-21 14:31:29.349 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:31:29.362 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:31:31.149 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:31:31.166 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:31:31.485 +02:00 [INF] Received HTTP response headers after 311.0046ms - 200
+2022-12-21 14:31:31.492 +02:00 [INF] End processing HTTP request after 343.8954ms - 200
+2022-12-21 14:49:48.538 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:49:48.549 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:49:48.710 +02:00 [INF] Received HTTP response headers after 153.326ms - 401
+2022-12-21 14:49:48.717 +02:00 [INF] End processing HTTP request after 178.6968ms - 401
+2022-12-21 14:49:49.025 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfile
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken, HttpContent content) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 59
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 70
+   at MailRemoverAPI.Services.GmailService.GetProfile(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 37
+   at MailRemoverAPI.Controllers.GmailsController.GetProfile(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:49:55.293 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:49:55.306 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:49:55.366 +02:00 [INF] Received HTTP response headers after 52.7645ms - 401
+2022-12-21 14:49:55.371 +02:00 [INF] End processing HTTP request after 77.446ms - 401
+2022-12-21 14:49:55.677 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfile
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken, HttpContent content) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 59
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 70
+   at MailRemoverAPI.Services.GmailService.GetProfile(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 37
+   at MailRemoverAPI.Controllers.GmailsController.GetProfile(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:50:10.006 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:50:10.007 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:50:10.063 +02:00 [INF] Received HTTP response headers after 54.2885ms - 401
+2022-12-21 14:50:10.067 +02:00 [INF] End processing HTTP request after 60.994ms - 401
+2022-12-21 14:50:10.317 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfile
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken, HttpContent content) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 59
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 70
+   at MailRemoverAPI.Services.GmailService.GetProfile(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 37
+   at MailRemoverAPI.Controllers.GmailsController.GetProfile(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:51:06.001 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:51:06.005 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:51:06.060 +02:00 [INF] Received HTTP response headers after 51.2938ms - 401
+2022-12-21 14:51:06.064 +02:00 [INF] End processing HTTP request after 62.6766ms - 401
+2022-12-21 14:51:06.331 +02:00 [ERR] Something Went Wrong While Processing/api/Gmails/GetProfile
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken, HttpContent content) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 59
+   at MailRemoverAPI.Services.HttpRequestService.HttpRequest[T](String uri, HttpMethod method, String bearerToken) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\HttpRequestService.cs:line 70
+   at MailRemoverAPI.Services.GmailService.GetProfile(Guid id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Services\GmailService.cs:line 37
+   at MailRemoverAPI.Controllers.GmailsController.GetProfile(Guid Id) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Controllers\GmailsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MailRemoverAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Greta\Source\Repos\Virppsa\PSI-2022\MailRemoverAPI\MailRemoverAPI\Middleware\ExceptionMiddleware.cs:line 22
+2022-12-21 14:52:48.221 +02:00 [INF] Start processing HTTP request POST "https://oauth2.googleapis.com/token?client_id=915249258106-okhc493erabvu8ung70thq15hmn1q1ia.apps.googleusercontent.com&client_secret=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&code=4/0AWgavdd8sHS75WCPgYkHRn-fRbs3UaUXGMqSkEKJi6Iu7FyzQhjol4w5hvDXWVU_29QtDA&grant_type=authorization_code&redirect_uri=https%3A//localhost:7151/api/GoogleAuth/Code"
+2022-12-21 14:52:48.228 +02:00 [INF] Sending HTTP request POST "https://oauth2.googleapis.com/token?client_id=915249258106-okhc493erabvu8ung70thq15hmn1q1ia.apps.googleusercontent.com&client_secret=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&code=4/0AWgavdd8sHS75WCPgYkHRn-fRbs3UaUXGMqSkEKJi6Iu7FyzQhjol4w5hvDXWVU_29QtDA&grant_type=authorization_code&redirect_uri=https%3A//localhost:7151/api/GoogleAuth/Code"
+2022-12-21 14:52:48.519 +02:00 [INF] Received HTTP response headers after 284.8998ms - 200
+2022-12-21 14:52:48.526 +02:00 [INF] End processing HTTP request after 305.3198ms - 200
+2022-12-21 14:52:48.542 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/me/profile"
+2022-12-21 14:52:48.550 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/me/profile"
+2022-12-21 14:52:48.942 +02:00 [INF] Received HTTP response headers after 385.5197ms - 200
+2022-12-21 14:52:48.950 +02:00 [INF] End processing HTTP request after 407.7551ms - 200
+2022-12-21 14:53:34.972 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:53:34.994 +02:00 [INF] Getting user by id 7318c89b-f035-4e0f-9edc-16f12f7f1521
+2022-12-21 14:53:38.084 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:53:38.092 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/profile"
+2022-12-21 14:53:38.316 +02:00 [INF] Received HTTP response headers after 217.4726ms - 200
+2022-12-21 14:53:38.324 +02:00 [INF] End processing HTTP request after 240.4963ms - 200
+2022-12-21 14:56:02.179 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages"
+2022-12-21 14:56:02.182 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages"
+2022-12-21 14:56:02.630 +02:00 [INF] Received HTTP response headers after 445.6133ms - 200
+2022-12-21 14:56:02.634 +02:00 [INF] End processing HTTP request after 455.1557ms - 200
+2022-12-21 14:56:02.657 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185340b980372451"
+2022-12-21 14:56:02.661 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185340b980372451"
+2022-12-21 14:56:03.026 +02:00 [INF] Received HTTP response headers after 358.6389ms - 200
+2022-12-21 14:56:03.030 +02:00 [INF] End processing HTTP request after 372.8268ms - 200
+2022-12-21 14:56:03.048 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1853158f1a629fe2"
+2022-12-21 14:56:03.051 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1853158f1a629fe2"
+2022-12-21 14:56:03.272 +02:00 [INF] Received HTTP response headers after 217.1085ms - 200
+2022-12-21 14:56:03.280 +02:00 [INF] End processing HTTP request after 232.266ms - 200
+2022-12-21 14:56:03.289 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185311d814b18532"
+2022-12-21 14:56:03.298 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185311d814b18532"
+2022-12-21 14:56:03.527 +02:00 [INF] Received HTTP response headers after 214.649ms - 200
+2022-12-21 14:56:03.534 +02:00 [INF] End processing HTTP request after 245.4251ms - 200
+2022-12-21 14:56:03.544 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18511619524fb7ad"
+2022-12-21 14:56:03.554 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18511619524fb7ad"
+2022-12-21 14:56:03.815 +02:00 [INF] Received HTTP response headers after 251.8517ms - 200
+2022-12-21 14:56:03.822 +02:00 [INF] End processing HTTP request after 277.864ms - 200
+2022-12-21 14:56:03.886 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a9ebe5bee"
+2022-12-21 14:56:03.894 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a9ebe5bee"
+2022-12-21 14:56:04.118 +02:00 [INF] Received HTTP response headers after 214.9623ms - 200
+2022-12-21 14:56:04.127 +02:00 [INF] End processing HTTP request after 240.759ms - 200
+2022-12-21 14:56:04.136 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a370916dc"
+2022-12-21 14:56:04.146 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a370916dc"
+2022-12-21 14:56:04.371 +02:00 [INF] Received HTTP response headers after 216.9359ms - 200
+2022-12-21 14:56:04.377 +02:00 [INF] End processing HTTP request after 240.9258ms - 200
+2022-12-21 14:56:04.388 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a53e06c439520"
+2022-12-21 14:56:04.402 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a53e06c439520"
+2022-12-21 14:56:04.632 +02:00 [INF] Received HTTP response headers after 222.8118ms - 200
+2022-12-21 14:56:04.638 +02:00 [INF] End processing HTTP request after 249.9885ms - 200
+2022-12-21 14:56:04.645 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10d33f66b9ac"
+2022-12-21 14:56:04.652 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10d33f66b9ac"
+2022-12-21 14:56:04.876 +02:00 [INF] Received HTTP response headers after 217.178ms - 200
+2022-12-21 14:56:04.879 +02:00 [INF] End processing HTTP request after 233.7353ms - 200
+2022-12-21 14:56:04.891 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10c44a64e0ea"
+2022-12-21 14:56:04.895 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10c44a64e0ea"
+2022-12-21 14:56:05.102 +02:00 [INF] Received HTTP response headers after 203.2779ms - 200
+2022-12-21 14:56:05.107 +02:00 [INF] End processing HTTP request after 216.124ms - 200
+2022-12-21 14:56:05.113 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1847c96d8fca2061"
+2022-12-21 14:56:05.119 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1847c96d8fca2061"
+2022-12-21 14:56:05.358 +02:00 [INF] Received HTTP response headers after 233.9911ms - 200
+2022-12-21 14:56:05.367 +02:00 [INF] End processing HTTP request after 253.0879ms - 200
+2022-12-21 14:56:05.376 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e7ca3f8f15b"
+2022-12-21 14:56:05.385 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e7ca3f8f15b"
+2022-12-21 14:56:05.616 +02:00 [INF] Received HTTP response headers after 221.9819ms - 200
+2022-12-21 14:56:05.624 +02:00 [INF] End processing HTTP request after 247.635ms - 200
+2022-12-21 14:56:05.634 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e0d2b7752de"
+2022-12-21 14:56:05.646 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e0d2b7752de"
+2022-12-21 14:56:05.868 +02:00 [INF] Received HTTP response headers after 212.9707ms - 200
+2022-12-21 14:56:05.870 +02:00 [INF] End processing HTTP request after 236.2515ms - 200
+2022-12-21 14:56:05.874 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458599f5e3705b"
+2022-12-21 14:56:05.878 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458599f5e3705b"
+2022-12-21 14:56:06.090 +02:00 [INF] Received HTTP response headers after 208.7417ms - 200
+2022-12-21 14:56:06.097 +02:00 [INF] End processing HTTP request after 222.8578ms - 200
+2022-12-21 14:56:06.103 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184536a4e50e7763"
+2022-12-21 14:56:06.109 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184536a4e50e7763"
+2022-12-21 14:56:06.322 +02:00 [INF] Received HTTP response headers after 206.0983ms - 200
+2022-12-21 14:56:06.328 +02:00 [INF] End processing HTTP request after 224.9508ms - 200
+2022-12-21 14:56:06.335 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18414513764bf01b"
+2022-12-21 14:56:06.341 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18414513764bf01b"
+2022-12-21 14:56:06.561 +02:00 [INF] Received HTTP response headers after 214.2298ms - 200
+2022-12-21 14:56:06.567 +02:00 [INF] End processing HTTP request after 232.5742ms - 200
+2022-12-21 14:56:06.574 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1841040c371717fb"
+2022-12-21 14:56:06.580 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1841040c371717fb"
+2022-12-21 14:56:06.866 +02:00 [INF] Received HTTP response headers after 280.2281ms - 200
+2022-12-21 14:56:06.872 +02:00 [INF] End processing HTTP request after 297.9275ms - 200
+2022-12-21 14:56:19.698 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages"
+2022-12-21 14:56:19.702 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages"
+2022-12-21 14:56:19.913 +02:00 [INF] Received HTTP response headers after 208.1061ms - 200
+2022-12-21 14:56:19.917 +02:00 [INF] End processing HTTP request after 219.52ms - 200
+2022-12-21 14:56:19.921 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185340b980372451"
+2022-12-21 14:56:19.925 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185340b980372451"
+2022-12-21 14:56:20.151 +02:00 [INF] Received HTTP response headers after 222.1897ms - 200
+2022-12-21 14:56:20.155 +02:00 [INF] End processing HTTP request after 234.0954ms - 200
+2022-12-21 14:56:20.159 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1853158f1a629fe2"
+2022-12-21 14:56:20.163 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1853158f1a629fe2"
+2022-12-21 14:56:20.370 +02:00 [INF] Received HTTP response headers after 203.1775ms - 200
+2022-12-21 14:56:20.374 +02:00 [INF] End processing HTTP request after 214.7651ms - 200
+2022-12-21 14:56:20.378 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185311d814b18532"
+2022-12-21 14:56:20.381 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/185311d814b18532"
+2022-12-21 14:56:20.593 +02:00 [INF] Received HTTP response headers after 207.845ms - 200
+2022-12-21 14:56:20.596 +02:00 [INF] End processing HTTP request after 218.5995ms - 200
+2022-12-21 14:56:20.601 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18511619524fb7ad"
+2022-12-21 14:56:20.607 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18511619524fb7ad"
+2022-12-21 14:56:20.832 +02:00 [INF] Received HTTP response headers after 213.4728ms - 200
+2022-12-21 14:56:20.836 +02:00 [INF] End processing HTTP request after 235.0505ms - 200
+2022-12-21 14:56:20.843 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a9ebe5bee"
+2022-12-21 14:56:20.847 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a9ebe5bee"
+2022-12-21 14:56:21.066 +02:00 [INF] Received HTTP response headers after 213.8597ms - 200
+2022-12-21 14:56:21.070 +02:00 [INF] End processing HTTP request after 227.0546ms - 200
+2022-12-21 14:56:21.074 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a370916dc"
+2022-12-21 14:56:21.078 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1851160a370916dc"
+2022-12-21 14:56:21.291 +02:00 [INF] Received HTTP response headers after 209.0807ms - 200
+2022-12-21 14:56:21.295 +02:00 [INF] End processing HTTP request after 220.828ms - 200
+2022-12-21 14:56:21.301 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a53e06c439520"
+2022-12-21 14:56:21.304 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a53e06c439520"
+2022-12-21 14:56:21.513 +02:00 [INF] Received HTTP response headers after 204.4562ms - 200
+2022-12-21 14:56:21.519 +02:00 [INF] End processing HTTP request after 218.2983ms - 200
+2022-12-21 14:56:21.526 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10d33f66b9ac"
+2022-12-21 14:56:21.533 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10d33f66b9ac"
+2022-12-21 14:56:21.757 +02:00 [INF] Received HTTP response headers after 216.7053ms - 200
+2022-12-21 14:56:21.763 +02:00 [INF] End processing HTTP request after 236.8839ms - 200
+2022-12-21 14:56:21.772 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10c44a64e0ea"
+2022-12-21 14:56:21.778 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184a10c44a64e0ea"
+2022-12-21 14:56:22.001 +02:00 [INF] Received HTTP response headers after 218.2284ms - 200
+2022-12-21 14:56:22.004 +02:00 [INF] End processing HTTP request after 232.6528ms - 200
+2022-12-21 14:56:22.008 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1847c96d8fca2061"
+2022-12-21 14:56:22.012 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1847c96d8fca2061"
+2022-12-21 14:56:22.222 +02:00 [INF] Received HTTP response headers after 205.3153ms - 200
+2022-12-21 14:56:22.230 +02:00 [INF] End processing HTTP request after 221.4449ms - 200
+2022-12-21 14:56:22.239 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e7ca3f8f15b"
+2022-12-21 14:56:22.249 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e7ca3f8f15b"
+2022-12-21 14:56:22.472 +02:00 [INF] Received HTTP response headers after 210.224ms - 200
+2022-12-21 14:56:22.480 +02:00 [INF] End processing HTTP request after 240.9177ms - 200
+2022-12-21 14:56:22.496 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e0d2b7752de"
+2022-12-21 14:56:22.504 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458e0d2b7752de"
+2022-12-21 14:56:22.734 +02:00 [INF] Received HTTP response headers after 214.3704ms - 200
+2022-12-21 14:56:22.742 +02:00 [INF] End processing HTTP request after 246.201ms - 200
+2022-12-21 14:56:22.752 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458599f5e3705b"
+2022-12-21 14:56:22.767 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18458599f5e3705b"
+2022-12-21 14:56:22.983 +02:00 [INF] Received HTTP response headers after 205.4616ms - 200
+2022-12-21 14:56:22.989 +02:00 [INF] End processing HTTP request after 237.0446ms - 200
+2022-12-21 14:56:22.997 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184536a4e50e7763"
+2022-12-21 14:56:23.004 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/184536a4e50e7763"
+2022-12-21 14:56:23.223 +02:00 [INF] Received HTTP response headers after 213.0893ms - 200
+2022-12-21 14:56:23.227 +02:00 [INF] End processing HTTP request after 230.1382ms - 200
+2022-12-21 14:56:23.231 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18414513764bf01b"
+2022-12-21 14:56:23.239 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/18414513764bf01b"
+2022-12-21 14:56:23.455 +02:00 [INF] Received HTTP response headers after 208.1524ms - 200
+2022-12-21 14:56:23.459 +02:00 [INF] End processing HTTP request after 227.8102ms - 200
+2022-12-21 14:56:23.463 +02:00 [INF] Start processing HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1841040c371717fb"
+2022-12-21 14:56:23.468 +02:00 [INF] Sending HTTP request GET "https://gmail.googleapis.com/gmail/v1/users/mailremovertest@gmail.com/messages/1841040c371717fb"
+2022-12-21 14:56:23.751 +02:00 [INF] Received HTTP response headers after 278.6108ms - 200
+2022-12-21 14:56:23.758 +02:00 [INF] End processing HTTP request after 294.4415ms - 200

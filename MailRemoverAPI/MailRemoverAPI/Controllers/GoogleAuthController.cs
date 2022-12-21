@@ -25,7 +25,7 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> Code(string code, string state)
         {
             var response = await _gmailService.PostAccessCode(code, state);
-            return Ok(response);
+            return Redirect("http://localhost:3000");
         }
     }
 }
