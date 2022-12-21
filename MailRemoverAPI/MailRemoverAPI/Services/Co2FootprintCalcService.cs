@@ -3,9 +3,9 @@ namespace MailRemoverAPI.Services
 {
     public class Co2FootprintCalcService : ICo2FootprintCalcService
     {
-        public double Co2FootprintCalculatorKg(int messagesTotal)
+        public double Co2FootprintCalculatorKg(int bytes)
         {
-            double calculatedCo2 = messagesTotal * 0.5;
+            double calculatedCo2 = bytes * 0.0001;
             return calculatedCo2;
         }
 
