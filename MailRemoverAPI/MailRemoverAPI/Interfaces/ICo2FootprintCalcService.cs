@@ -3,9 +3,8 @@ namespace MailRemoverAPI.Interfaces
 {
     public interface ICo2FootprintCalcService
     {
-        public double Co2FootprintCalculatorKgMessages(int messagesTotal);
-
-        public double Co2FootprintCalculatorKgKBytes(int size);
+        public double Co2FootprintCalculatorKg(int bytes);
+        
         public int EggCalculator(int messagesTotal);
     }
 }
