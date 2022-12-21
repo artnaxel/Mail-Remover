@@ -29,8 +29,6 @@ namespace IntegrationTests
         [InlineData("api/Email/GetEmision?mb=59458247")]
         // Gmail
         [InlineData("api/Gmails/GetAll")]
-        [InlineData("api/Gmails/GetById")]
-        [InlineData("/api/Gmails/GetProfile?Id=6e546687-9db2-41b3-95fa-f8f55c16a2aa")]
         // Google Auth
         [InlineData("/api/GoogleAuth/Get?user_id=fb020d52-30fb-4e43-82cf-681ff3cd5eb6")]
         //Users
