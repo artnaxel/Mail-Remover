@@ -19,18 +19,18 @@ namespace MailRemoverAPI.Controllers
         public async Task<IActionResult> GetCo2Eggs([FromQuery] int totalMessages)
         {
             var resultEggs = _co2FootprintCalcService.EggCalculator(totalMessages);
-            var resultCO2 = _co2FootprintCalcService.Co2FootprintCalculatorKgMessages(totalMessages);
+            // var resultCO2 = _co2FootprintCalcService.Co2FootprintCalculatorKgMessages(totalMessages);
 
-            return Ok(new {eggs = resultEggs, co2 = resultCO2});
+            return Ok(new {eggs = resultEggs, /*co2 = resultCO2*/});
         }
-
+        /*
         [HttpGet("api/getByGmail")]
         public async Task<IActionResult> GetCo2Gmail([FromQuery] int size)
         {
             var resultCO2Gmail = _co2FootprintCalcService.Co2FootprintCalculatorKgKBytes(size);
             return Ok(new { co2 = resultCO2Gmail });
         }
-
+        */
     }
 
 }
