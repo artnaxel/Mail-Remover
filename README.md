@@ -18,4 +18,4 @@ VU PS
 
 -- How to view error level loggs
 
-- Go to `SEQ` wbsite: 1.`following this `[link](https://datalust.co/seq) `download the program`<br /> 2.`Set up "SEQ"`<br /> 3.`See if "SEQ"'s status is "Running" by going to "Services"`<br /> 4.`Follow this` [link](http://localhost:5341/#/events) `to view your loggs`<br /> 5.`Click on "Errors" to view only errors`
+- Go to `SEQ` wbsite: 1.`following this `[link](https://datalust.co/seq) `download the program`<br /> 2.`Set up "SEQ"`<br /> 3.`See if "SEQ"'s status is "Running" by going to "Services"`<br /> 4.`Follow this` [link](http://localhost:5341/#/events) `to view your loggs`<br /> 5.`Click on "Errors" to view only errors`test

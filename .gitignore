@@ -243,3 +243,20 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+MailRemoverAPI/MailRemoverAPI/logs/log-20230413.txt
+MailRemoverAPI/azurite_workspace/__azurite_db_table__.json
+MailRemoverAPI/azurite_workspace/__azurite_db_blob__.json
+mail-remover/build/static/js/main.c132e7b8.js.map
+mail-remover/build/static/js/main.c132e7b8.js.LICENSE.txt
+mail-remover/build/static/js/main.c132e7b8.js
+mail-remover/build/static/js/787.c0180f5b.chunk.js.map
+mail-remover/build/static/js/787.c0180f5b.chunk.js
+mail-remover/build/static/css/main.a215fd8c.css.map
+mail-remover/build/static/css/main.a215fd8c.css
+mail-remover/build/robots.txt
+mail-remover/build/manifest.json
+mail-remover/build/logo512.png
+mail-remover/build/logo192.png
+mail-remover/build/index.html
+mail-remover/build/favicon.ico
+mail-remover/build/asset-manifest.json
