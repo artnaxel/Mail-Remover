@@ -18,18 +18,12 @@ public class FeedbackController : Controller {
         _repo = repo;
     }
 
-    // private FeedbackController() {}
-
-    // public FeedbackController(ILogger<FeedbackController> illoger, FeedbackRepository repo) => new FeedbackController() {
-    //     _logger = 
-    // };
-
-    // public FeedbackRepository(FeedbackDbContext ctx) {
-
-    // }
-
     [HttpGet]
-    public IEnumerable<M.Feedback> GetId() {
-        throw new NotImplementedException();
+    public async Task<IEnumerable<M.Feedback>> Get() {
+        // _repo.GetFeedbackById
+        return await _repo.GetAllFeedback();
     }
+
+    [HttpGet("/count")]
+    public async Task<int> Count() => await _repo.GetCount();
 }

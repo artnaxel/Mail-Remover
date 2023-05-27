@@ -1,15 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 // using Microsoft.Extensions.DependencyInjection.Abstractions;
 
 using Feedback.DB;
+using Feedback.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<FeedbackDbContext>(opt =>
     opt.UseInMemoryDatabase("FeedbackDB"));
-builder.Services.AddSingleton<IFeedbackRepository>();
+builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

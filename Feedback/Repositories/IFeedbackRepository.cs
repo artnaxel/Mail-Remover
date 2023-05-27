@@ -10,6 +10,8 @@ namespace Feedback.Repositories
     // TODO
     public interface IFeedbackRepository
     {
+        public Task<int> GetCount();
+        public Task<IEnumerable<M.Feedback>> GetAllFeedback();
         public Task<IEnumerable<M.Feedback>> GetFeedbackById(Guid id);
         public Task InsertFeedback(M.Feedback feedback);
 

@@ -17,10 +17,10 @@ namespace Feedback.DB
 
         public FeedbackDbContext(DbContextOptions opts) : base(opts) {}
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseInMemoryDatabase();
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     optionsBuilder.UseInMemoryDatabase();
+        // }
 
         protected override void OnModelCreating(ModelBuilder builder) {
             // TODO: figure feedback insertion
