@@ -26,4 +26,9 @@ public class FeedbackController : Controller {
 
     [HttpGet("/count")]
     public async Task<int> Count() => await _repo.GetCount();
+
+    [HttpPost("/insert/")]
+    public async Task Insert([FromBody] M.Feedback feedback) => 
+        await _repo
+            .InsertFeedback(feedback);
 }
