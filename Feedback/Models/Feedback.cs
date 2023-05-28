@@ -11,5 +11,5 @@ public class Feedback : Entity {
     public string category { get; set; }
     public int UserId { get; set; }
     // public User User { get; set; } // Lazy???
-    public IEnumerable<Attachment> Attachments { get; set; }
+    public IList<Attachment> Attachments { get; set; } = new Attachment[] {};
 }

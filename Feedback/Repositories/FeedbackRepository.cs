@@ -9,7 +9,7 @@ using Feedback.DB;
 
 namespace Feedback.Repositories
 {
-    public class FeedbackRepository : IFeedbackRepository
+    public class FeedbackRepository : IEntityRepository<M.Feedback>
     {
         private FeedbackDbContext dbContext;
 
@@ -23,30 +23,34 @@ namespace Feedback.Repositories
             return dbContext.Feedback.Count();
         }
 
-        public async Task<IEnumerable<M.Feedback>> GetAllFeedback() {
+        public async Task<IEnumerable<M.Feedback>> GetAll() {
             await Task.Delay(1);
             return dbContext.Feedback;
         }
 
-        public async Task<IEnumerable<M.Feedback>> GetFeedbackBy(Predicate<M.Feedback> pred) {
+        public async Task<IEnumerable<M.Feedback>> GetBy(Predicate<M.Feedback> pred) {
             await Task.Delay(1);
             return dbContext.Feedback
                 .Where((f) => pred(f));
         }
 
-        public async Task<IEnumerable<M.Feedback>> GetFeedbackById(Guid id)
-            => await this.GetFeedbackBy((f) => f.Id.Equals(id));
+        public async Task<M.Feedback?> GetById(Guid id)
+            => (await this.GetBy((f) => f.Id.Equals(id))).Last();
 
-        public async Task InsertFeedback(M.Feedback feedback) {
-            await Task.Delay(1);
+        public async Task<Guid> Insert(M.Feedback feedback) {
             dbContext.Feedback.Add(feedback);
+            dbContext.SaveChanges();
+
+            return feedback.Id;
         }
 
-        public async Task UpdateFeedbackByGuid(Guid guid, Func<M.Feedback, M.Feedback> func) {
-            await Task.Delay(1);
+        public async Task UpdateByGuid(Guid guid, Func<M.Feedback, M.Feedback> func) {
             dbContext.Feedback
                 .Where((f) => f.Id == guid)
-                .Select(func);
+                .Select(func)
+                .AsEnumerable();
+            
+            dbContext.SaveChanges();
         }
     }
 }

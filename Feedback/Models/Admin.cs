@@ -4,6 +4,6 @@ namespace Feedback.Models;
 public class Admin : Entity {
     public string Name { get; set; }
     public string Role { get; set; }
-    public Lazy<IEnumerable<Ticket>> Tickets { get; set; }
-    public Lazy<IEnumerable<Feedback>> Feedbacks { get; set; }
+    public IList<Ticket> Tickets { get; set; } = new Ticket[] {};
+    public IList<Feedback> Feedbacks { get; set; } = new Feedback[] {};
 }

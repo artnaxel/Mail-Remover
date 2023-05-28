@@ -1,19 +1,24 @@
 using Microsoft.EntityFrameworkCore;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 
 using Feedback.DB;
 using Feedback.Repositories;
+using M = Feedback.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<FeedbackDbContext>(opt =>
-    opt.UseInMemoryDatabase("FeedbackDB"));
-builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+builder.Services.AddDbContext<FeedbackDbContext>(
+    opt => opt
+        .UseInMemoryDatabase("FeedbackDB")
+        .EnableSensitiveDataLogging()
+);
+builder.Services.AddScoped<IEntityRepository<M.Feedback>, FeedbackRepository>();
+builder.Services.AddScoped<IEntityRepository<M.Admin>, AdminRepository>();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

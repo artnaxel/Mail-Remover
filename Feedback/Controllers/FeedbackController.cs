@@ -10,25 +10,24 @@ using Feedback.Repositories;
 [Route("feedback")]
 public class FeedbackController : Controller {
 
-    private IFeedbackRepository _repo { get; init; }
+    private IEntityRepository<M.Feedback> _repo { get; init; }
     // private ILogger<FeedbackController> _logger { get; init; }
 
-    public FeedbackController(IFeedbackRepository repo)
+    public FeedbackController(IEntityRepository<M.Feedback> repo)
     {
         _repo = repo;
     }
 
     [HttpGet]
     public async Task<IEnumerable<M.Feedback>> Get() {
-        // _repo.GetFeedbackById
-        return await _repo.GetAllFeedback();
+        return await _repo.GetAll();
     }
 
-    [HttpGet("/count")]
+    [HttpGet("count")]
     public async Task<int> Count() => await _repo.GetCount();
 
-    [HttpPost("/insert/")]
+    [HttpPost("create")]
     public async Task Insert([FromBody] M.Feedback feedback) => 
         await _repo
-            .InsertFeedback(feedback);
+            .Insert(feedback);
 }

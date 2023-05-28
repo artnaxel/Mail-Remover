@@ -12,8 +12,6 @@ public class Attachment : Entity {
     public string FileName { get; set; }
     [JsonConverter(typeof(Base64EncodedStringConverter))]
     public byte[] Bytes { get; set; }
-    // public Base64 Bytes { get; set; }
-    // public bytes[] Bytes { get; set; }
 }
 
 public class Base64EncodedStringConverter : JsonConverter<byte []>

@@ -7,26 +7,32 @@ using M = Feedback.Models;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.InMemory;
 
 namespace Feedback.DB
 {
     public class FeedbackDbContext : DbContext
     {
         public DbSet<M.Feedback> Feedback { get; private set; }
+        public DbSet<M.Admin> Admin { get; private set; }
 
         public FeedbackDbContext(DbContextOptions opts) : base(opts) {}
 
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        // {
-        //     optionsBuilder.UseInMemoryDatabase();
-        // }
-
         protected override void OnModelCreating(ModelBuilder builder) {
-            // TODO: figure feedback insertion
+            // builder
+            //     .Entity<M.Feedback>()
+            //     .HasKey((f) => f.Id);
+            
             builder
                 .Entity<M.Feedback>()
                 .HasMany((f) => f.Attachments);
+            
+            builder
+                .Entity<M.Admin>()
+                .HasMany((a) => a.Tickets);
+            
+            builder
+                .Entity<M.Admin>()
+                .HasMany((a) => a.Feedbacks);
 
             base.OnModelCreating(builder);
         }

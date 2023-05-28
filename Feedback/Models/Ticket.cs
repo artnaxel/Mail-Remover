@@ -8,5 +8,5 @@ public class Ticket : Entity {
     public DateTime Created { get; set; }
     public string Status { get; set; }
     public string Priotity { get; set; }
-    public Lazy<Feedback> Feedback { get; set; }
+    public Feedback Feedback { get; set; }
 }
